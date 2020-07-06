@@ -5,7 +5,7 @@
 
     <link rel="shortcut icon" href="upload/TG-Thumb.png" />
 
-    <title>Inicio</title>
+    <title>Cabezas Rent a Car</title>
 
 
     <meta charset="UTF-8" />
