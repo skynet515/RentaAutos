@@ -44,7 +44,7 @@
     <div class="footer_bar_wrapper ">
     <div class="menu-footer-menu-container">
                     <ul id="footer_menu" class="footer_nav">
-                        <li class="menu-item"><a href="../vertical-dark/dist/login.html">Admin</a></li>
+                        <li class="menu-item"><a href="../vertical-dark/dist/login.php">Admin</a></li>
                     </ul>
                 </div>
         <div id="copyright">© Copyright Cabezas Rent a Car</div>

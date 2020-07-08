@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>Greeva - Responsive Bootstrap 4 Admin Dashboard</title>
+        <title>Login Administrador</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
         <meta content="Coderthemes" name="author" />
@@ -30,61 +30,49 @@
                         <div class="card">
 
                             <div class="card-body p-4">
+        
+                             <strong><h1 style="font-size: 13px; color: white; "><?php 
                                 
+                                include('validar.php');	  
+
+                                ?></h1></strong>
+                           
                                 <div class="text-center mb-4">
                                     <a href="../../alquiler/index.php">
                                         <span><img src="assets/images/logo-light.png" alt="" height="28"></span>
                                     </a>
                                 </div>
 
-                                <form action="#" class="pt-2">
+                                <form action="../../verificarUser.php" class="pt-2" method="post">
 
                                     <div class="form-group mb-3">
-                                        <label for="emailaddress">Email address</label>
-                                        <input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter your email">
+                                        <label for="emailaddress">Nombre de usuario</label>
+                                        <input class="form-control" type="email" name="user" id="user" required="" placeholder="Escriba su nombre de usuario">
                                     </div>
 
                                     <div class="form-group mb-3">
                                         <a href="auth-recoverpassword.html" class="text-muted float-right"><small>Forgot your password?</small></a>
-                                        <label for="password">Password</label>
-                                        <input class="form-control" type="password" required="" id="password" placeholder="Enter your password">
+                                        <label for="password">Contraseña</label>
+                                        <input class="form-control" type="password" required="" name="password" id="password" placeholder="Escriba su contraseña">
                                     </div>
 
                                     <div class="custom-control custom-checkbox mb-3">
                                         <input type="checkbox" class="custom-control-input" id="checkbox-signin" checked>
-                                        <label class="custom-control-label" for="checkbox-signin">Remember me</label>
+                                        <label class="custom-control-label" for="checkbox-signin">Recordarme</label>
                                     </div>
 
                                     <div class="form-group mb-0 text-center">
-                                        <button class="btn btn-success btn-block" type="submit"> Log In </button>
+                                        <button class="btn btn-success btn-block" type="submit">Iniciar Sesión</button>
                                     </div>
-
                                 </form>
-
-                                <div class="row mt-3">
-                                    <div class="col-12 text-center">
-                                        <p class="text-muted mb-0">Don't have an account? <a href="auth-register.html" class="text-dark ml-1"><b>Sign Up</b></a></p>
-                                    </div> <!-- end col -->
-                                </div>
-                                <!-- end row -->
-
-                            </div> <!-- end card-body -->
+                            </div> 
                         </div>
-                        <!-- end card -->
-
-                    </div> <!-- end col -->
+                    </div> 
                 </div>
-                <!-- end row -->
+              
             </div>
-            <!-- end container -->
         </div>
-        <!-- end page -->
-
-        <!-- Vendor js -->
         <script src="assets/js/vendor.min.js"></script>
-
-        <!-- App js -->
         <script src="assets/js/app.min.js"></script>
-        
     </body>
 </html>
