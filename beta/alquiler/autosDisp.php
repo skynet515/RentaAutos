@@ -1,4 +1,11 @@
-<?php include('menu.php')?>
+<?php 
+
+    include('menu.php');
+    include('../conexion.php');
+
+    
+
+?>
 
         <div id="page_caption" class="hasbg parallax  withtopbar  " style="background-image:url(upload/driver-2.jpg);">
 
@@ -25,36 +32,44 @@
 
                             <div id="portfolio_filter_wrapper" class="gallery classic three_cols portfolio-content section content clearfix" data-columns="3">
                                 <!--INICIO DE WHILE-->
+
+                                <?php  
+                                    $query = mysqli_query($miconexion,"
+                                    
+                                        SELECT  md.modelo, tra.transmision, aut.precio, aut.capacidad, mc.marca, img.img
+                                        FROM tblautos AS aut inner join tblmodelo AS md on aut.idmodelo = md.idmodelo
+                                        inner join tbltransmision AS tra on tra.idtransmision = aut.idtransmision
+                                        inner join tblmarca AS mc on mc.idmarca = aut.idmarca
+                                        INNER JOIN asignarimg AS a ON a.idautos = aut.idautos
+                                        INNER JOIN tblimg AS img ON img.idimg = a.idimg
+
+                                    
+                                    
+                                    ");
+                                    mysqli_data_seek( $query, 0 );
+                                    
+
+                                    while ($data = mysqli_fetch_array($query)) { 
+
+                                ?>
                                 <div class="element grid classic3_cols animated2">
 
                                     <div class="one_third gallery3 classic static filterable portfolio_type themeborder" data-id="post-2">
 
                                         <a class="car_image" href="#">
-                                            <img src="upload/carro01.jpg" alt="BMW 3 Series" />
+                                            <img src="upload/<?=$data['img'];?>" alt="BMW 3 Series" />
                                         </a>
 
                                         <div class="portfolio_info_wrapper">
                                             <div class="car_attribute_wrapper">
-                                                <a class="car_link" href="#"><h4>BMW 3 Series</h4></a>
-                                                <div class="car_attribute_rating">
-                                                    <div class="br-theme-fontawesome-stars-o">
-                                                        <div class="br-widget">
-                                                            <a href="javascript:;" class="br-selected"></a>
-                                                            <a href="javascript:;" class="br-selected"></a>
-                                                            <a href="javascript:;" class="br-selected"></a>
-                                                            <a href="javascript:;" class="br-selected"></a>
-                                                            <a href="javascript:;"></a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="car_attribute_rating_count">
-                                                        4&nbsp; reviews </div>
-                                                </div>
+                                                <a class="car_link" href="#"><h4><?=$data['marca'];?> <?=$data['modelo'];?></h4></a>
+                                                
 
                                                 <div class="car_attribute_wrapper_icon">
                                                     <div class="one_fourth">
                                                         <div class="car_attribute_icon ti-user"></div>
                                                         <div class="car_attribute_content">
-                                                            4 </div>
+                                                        <?=$data['capacidad'];?> </div>
                                                     </div>
 
                                                     <div class="one_fourth">
@@ -66,7 +81,7 @@
                                                     <div class="one_fourth">
                                                         <div class="car_attribute_icon ti-panel"></div>
                                                         <div class="car_attribute_content">
-                                                            Auto </div>
+                                                        <?=$data['transmision'];?>   </div>
                                                     </div>
 
                                                 </div>
@@ -74,13 +89,15 @@
                                             </div>
                                             <div class="car_attribute_price">
                                                 <div class="car_attribute_price_day three_cols">
-                                                    <span class="single_car_currency">$</span><span class="single_car_price">64</span> <span class="car_unit_day">Per Day</span>
+                                                    <span class="single_car_currency">$</span><span class="single_car_price"><?=$data['precio'];?></span> <span class="car_unit_day">Per Day</span>
                                                 </div>
                                             </div>
                                             <br class="clear" />
                                         </div>
                                     </div>
                                 </div>
+
+                                    <?php } ?>
                                <!--FIN DE WHILE-->
                             </div>
                             <br class="clear" />
