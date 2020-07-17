@@ -1,16 +1,56 @@
-<?php include('menu.php')?>
-        <div id="page_caption" class="hasbg  withtopbar " style="background-image:url(upload/bmw-3-series-sedan-wallpaper-1920x1200-05.jpg);">
+<?php include('menu.php');
+include('../conexion.php');
+
+$query = mysqli_query($miconexion,"
+SELECT  md.modelo, tra.transmision, aut.precio, aut.capacidad, mc.marca, img.portada, aut.cant_puertas
+FROM tblautos AS aut inner join tblmodelo AS md on aut.idmodelo = md.idmodelo
+inner join tbltransmision AS tra on tra.idtransmision = aut.idtransmision
+inner join tblmarca AS mc on mc.idmarca = aut.idmarca
+INNER JOIN asignarimg AS a ON a.idautos = aut.idautos
+INNER JOIN tblimg AS img ON img.idimg = a.idimg
+WHERE aut.idautos=1;");
+
+mysqli_data_seek( $query, 0 );
+
+$data = mysqli_fetch_array($query);
+
+?>
+
+        <div id="page_caption" class="hasbg  withtopbar " style="background-image:url(upload/<?=$data['portada'];?>">
 
             <div class="single_car_header_button">
                 <div class="standard_wrapper">
-                    <a href="upload/nw6xremkxkg-nicolai-berntsen.jpg" id="single_car_gallery_open" class="button fancy-gallery"><span class="ti-camera"></span>View Photos</a>
-                    <div style="display:none;">
-                        <a id="single_car_gallery_image1" href="upload/traffic-car-vehicle-black.jpg" title="" class="fancy-gallery"></a>
-                        <a id="single_car_gallery_image2" href="upload/evening.jpg" title="" class="fancy-gallery"></a>
-                        <a id="single_car_gallery_image3" href="upload/IMG_3496bfree.jpg" title="The road to success and the road to failure are almost exactly the same" class="fancy-gallery"></a>
-                        <a id="single_car_gallery_image4" href="upload/road-people-street-smartphone.jpg" title="" class="fancy-gallery"></a>
-                    </div>
 
+                <?php 
+                 $num =0;
+                    $sql = mysqli_query($miconexion,"
+                    SELECT img.img
+                    FROM 
+                    tblautos AS aut INNER JOIN asignarimg AS img ON
+                    aut.idautos = img.idautos
+                    WHERE aut.idautos = 1;" );
+
+                    mysqli_data_seek( $query, 0 );
+                   
+                    while($img = mysqli_fetch_array($sql)){
+                    $num= $num +1;
+                ?>
+                    <?php if($num ==1){  ?>
+
+                    <a href="upload/carro1a.jpg" id="single_car_gallery_open" class="button fancy-gallery"><span class="ti-camera"></span>View Photos</a>
+                    
+                    <?php } 
+                    
+                    else if($num>1){
+                        
+                        ?>
+
+                    <div style="display:none;">
+                        <a id="single_car_gallery_image1" href="upload/<?=$img['img'];?>" title="" class="fancy-gallery"></a>
+                    </div>
+                    
+                <?php }
+                        } ?>
                     <a href="#video_review143" id="single_car_video_review_open" class="button" data-type="inline"><span class="ti-control-play"></span>Video Review</a>
 
                     <div id="video_review143" class="car_video_review_wrapper" style="display:none;">
@@ -22,7 +62,7 @@
             <div class="single_car_header_content">
                 <div class="standard_wrapper">
                     <div class="single_car_header_price">
-                        <span id="single_car_price"><span class="single_car_currency">$</span><span class="single_car_price">64</span></span>
+                        <span id="single_car_price"><span class="single_car_currency">$</span><span class="single_car_price"><?=$data['precio'];?></span></span>
                         <span id="single_car_price_per_unit_change" class="single_car_price_per_unit">
                     <span id="single_car_unit">Per Day</span>
                         <span class="ti-angle-down"></span>
@@ -54,45 +94,31 @@
 
                     <div class="sidebar_content">
 
-                        <h1>Mercedes Benz GLE</h1>
-                        <div class="car_attribute_wrapper">
-                            <div class="car_attribute_rating">
-                                <div class="br-theme-fontawesome-stars-o">
-                                    <div class="br-widget">
-                                        <a href="javascript:;" class="br-selected"></a>
-                                        <a href="javascript:;" class="br-selected"></a>
-                                        <a href="javascript:;" class="br-selected"></a>
-                                        <a href="javascript:;" class="br-selected"></a>
-                                        <a href="javascript:;"></a>
-                                    </div>
-                                </div>
-                                <div class="car_attribute_rating_count">
-                                    4&nbsp; reviews </div>
-                            </div>
-                        </div>
+                        <h1><?=$data['marca'];?> <?=$data['modelo'];?></h1>
+                        
                         <div class="single_car_attribute_wrapper themeborder">
                             <div class="one_fourth">
                                 <div class="car_attribute_icon ti-user"></div>
                                 <div class="car_attribute_content">
-                                    5&nbsp;Passengers </div>
+                                <?=$data['capacidad'];?>&nbsp; Pasajeros</div>
                             </div>
 
                             <div class="one_fourth">
                                 <div class="car_attribute_icon ti-briefcase"></div>
                                 <div class="car_attribute_content">
-                                    4&nbsp;Luggages </div>
+                                    4&nbsp; Maletas</div>
                             </div>
 
                             <div class="one_fourth">
                                 <div class="car_attribute_icon ti-panel"></div>
                                 <div class="car_attribute_content">
-                                    Auto </div>
+                                <?=$data['transmision'];?> </div>
                             </div>
 
                             <div class="one_fourth last">
                                 <div class="car_attribute_icon ti-car"></div>
                                 <div class="car_attribute_content">
-                                    5&nbsp; Doors </div>
+                                <?=$data['cant_puertas'];?>&nbsp; Puertas </div>
                             </div>
                         </div>
                         <br class="clear" />
@@ -193,7 +219,7 @@
 
                                 <div class="comment" id="comment-48">
                                     <div class="gravatar">
-                                        <img src="upload/author1-100x100.jpg" width="60" height="60" alt="Jack Dawson" class="avatar avatar-60 wp-user-avatar wp-user-avatar-60 alignnone photo" /> </div>
+                                        <img src="upload/author1-x.jpg" width="60" height="60" alt="Jack Dawson" class="avatar avatar-60 wp-user-avatar wp-user-avatar-60 alignnone photo" /> </div>
 
                                     <div class="right ">
 
@@ -260,7 +286,7 @@
 
                             <div class="comment" id="comment-49">
                                 <div class="gravatar">
-                                    <img src="upload/me-100x100.jpg" width="60" height="60" alt="Anna Kornikova" class="avatar avatar-60 wp-user-avatar wp-user-avatar-60 alignnone photo" /> </div>
+                                    <img src="upload/me-x.jpg" width="60" height="60" alt="Anna Kornikova" class="avatar avatar-60 wp-user-avatar wp-user-avatar-60 alignnone photo" /> </div>
 
                                 <div class="right ">
 
@@ -327,7 +353,7 @@
 
                         <div class="comment" id="comment-50">
                             <div class="gravatar">
-                                <img src="upload/avatar-100x100.png" width="60" height="60" alt="Marie Argeris" class="avatar avatar-60 wp-user-avatar wp-user-avatar-60 alignnone photo" /> </div>
+                                <img src="upload/avatar-x.png" width="60" height="60" alt="Marie Argeris" class="avatar avatar-60 wp-user-avatar wp-user-avatar-60 alignnone photo" /> </div>
 
                             <div class="right ">
 
@@ -394,7 +420,7 @@
 
                     <div class="comment" id="comment-51">
                         <div class="gravatar">
-                            <img src="upload/author2-100x100.jpg" width="60" height="60" alt="Jessica Medina" class="avatar avatar-60 wp-user-avatar wp-user-avatar-60 alignnone photo" /> </div>
+                            <img src="upload/author2-x.jpg" width="60" height="60" alt="Jessica Medina" class="avatar avatar-60 wp-user-avatar wp-user-avatar-60 alignnone photo" /> </div>
 
                         <div class="right ">
 
@@ -477,7 +503,7 @@
                     </p>
                     <p class="comment-form-email">
                         <label for="email">Email <span class="required">*</span></label>
-                        <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" required='required' />
+                        <input id="email" name="email" type="text" value="" size="30" maxlength="" aria-describedby="email-notes" required='required' />
                     </p>
                     <p class="comment-form-url">
                         <label for="url">Website</label>
@@ -511,7 +537,7 @@
                 <div class="content">
 
                     <div class="single_car_header_price">
-                        <span id="single_car_price_scroll"><span class="single_car_currency">$</span><span class="single_car_price">127</span></span>
+                        <span id="single_car_price_scroll"><span class="single_car_currency">$</span><span class="single_car_price"><?=$data['precio'];?></span></span>
                         <span id="single_car_price_per_unit_change_scroll" class="single_car_price_per_unit">
                             <span id="single_car_unit_scroll">Per Day</span>
                         <span class="ti-angle-down"></span>

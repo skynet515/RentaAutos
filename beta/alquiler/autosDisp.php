@@ -4,7 +4,6 @@
     include('../conexion.php');
 
     
-
 ?>
 
         <div id="page_caption" class="hasbg parallax  withtopbar  " style="background-image:url(upload/driver-2.jpg);">
