@@ -1,14 +1,12 @@
 <?php include('menu.php');
 include('../conexion.php');
+$idauto=$_GET['id'];
 
 $query = mysqli_query($miconexion,"
-SELECT  md.modelo, tra.transmision, aut.precio, aut.capacidad, mc.marca, img.portada, aut.cant_puertas
-FROM tblautos AS aut inner join tblmodelo AS md on aut.idmodelo = md.idmodelo
-inner join tbltransmision AS tra on tra.idtransmision = aut.idtransmision
-inner join tblmarca AS mc on mc.idmarca = aut.idmarca
-INNER JOIN asignarimg AS a ON a.idautos = aut.idautos
-INNER JOIN tblimg AS img ON img.idimg = a.idimg
-WHERE aut.idautos=1;");
+SELECT marca.marca, modelo.modelo, aut.precio, tra.transmision, img.img, aut.capacidad, img.portada, aut.cant_puertas
+FROM tblautos AS aut INNER JOIN tblmarca AS marca ON aut.idmarca=marca.idmarca INNER JOIN tblmodelo AS 
+modelo ON aut.idmodelo=modelo.idmodelo INNER JOIN tbltransmision AS tra ON aut.idtransmision=tra.idtransmision
+INNER JOIN tblimg AS img ON aut.idimg=img.idimg WHERE aut.idautos=$idauto");
 
 mysqli_data_seek( $query, 0 );
 
@@ -23,12 +21,9 @@ $data = mysqli_fetch_array($query);
 
                 <?php 
                  $num =0;
-                    $sql = mysqli_query($miconexion,"
-                    SELECT img.img
-                    FROM 
-                    tblautos AS aut INNER JOIN asignarimg AS img ON
-                    aut.idautos = img.idautos
-                    WHERE aut.idautos = 1;" );
+                    $sql = mysqli_query($miconexion,"SELECT repo.img
+                    FROM tblrepositorio AS repo INNER JOIN tblautos AS au ON au.idautos=repo.idauto
+                    WHERE au.idautos=$idauto");
 
                     mysqli_data_seek( $query, 0 );
                    
@@ -64,7 +59,7 @@ $data = mysqli_fetch_array($query);
                     <div class="single_car_header_price">
                         <span id="single_car_price"><span class="single_car_currency">$</span><span class="single_car_price"><?=$data['precio'];?></span></span>
                         <span id="single_car_price_per_unit_change" class="single_car_price_per_unit">
-                    <span id="single_car_unit">Per Day</span>
+                    <span id="single_car_unit">Por día</span>
                         <span class="ti-angle-down"></span>
 
                         <ul id="price_per_unit_select">
