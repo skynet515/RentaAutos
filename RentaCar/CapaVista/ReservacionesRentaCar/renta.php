@@ -1,18 +1,9 @@
 <?php include('menu.php');
-include('../conexion.php');
+include_once ('../../CapaNegocios/Nrenta.php');
+$renta=new Nrenta();
 
-$query = mysqli_query($miconexion,"
-SELECT  md.modelo, tra.transmision, aut.precio, aut.capacidad, mc.marca, img.portada, aut.cant_puertas
-FROM tblautos AS aut inner join tblmodelo AS md on aut.idmodelo = md.idmodelo
-inner join tbltransmision AS tra on tra.idtransmision = aut.idtransmision
-inner join tblmarca AS mc on mc.idmarca = aut.idmarca
-INNER JOIN asignarimg AS a ON a.idautos = aut.idautos
-INNER JOIN tblimg AS img ON img.idimg = a.idimg
-WHERE aut.idautos=1;");
-
-mysqli_data_seek( $query, 0 );
-
-$data = mysqli_fetch_array($query);
+$idauto=$_GET['id'];
+$data=$renta->ListarPortada($idauto);
 
 ?>
 
@@ -23,16 +14,10 @@ $data = mysqli_fetch_array($query);
 
                 <?php 
                  $num =0;
-                    $sql = mysqli_query($miconexion,"
-                    SELECT img.img
-                    FROM 
-                    tblautos AS aut INNER JOIN asignarimg AS img ON
-                    aut.idautos = img.idautos
-                    WHERE aut.idautos = 1;" );
+                   $lista=$renta->ListaImages($idauto);
+                    foreach($lista as $matriz=>$img)
+                    {
 
-                    mysqli_data_seek( $query, 0 );
-                   
-                    while($img = mysqli_fetch_array($sql)){
                     $num= $num +1;
                 ?>
                     <?php if($num ==1){  ?>
@@ -49,8 +34,8 @@ $data = mysqli_fetch_array($query);
                         <a id="single_car_gallery_image1" href="upload/<?=$img['img'];?>" title="" class="fancy-gallery"></a>
                     </div>
                     
-                <?php }
-                        } ?>
+                <?php    }
+                 } ?>
                     <a href="#video_review143" id="single_car_video_review_open" class="button" data-type="inline"><span class="ti-control-play"></span>Video Review</a>
 
                     <div id="video_review143" class="car_video_review_wrapper" style="display:none;">
@@ -64,7 +49,7 @@ $data = mysqli_fetch_array($query);
                     <div class="single_car_header_price">
                         <span id="single_car_price"><span class="single_car_currency">$</span><span class="single_car_price"><?=$data['precio'];?></span></span>
                         <span id="single_car_price_per_unit_change" class="single_car_price_per_unit">
-                    <span id="single_car_unit">Per Day</span>
+                    <span id="single_car_unit">Por día</span>
                         <span class="ti-angle-down"></span>
 
                         <ul id="price_per_unit_select">
@@ -130,7 +115,7 @@ $data = mysqli_fetch_array($query);
                             <h4 class="p1">No Smoking</h4>
                             <p class="p2">See-through delicate embroidered organza blue lining luxury acetate-mix stretch pleat detailing. Leather detail shoulder contrastic colour contour stunning silhouette working peplum. Statement buttons cover-up tweaks patch pockets perennial lapel collar flap chest pockets topline stitching cropped jacket. Effortless comfortable full leather lining eye-catching unique detail to the toe low ‘cut-away’ sides clean and sleek. Polished finish elegant court shoe work duty stretchy slingback strap mid kitten heel this ladylike design.</p>
                         </div>
-
+                        <?php// }?>
                         <ul class="single_car_departure_wrapper themeborder">
                             <li>
                                 <div class="single_car_departure_title">Included</div>
