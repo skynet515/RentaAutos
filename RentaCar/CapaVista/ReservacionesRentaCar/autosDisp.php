@@ -30,7 +30,7 @@ $Ndatos = new Nautosdesp(); ?>
 					<div id="portfolio_filter_wrapper" class="gallery classic three_cols portfolio-content section content clearfix" data-columns="3">
 						<!--INICIO DE WHILE-->
 
-						<?php 
+						<?php
 						$lista = $Ndatos->listarautos();
 						foreach ($lista as $autos => $data) {
 
