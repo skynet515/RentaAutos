@@ -104,15 +104,7 @@ $data = $renta->ListarPortada($idauto);
                     </div>
                 </div>
                 <br class="clear" />
-                <div class="single_car_content">
-                    <h4 class="p1">Refueling</h4>
-                    <p class="p2">Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim 8-bit hella, PBR 3 wolf moon beard Helvetica. Salvia esse nihil, flexitarian Truffaut synth art party deep v chillwave. Seitan High Life reprehenderit consectetur cupidatat kogi. Et leggings fanny pack, elit bespoke vinyl art party Pitchfork selfies master cleanse.</p>
-                    <h4 class="p1">Car Wash</h4>
-                    <p class="p2">Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag. Selfies iPhone Kickstarter, drinking vinegar jean vinegar stumptown yr pop-up artisan sunt. Craft beer elit seitan exercitation, photo booth</p>
-                    <h4 class="p1">No Smoking</h4>
-                    <p class="p2">See-through delicate embroidered organza blue lining luxury acetate-mix stretch pleat detailing. Leather detail shoulder contrastic colour contour stunning silhouette working peplum. Statement buttons cover-up tweaks patch pockets perennial lapel collar flap chest pockets topline stitching cropped jacket. Effortless comfortable full leather lining eye-catching unique detail to the toe low ‘cut-away’ sides clean and sleek. Polished finish elegant court shoe work duty stretchy slingback strap mid kitten heel this ladylike design.</p>
-                </div>
-                <?php// }?>
+               
                 <ul class="single_car_departure_wrapper themeborder">
                     <li>
                         <div class="single_car_departure_title">Included</div>
@@ -143,397 +135,41 @@ $data = $renta->ListarPortada($idauto);
                     </li>
                 </ul>
 
-                <div class="fullwidth_comment_wrapper sidebar">
-
-                    <h3 class="comment_title">4 Reviews</span></h3>
-                    <div class="avg_comment_rating_wrapper themeborder">
-                        <div class="comment_rating_wrapper">
-                            <div class="comment_rating_label">Driving</div>
-                            <div class="br-theme-fontawesome-stars-o">
-                                <div class="br-widget">
-                                    <a href="javascript:;" class="br-selected"></a>
-                                    <a href="javascript:;" class="br-selected"></a>
-                                    <a href="javascript:;" class="br-selected"></a>
-                                    <a href="javascript:;" class="br-selected"></a>
-                                    <a href="javascript:;"></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="comment_rating_wrapper">
-                            <div class="comment_rating_label">Interior Layout</div>
-                            <div class="br-theme-fontawesome-stars-o">
-                                <div class="br-widget">
-                                    <a href="javascript:;" class="br-selected"></a>
-                                    <a href="javascript:;" class="br-selected"></a>
-                                    <a href="javascript:;" class="br-selected"></a>
-                                    <a href="javascript:;" class="br-selected"></a>
-                                    <a href="javascript:;"></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="comment_rating_wrapper">
-                            <div class="comment_rating_label">Space &amp; Practicality</div>
-                            <div class="br-theme-fontawesome-stars-o">
-                                <div class="br-widget">
-                                    <a href="javascript:;" class="br-selected"></a>
-                                    <a href="javascript:;" class="br-selected"></a>
-                                    <a href="javascript:;" class="br-selected"></a>
-                                    <a href="javascript:;" class="br-selected"></a>
-                                    <a href="javascript:;"></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="comment_rating_wrapper">
-                            <div class="comment_rating_label">Overall</div>
-                            <div class="br-theme-fontawesome-stars-o">
-                                <div class="br-widget">
-                                    <a href="javascript:;" class="br-selected"></a>
-                                    <a href="javascript:;" class="br-selected"></a>
-                                    <a href="javascript:;" class="br-selected"></a>
-                                    <a href="javascript:;" class="br-selected"></a>
-                                    <a href="javascript:;"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="fullwidth_comment_wrapper sidebar">                   
                     <div>
-                        <a name="comments"></a>
-
-                        <div class="comment" id="comment-48">
-                            <div class="gravatar">
-                                <img src="upload/author1-x.jpg" width="60" height="60" alt="Jack Dawson" class="avatar avatar-60 wp-user-avatar wp-user-avatar-60 alignnone photo" /> </div>
-
+                        
                             <div class="right ">
-
-                                <h7>Jack Dawson</h7>
-
-                                <div class="comment_date">January 18, 2017 at 8:08 am</div>
-                                <a rel='nofollow' class='comment-reply-link' href='#' aria-label='Reply to Jack Dawson'>Reply</a>
-                                <div class="comment_text" />
-                                <p>Et leggings fanny pack, elit bespoke vinyl art party Pitchfork selfies master cleanse Kickstarter seitan retro. Drinking vinegar stumptown yr pop-up artisan sunt. Deep v cliche lomo biodiesel Neutra selfies. Shorts fixie consequat flexitarian four loko tempor duis single-origin coffee. Banksy, elit small batch freegan sed.</p>
-                                <div class="comment_rating_wrapper">
-                                    <div class="comment_rating_label">Driving</div>
-                                    <div class="br-theme-fontawesome-stars-o">
-                                        <div class="br-widget">
-                                            <a href="javascript:;" class="br-selected"></a>
-                                            <a href="javascript:;" class="br-selected"></a>
-                                            <a href="javascript:;" class="br-selected"></a>
-                                            <a href="javascript:;" class="br-selected"></a>
-                                            <a href="javascript:;"></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="comment_rating_wrapper">
-                                    <div class="comment_rating_label">Interior Layout</div>
-                                    <div class="br-theme-fontawesome-stars-o">
-                                        <div class="br-widget">
-                                            <a href="javascript:;" class="br-selected"></a>
-                                            <a href="javascript:;" class="br-selected"></a>
-                                            <a href="javascript:;" class="br-selected"></a>
-                                            <a href="javascript:;" class="br-selected"></a>
-                                            <a href="javascript:;"></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="comment_rating_wrapper">
-                                    <div class="comment_rating_label">Space &amp; Practicality</div>
-                                    <div class="br-theme-fontawesome-stars-o">
-                                        <div class="br-widget">
-                                            <a href="javascript:;" class="br-selected"></a>
-                                            <a href="javascript:;" class="br-selected"></a>
-                                            <a href="javascript:;" class="br-selected"></a>
-                                            <a href="javascript:;" class="br-selected"></a>
-                                            <a href="javascript:;" class="br-selected"></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="comment_rating_wrapper">
-                                    <div class="comment_rating_label">Overall</div>
-                                    <div class="br-theme-fontawesome-stars-o">
-                                        <div class="br-widget">
-                                            <a href="javascript:;" class="br-selected"></a>
-                                            <a href="javascript:;" class="br-selected"></a>
-                                            <a href="javascript:;" class="br-selected"></a>
-                                            <a href="javascript:;" class="br-selected"></a>
-                                            <a href="javascript:;"></a>
-                                        </div>
-                                    </div>
-                                </div>
+                                <div class="comment_text">
                             </div>
-                        </div>
+                       
                     </div>
-                    <br class="clear" />
-                    </li>
-                    <!-- #comment-## -->
-
-                    <div class="comment" id="comment-49">
+                    
+            
                         <div class="gravatar">
-                            <img src="upload/me-x.jpg" width="60" height="60" alt="Anna Kornikova" class="avatar avatar-60 wp-user-avatar wp-user-avatar-60 alignnone photo" /> </div>
+                        </div>
 
                         <div class="right ">
 
-                            <h7>Anna Kornikova</h7>
-
-                            <div class="comment_date">January 18, 2017 at 8:08 am</div>
-                            <a rel='nofollow' class='comment-reply-link' href='#' aria-label='Reply to Anna Kornikova'>Reply</a>
                             <div class="comment_text" />
-                            <p>Exercitation photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident chillwave deep v laborum. Aliquip veniam delectus, Marfa eiusmod Pinterest in do umami readymade swag. Selfies iPhone Kickstarter, drinking vinegar jean vinegar stumptown yr pop-up artisan sunt. Craft beer elit seitan exercitation, photo booth,</p>
-                            <div class="comment_rating_wrapper">
-                                <div class="comment_rating_label">Driving</div>
-                                <div class="br-theme-fontawesome-stars-o">
-                                    <div class="br-widget">
-                                        <a href="javascript:;" class="br-selected"></a>
-                                        <a href="javascript:;" class="br-selected"></a>
-                                        <a href="javascript:;" class="br-selected"></a>
-                                        <a href="javascript:;" class="br-selected"></a>
-                                        <a href="javascript:;" class="br-selected"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="comment_rating_wrapper">
-                                <div class="comment_rating_label">Interior Layout</div>
-                                <div class="br-theme-fontawesome-stars-o">
-                                    <div class="br-widget">
-                                        <a href="javascript:;" class="br-selected"></a>
-                                        <a href="javascript:;" class="br-selected"></a>
-                                        <a href="javascript:;" class="br-selected"></a>
-                                        <a href="javascript:;" class="br-selected"></a>
-                                        <a href="javascript:;" class="br-selected"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="comment_rating_wrapper">
-                                <div class="comment_rating_label">Space &amp; Practicality</div>
-                                <div class="br-theme-fontawesome-stars-o">
-                                    <div class="br-widget">
-                                        <a href="javascript:;" class="br-selected"></a>
-                                        <a href="javascript:;" class="br-selected"></a>
-                                        <a href="javascript:;" class="br-selected"></a>
-                                        <a href="javascript:;" class="br-selected"></a>
-                                        <a href="javascript:;"></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="comment_rating_wrapper">
-                                <div class="comment_rating_label">Overall</div>
-                                <div class="br-theme-fontawesome-stars-o">
-                                    <div class="br-widget">
-                                        <a href="javascript:;" class="br-selected"></a>
-                                        <a href="javascript:;" class="br-selected"></a>
-                                        <a href="javascript:;" class="br-selected"></a>
-                                        <a href="javascript:;" class="br-selected"></a>
-                                        <a href="javascript:;" class="br-selected"></a>
-                                    </div>
-                                </div>
-                            </div>
+                            
                         </div>
-                    </div>
                 </div>
-                <br class="clear" />
-                </li>
-                <!-- #comment-## -->
-
-                <div class="comment" id="comment-50">
-                    <div class="gravatar">
-                        <img src="upload/avatar-x.png" width="60" height="60" alt="Marie Argeris" class="avatar avatar-60 wp-user-avatar wp-user-avatar-60 alignnone photo" /> </div>
-
                     <div class="right ">
-
-                        <h7>Marie Argeris</h7>
-
-                        <div class="comment_date">January 18, 2017 at 8:08 am</div>
-                        <a rel='nofollow' class='comment-reply-link' href='#' aria-label='Reply to Marie Argeris'>Reply</a>
                         <div class="comment_text" />
-                        <p>Statement buttons cover-up tweaks patch pockets perennial lapel collar flap chest pockets topline stitching cropped jacket. Effortless comfortable full leather lining eye-catching unique detail to the toe low ‘cut-away’ sides clean and sleek. Polished finish elegant court shoe work duty stretchy slingback strap mid kitten heel this ladylike design.</p>
-                        <div class="comment_rating_wrapper">
-                            <div class="comment_rating_label">Driving</div>
-                            <div class="br-theme-fontawesome-stars-o">
-                                <div class="br-widget">
-                                    <a href="javascript:;" class="br-selected"></a>
-                                    <a href="javascript:;" class="br-selected"></a>
-                                    <a href="javascript:;" class="br-selected"></a>
-                                    <a href="javascript:;" class="br-selected"></a>
-                                    <a href="javascript:;"></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="comment_rating_wrapper">
-                            <div class="comment_rating_label">Interior Layout</div>
-                            <div class="br-theme-fontawesome-stars-o">
-                                <div class="br-widget">
-                                    <a href="javascript:;" class="br-selected"></a>
-                                    <a href="javascript:;" class="br-selected"></a>
-                                    <a href="javascript:;" class="br-selected"></a>
-                                    <a href="javascript:;" class="br-selected"></a>
-                                    <a href="javascript:;" class="br-selected"></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="comment_rating_wrapper">
-                            <div class="comment_rating_label">Space &amp; Practicality</div>
-                            <div class="br-theme-fontawesome-stars-o">
-                                <div class="br-widget">
-                                    <a href="javascript:;" class="br-selected"></a>
-                                    <a href="javascript:;" class="br-selected"></a>
-                                    <a href="javascript:;" class="br-selected"></a>
-                                    <a href="javascript:;" class="br-selected"></a>
-                                    <a href="javascript:;" class="br-selected"></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="comment_rating_wrapper">
-                            <div class="comment_rating_label">Overall</div>
-                            <div class="br-theme-fontawesome-stars-o">
-                                <div class="br-widget">
-                                    <a href="javascript:;" class="br-selected"></a>
-                                    <a href="javascript:;" class="br-selected"></a>
-                                    <a href="javascript:;" class="br-selected"></a>
-                                    <a href="javascript:;" class="br-selected"></a>
-                                    <a href="javascript:;"></a>
-                                </div>
-                            </div>
-                        </div>
+ 
                     </div>
-                </div>
+               
             </div>
-            <br class="clear" />
-            </li>
-            <!-- #comment-## -->
 
-            <div class="comment" id="comment-51">
-                <div class="gravatar">
-                    <img src="upload/author2-x.jpg" width="60" height="60" alt="Jessica Medina" class="avatar avatar-60 wp-user-avatar wp-user-avatar-60 alignnone photo" /> </div>
 
                 <div class="right ">
-
-                    <h7>Jessica Medina</h7>
-
-                    <div class="comment_date">January 18, 2017 at 8:08 am</div>
-                    <a rel='nofollow' class='comment-reply-link' href='#' aria-label='Reply to Jessica Medina'>Reply</a>
                     <div class="comment_text" />
-                    <p>Foam padding in the insoles leather finest quality staple flat slip-on design pointed toe off-duty shoe. Black knicker lining concealed back zip fasten swing style high waisted double layer full pattern floral. Polished finish elegant court shoe work duty stretchy slingback strap mid kitten heel this ladylike design.</p>
-                    <div class="comment_rating_wrapper">
-                        <div class="comment_rating_label">Driving</div>
-                        <div class="br-theme-fontawesome-stars-o">
-                            <div class="br-widget">
-                                <a href="javascript:;" class="br-selected"></a>
-                                <a href="javascript:;" class="br-selected"></a>
-                                <a href="javascript:;" class="br-selected"></a>
-                                <a href="javascript:;" class="br-selected"></a>
-                                <a href="javascript:;" class="br-selected"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="comment_rating_wrapper">
-                        <div class="comment_rating_label">Interior Layout</div>
-                        <div class="br-theme-fontawesome-stars-o">
-                            <div class="br-widget">
-                                <a href="javascript:;" class="br-selected"></a>
-                                <a href="javascript:;" class="br-selected"></a>
-                                <a href="javascript:;" class="br-selected"></a>
-                                <a href="javascript:;" class="br-selected"></a>
-                                <a href="javascript:;"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="comment_rating_wrapper">
-                        <div class="comment_rating_label">Space &amp; Practicality</div>
-                        <div class="br-theme-fontawesome-stars-o">
-                            <div class="br-widget">
-                                <a href="javascript:;" class="br-selected"></a>
-                                <a href="javascript:;" class="br-selected"></a>
-                                <a href="javascript:;" class="br-selected"></a>
-                                <a href="javascript:;" class="br-selected"></a>
-                                <a href="javascript:;" class="br-selected"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="comment_rating_wrapper">
-                        <div class="comment_rating_label">Overall</div>
-                        <div class="br-theme-fontawesome-stars-o">
-                            <div class="br-widget">
-                                <a href="javascript:;" class="br-selected"></a>
-                                <a href="javascript:;" class="br-selected"></a>
-                                <a href="javascript:;" class="br-selected"></a>
-                                <a href="javascript:;" class="br-selected"></a>
-                                <a href="javascript:;" class="br-selected"></a>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
-            </div>
+           
         </div>
-        <br class="clear" />
-        </li>
         <!-- #comment-## -->
     </div>
-
-    <!-- End of thread -->
-    <div style="height:10px"></div>
-
-    <div id="respond" class="comment-respond">
-        <h3 id="reply-title" class="comment-reply-title">Write A Review <small><a rel="nofollow" id="cancel-comment-reply-link" href="#" style="display:none;">Cancel reply</a></small></h3>
-        <form action="#" method="post" id="commentform" class="comment-form">
-            <p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p>
-            <p class="comment-form-comment">
-                <label for="comment">Comment</label>
-                <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea>
-            </p>
-            <p class="comment-form-author">
-                <label for="author">Name <span class="required">*</span></label>
-                <input id="author" name="author" type="text" value="" size="30" maxlength="245" required='required' />
-            </p>
-            <p class="comment-form-email">
-                <label for="email">Email <span class="required">*</span></label>
-                <input id="email" name="email" type="text" value="" size="30" maxlength="" aria-describedby="email-notes" required='required' />
-            </p>
-            <p class="comment-form-url">
-                <label for="url">Website</label>
-                <input id="url" name="url" type="text" value="" size="30" maxlength="200" />
-            </p>
-            <p class="comment-form-rating">
-                <label for="driving_rating">Driving</label>
-                <span class="commentratingbox">
-                    <select id="driving_rating" name="driving_rating">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select></p>
-            <p class="comment-form-rating"><label for="interior_rating">Interior Layout</label>
-                <span class="commentratingbox">
-                    <select id="interior_rating" name="interior_rating">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select></p>
-            <p class="comment-form-rating"><label for="space_rating">Space &amp; Practicality</label>
-                <span class="commentratingbox">
-                    <select id="space_rating" name="space_rating">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select></p>
-            <p class="comment-form-rating"><label for="overall_rating">Overall</label>
-                <span class="commentratingbox">
-                    <select id="overall_rating" name="overall_rating">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select></p>
-            <p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Review" /> <input type='hidden' name='comment_post_ID' value='153' id='comment_post_ID' />
-                <input type='hidden' name='comment_parent' id='comment_parent' value='0' />
-            </p> \
-        </form>
-    </div><!-- #respond -->
-
 </div>
 
 </div>
@@ -727,21 +363,10 @@ $data = $renta->ListarPortada($idauto);
                 <br class="clear" />
             </div>
 
-
-            <div class="single_car_users_online_wrapper themeborder">
-                <div class="single_car_users_online_icon">
-                    <span class="ti-info-alt"></span>
-                </div>
-                <div class="single_car_users_online_content">
-                    <strong>231</strong> traveler(s) are considering our cars right now! </div>
-            </div>
-
         </div>
 
     </div>
-    <br class="clear" />
-
-    <div class="sidebar_bottom"></div>
+    
 </div>
 
 </div>
