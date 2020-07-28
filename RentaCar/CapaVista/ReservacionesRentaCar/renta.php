@@ -4,7 +4,6 @@ $renta = new Nrenta();
 
 $idauto = $_GET['id'];
 $data = $renta->ListarPortada($idauto);
-
 ?>
 
 <div id="page_caption" class="hasbg  withtopbar " style="background-image:url(upload/<?= $data['portada']; ?>">
@@ -104,7 +103,7 @@ $data = $renta->ListarPortada($idauto);
                     </div>
                 </div>
                 <br class="clear" />
-               
+
                 <ul class="single_car_departure_wrapper themeborder">
                     <li>
                         <div class="single_car_departure_title">Included</div>
@@ -135,42 +134,42 @@ $data = $renta->ListarPortada($idauto);
                     </li>
                 </ul>
 
-                <div class="fullwidth_comment_wrapper sidebar">                   
+                <div class="fullwidth_comment_wrapper sidebar">
                     <div>
-                        
-                            <div class="right ">
-                                <div class="comment_text">
+
+                        <div class="right ">
+                            <div class="comment_text">
                             </div>
-                       
-                    </div>
-                    
-            
+
+                        </div>
+
+
                         <div class="gravatar">
                         </div>
 
                         <div class="right ">
 
                             <div class="comment_text" />
-                            
+
                         </div>
-                </div>
+                    </div>
                     <div class="right ">
                         <div class="comment_text" />
- 
+
                     </div>
-               
-            </div>
+
+                </div>
 
 
                 <div class="right ">
                     <div class="comment_text" />
 
                 </div>
-           
+
+            </div>
+            <!-- #comment-## -->
         </div>
-        <!-- #comment-## -->
     </div>
-</div>
 
 </div>
 
@@ -212,33 +211,42 @@ $data = $renta->ListarPortada($idauto);
                         <p>
                             <label> Nombre Completo
                                 <br />
-                                <span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="John Doe" /></span> </label>
+                                <span class="wpcf7-form-control-wrap your-name"><input type="text" name="nombre" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="John Doe" /></span> </label>
                         </p>
                         <p>
                             <label> Correo Electrónico
                                 <br />
-                                <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="sample@yourcompany.com" /></span> </label>
+                                <span class="wpcf7-form-control-wrap your-email"><input type="email" name="mail" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="sample@yourcompany.com" /></span> </label>
                         </p>
                         <p>
                             <label> Número de teléfono
                                 <br />
-                                <span class="wpcf7-form-control-wrap your-tel"><input type="tel" name="your-tel" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" placeholder="+66-4353434" /></span> </label>
+                                <span class="wpcf7-form-control-wrap your-tel"><input type="tel" name="tel" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" placeholder="+66-4353434" /></span> </label>
+                        </p>
+                        <p>
+                            <label> Pais
+                                <br />
+                                <select class="selectpicker countrypicker" name="pais" data-flag="true" aria-required=" true" aria-invalid="false""></select>
+
+                                <script>
+                                    $('.countrypicker').countrypicker();
+                                </script>
                         </p>
                         <p>
                             <label> Dirección de recogida
                                 <br />
-                                <span class="wpcf7-form-control-wrap pickup-address"><input type="text" name="pickup-address" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="34 Mainfield Road" /></span> </label>
+                                <span class=" wpcf7-form-control-wrap pickup-address"><input type="text" name="d_recogida" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="34 Mainfield Road" /></span> </label>
                         </p>
                         <p>
                             <label> Fecha de recogida
                                 <br />
-                                <span class="wpcf7-form-control-wrap pickup-date"><input type="date" name="pickup-date" value="mm/dd/yyyy" class="wpcf7-form-control wpcf7-date wpcf7-validates-as-required wpcf7-validates-as-date" aria-required="true" aria-invalid="false" /></span> </label>
+                                <span class="wpcf7-form-control-wrap pickup-date"><input type="date" name="f_recogida" value="mm/dd/yyyy" class="wpcf7-form-control wpcf7-date wpcf7-validates-as-required wpcf7-validates-as-date" aria-required="true" aria-invalid="false" /></span> </label>
                         </p>
 
                         <p>
                             <label> Hora de recogida
                                 <br />
-                                <span class="wpcf7-form-control-wrap pickup-time"><select name="pickup-time" class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required" aria-required="true" aria-invalid="false">
+                                <span class="wpcf7-form-control-wrap pickup-time"><select name="hora_recogida" class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required" aria-required="true" aria-invalid="false">
                                         <option value="">---</option>
                                         <option value="1:00">1:00</option>
                                         <option value="1:30">1:30</option>
@@ -291,18 +299,18 @@ $data = $renta->ListarPortada($idauto);
                         <p>
                             <label> Fecha de entrega
                                 <br />
-                                <span class="wpcf7-form-control-wrap pickup-date"><input type="date" name="pickup-date" value="mm/dd/yyyy" class="wpcf7-form-control wpcf7-date wpcf7-validates-as-required wpcf7-validates-as-date" aria-required="true" aria-invalid="false" /></span> </label>
+                                <span class="wpcf7-form-control-wrap pickup-date"><input type="date" name="f_entrega" value="mm/dd/yyyy" class="wpcf7-form-control wpcf7-date wpcf7-validates-as-required wpcf7-validates-as-date" aria-required="true" aria-invalid="false" /></span> </label>
                         </p>
 
                         <p>
                             <label> Dirección de entrega
                                 <br />
-                                <span class="wpcf7-form-control-wrap dropoff-address"><input type="text" name="dropoff-address" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Heatrow Airport" /></span> </label><span class="wpcf7-form-control-wrap dynamicurl"><input type="hidden" name="dynamicurl" value="http://themes.themegoods.com/grandcarrental/demo/car/mercedes-benz-gle/" size="40" class="wpcf7-form-control wpcf7dtx-dynamictext wpcf7-dynamichidden" aria-invalid="false" /></span></p>
+                                <span class=" wpcf7-form-control-wrap dropoff-address"><input type="text" name="d_entrega" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Heatrow Airport" /></span> </label><span class="wpcf7-form-control-wrap dynamicurl"><input type="hidden" name="dynamicurl" value="http://themes.themegoods.com/grandcarrental/demo/car/mercedes-benz-gle/" size="40" class="wpcf7-form-control wpcf7dtx-dynamictext wpcf7-dynamichidden" aria-invalid="false" /></span></p>
 
                         <p>
                             <label> Hora de recogida
                                 <br />
-                                <span class="wpcf7-form-control-wrap pickup-time"><select name="pickup-time" class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required" aria-required="true" aria-invalid="false">
+                                <span class="wpcf7-form-control-wrap pickup-time"><select name="hora_recogida" class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required" aria-required="true" aria-invalid="false">
                                         <option value="">---</option>
                                         <option value="1:00">1:00</option>
                                         <option value="1:30">1:30</option>
@@ -353,10 +361,9 @@ $data = $renta->ListarPortada($idauto);
                                     </select></span> </label>
                         </p>
                         <p>
-                            <button data-product="132" data-processing="Please wait..." data-url="#" class="single_car_add_to_cart button">Realizar Reserva</button>
-
+                            <button type="submit" class="btn btn-success">Realizar Reserva</button>
+                            <?php $req = $renta->registrarRenta($idauto); ?>
                         </p>
-
                         <div class="wpcf7-response-output wpcf7-display-none"></div>
                     </form>
                 </div>
@@ -366,7 +373,7 @@ $data = $renta->ListarPortada($idauto);
         </div>
 
     </div>
-    
+
 </div>
 
 </div>
