@@ -20,11 +20,25 @@ class Nrenta
 
     public function registrarRenta($id)
     {
-        if (isset($_POST['f_recogida']) && isset($_POST['f_entrega']) && isset($_POST['d_recogida']) && isset($_POST['d_entrega'])) {
-
-            $lista = array('id' => $id, 'f_recogida' => $_POST['f_recogida'], 'f_entrega' => $_POST['f_entrega'], 'd_recogida' => $_POST['d_recogida'], 'd_entrega' => $_POST['d_entrega']);
-
+        if (
+            isset($_POST['f_recogida']) &&
+            isset($_POST['h_recogida']) &&
+            isset($_POST['d_entrega']) &&
+            isset($_POST['f_entrega']) &&
+            isset($_POST['d_recogida']) &&
+            isset($_POST['h_entrega'])
+        ) {
+            $lista = array(
+                'id' => $id,
+                'd_recogida' => $_POST['d_recogida'],
+                'f_recogida' => $_POST['f_entrega'],
+                'h_recogida' => $_POST['h_recogida'],
+                'd_entrega' => $_POST['d_entrega'],
+                'f_entrega' => $_POST['f_entrega'],
+                'h_entrega' => $_POST['h_entrega']
+            );
             $request = $this->dauto->registrarRenta($lista, "reserva");
+
             if ($request) {
                 return $request;
             } else { ?>

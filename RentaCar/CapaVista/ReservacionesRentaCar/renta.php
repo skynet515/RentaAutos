@@ -246,7 +246,7 @@ $data = $renta->ListarPortada($idauto);
                         <p>
                             <label> Hora de recogida
                                 <br />
-                                <span class="wpcf7-form-control-wrap pickup-time"><select name="hora_recogida" class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required" aria-required="true" aria-invalid="false">
+                                <span class="wpcf7-form-control-wrap pickup-time"><select name="h_entrega" class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required" aria-required="true" aria-invalid="false">
                                         <option value="">---</option>
                                         <option value="1:00">1:00</option>
                                         <option value="1:30">1:30</option>
@@ -310,7 +310,7 @@ $data = $renta->ListarPortada($idauto);
                         <p>
                             <label> Hora de recogida
                                 <br />
-                                <span class="wpcf7-form-control-wrap pickup-time"><select name="hora_recogida" class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required" aria-required="true" aria-invalid="false">
+                                <span class="wpcf7-form-control-wrap pickup-time"><select name="h_recogida" class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required" aria-required="true" aria-invalid="false">
                                         <option value="">---</option>
                                         <option value="1:00">1:00</option>
                                         <option value="1:30">1:30</option>
