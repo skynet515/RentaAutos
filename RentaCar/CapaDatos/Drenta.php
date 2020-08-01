@@ -44,12 +44,11 @@ class Drenta
 
     public function registrarRenta($lista, $tabla)
     {
-        $sql = "INSERT INTO $tabla (idauto, f_recogida, f_finres, cant_dia, 
-                total, direc_recogida, direc_entrega, H_recogida, H_entrega) VALUES (?,?,?,?,?,?,?,?,?)";
+        $sql = "INSERT INTO reserva (idauto, f_recogida, f_finres, cant_dia, 
+        total, direc_recogida, direc_entrega, H_recogida, H_entrega, idcliente, idadmin) VALUES (?,?,?,?,?,?,?,?,?,?,?)";
         try {
             $PreparedStatement = $this->conexion->getPrepareStatement($sql);
-
-            $PreparedStatement->bindValue(1, $lista['id'], PDO::PARAM_INT);
+            $PreparedStatement->bindValue(1, 4, PDO::PARAM_INT);
             $PreparedStatement->bindValue(2, $lista['f_recogida'], PDO::PARAM_STR);
             $PreparedStatement->bindValue(3, $lista['f_entrega'], PDO::PARAM_INT);
             $PreparedStatement->bindValue(4, 9, PDO::PARAM_INT);
@@ -58,8 +57,10 @@ class Drenta
             $PreparedStatement->bindValue(7, $lista['d_entrega'], PDO::PARAM_STR);
             $PreparedStatement->bindValue(8, $lista['h_recogida'], PDO::PARAM_STR);
             $PreparedStatement->bindValue(9, $lista['h_entrega'], PDO::PARAM_STR);
-            $f = $PreparedStatement->execute();
-            return $f;
+            $PreparedStatement->bindValue(10, 1, PDO::PARAM_INT);
+            $PreparedStatement->bindValue(11, 1, PDO::PARAM_INT);
+
+            return  $PreparedStatement->execute();
         } catch (PDOException $e) {
             $e = "0";
             echo "Error: " . $e;
