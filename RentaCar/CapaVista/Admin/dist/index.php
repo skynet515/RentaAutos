@@ -1,6 +1,6 @@
 <?php 
 
-include('../../restriccion.php')?>
+include_once('../../../CapaNegocios/restriccion.php');?>
 <!DOCTYPE html>
 <html lang="en">
     <head>

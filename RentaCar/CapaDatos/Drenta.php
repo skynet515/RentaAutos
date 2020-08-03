@@ -48,7 +48,7 @@ class Drenta
         total, direc_recogida, direc_entrega, H_recogida, H_entrega, idcliente, idadmin) VALUES (?,?,?,?,?,?,?,?,?,?,?)";
         try {
             $PreparedStatement = $this->conexion->getPrepareStatement($sql);
-            $PreparedStatement->bindValue(1, 4, PDO::PARAM_INT);
+            $PreparedStatement->bindValue(1, $lista['id'], PDO::PARAM_INT);
             $PreparedStatement->bindValue(2, $lista['f_recogida'], PDO::PARAM_STR);
             $PreparedStatement->bindValue(3, $lista['f_entrega'], PDO::PARAM_INT);
             $PreparedStatement->bindValue(4, 9, PDO::PARAM_INT);

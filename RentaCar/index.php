@@ -4,7 +4,7 @@
 
 <head>
 
-	<link rel="shortcut icon" href="upload/TG-Thumb.png" />
+	<link rel="shortcut icon" href="CapaVista/ReservacionesRentaCar/upload/TG-Thumb.png" />
 
 	<title>Inicio</title>
 
@@ -119,14 +119,14 @@
 						<div id="logo_normal" class="logo_container">
 							<div class="logo_align">
 								<a id="custom_logo" class="logo_wrapper hidden" href="index.html">
-									<img src="images/logo@2x_white.png" alt="" width="175" height="24" />
+									<img src="CapaVista/ReservacionesRentaCar/images/logo@2x_white.png" alt="" width="175" height="24" />
 								</a>
 							</div>
 						</div>
 						<div id="logo_transparent" class="logo_container">
 							<div class="logo_align">
 								<a id="custom_logo_transparent" class="logo_wrapper default" href="index.html">
-									<img src="images/logo@2x_white.png" alt="" width="175" height="24" />
+									<img src="CapaVista/ReservacionesRentaCar/images/logo@2x_white.png" alt="" width="175" height="24" />
 								</a>
 							</div>
 						</div>
@@ -180,9 +180,9 @@
 					<div id="rev_slider_1_1" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.5.1">
 						<ul>
 							<!-- SLIDE  -->
-							<li data-index="rs-1" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="upload/BMW-Vision-Future-Luxury-Concept-rear-interior-seats-100x50.jpg" data-rotate="0" data-saveperformance="off" data-mediafilter="xpro2" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+							<li data-index="rs-1" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="CapaVista/ReservacionesRentaCar/upload/BMW-Vision-Future-Luxury-Concept-rear-interior-seats-100x50.jpg" data-rotate="0" data-saveperformance="off" data-mediafilter="xpro2" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
 								<!-- MAIN IMAGE -->
-								<img src="upload/portada-inicio1.jpg" alt="" title="BMW-Vision-Future-Luxury-Concept-rear-interior-seats" width="1440" height="956" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+								<img src="CapaVista/ReservacionesRentaCar/upload/portada-inicio1.jpg" alt="" title="BMW-Vision-Future-Luxury-Concept-rear-interior-seats" width="1440" height="956" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
 								<!-- LAYERS -->
 
 								<!-- LAYER NR. 1 -->
@@ -197,9 +197,9 @@
 								<a class="tp-caption rev-btn rev-withicon " href="http://themes.themegoods.com/grandtour/demo/tour/tour-3-columns-classic/" target="_self" id="slide-1-layer-5" data-x="center" data-hoffset="" data-y="center" data-voffset="141" data-width="['auto']" data-height="['auto']" data-type="button" data-actions='' data-responsive_offset="on" data-responsive="off" data-frames='[{"delay":1000,"speed":800,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.8;sY:0.8;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":500,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255,255,255,1);bg:rgba(88,86,214,1);bc:rgba(30,198,182,1);bs:solid;bw:0 0 0 0;"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[12,12,12,12]" data-paddingright="[35,35,35,35]" data-paddingbottom="[12,12,12,12]" data-paddingleft="[35,35,35,35]" style="z-index: 8; white-space: nowrap; font-size: 17px; line-height: 17px; font-weight: 500; color: rgba(255,255,255,1);font-family:Poppins;background-color:#33337b;border-color:rgba(4,219,192,1);border-radius:30px 30px 30px 30px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;text-decoration: none;">View Price & Plan<i class="fa-icon-chevron-right"></i> </a>
 							</li>
 							<!-- SLIDE  -->
-							<li data-index="rs-2" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="upload/shutterstock_74418757-100x50.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+							<li data-index="rs-2" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="CapaVista/ReservacionesRentaCar/upload/shutterstock_74418757-100x50.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
 								<!-- MAIN IMAGE -->
-								<img src="upload/portada-inicio2.jpg" alt="" title="shutterstock_74418757" width="1440" height="1248" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+								<img src="CapaVista/ReservacionesRentaCar/upload/portada-inicio2.jpg" alt="" title="shutterstock_74418757" width="1440" height="1248" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
 								<!-- LAYERS -->
 
 								<!-- LAYER NR. 5 -->
@@ -237,7 +237,7 @@
 					<div class="standard_wrapper">
 						<div id="1572257382750659109" class="portfolio_filter_wrapper gallery grid three_cols" data-columns="3">
 							<div class="element grid classic3_cols animated1">
-								<div class="one_third gallery3 grid static filterable portfolio_type themeborder" style="background-image:url(upload/15C1119_043-1280x849-700x466.jpg);">
+								<div class="one_third gallery3 grid static filterable portfolio_type themeborder" style="background-image:url(CapaVista/ReservacionesRentaCar/upload/15C1119_043-1280x849-700x466.jpg);">
 									<a class="car_image" href="#"></a>
 									<div class="portfolio_info_wrapper">
 										<div class="car_attribute_wrapper">
@@ -272,7 +272,7 @@
 								</div>
 							</div>
 							<div class="element grid classic3_cols animated2">
-								<div class="one_third gallery3 grid static filterable portfolio_type themeborder" style="background-image:url(upload/Porsche-Panamera-700x466.jpg);">
+								<div class="one_third gallery3 grid static filterable portfolio_type themeborder" style="background-image:url(CapaVista/ReservacionesRentaCar/upload/Porsche-Panamera-700x466.jpg);">
 									<a class="car_image" href="#"></a>
 									<div class="portfolio_info_wrapper">
 										<div class="car_attribute_wrapper">
@@ -307,7 +307,7 @@
 								</div>
 							</div>
 							<div class="element grid classic3_cols animated3">
-								<div class="one_third gallery3 grid static filterable portfolio_type themeborder" style="background-image:url(upload/2016-bmw-7-series-exterior-images-1900x1200-07-700x466.jpg);">
+								<div class="one_third gallery3 grid static filterable portfolio_type themeborder" style="background-image:url(CapaVista/ReservacionesRentaCar/upload/2016-bmw-7-series-exterior-images-1900x1200-07-700x466.jpg);">
 									<a class="car_image" href="#"></a>
 									<div class="portfolio_info_wrapper">
 										<div class="car_attribute_wrapper">
@@ -342,7 +342,7 @@
 								</div>
 							</div>
 							<div class="element grid classic3_cols animated4">
-								<div class="one_third gallery3 grid static filterable portfolio_type themeborder" style="background-image:url(upload/Porsche-Boxster-Wheels-8-700x466.jpg);">
+								<div class="one_third gallery3 grid static filterable portfolio_type themeborder" style="background-image:url(CapaVista/ReservacionesRentaCar/upload/Porsche-Boxster-Wheels-8-700x466.jpg);">
 									<a class="car_image" href="#"></a>
 									<div class="portfolio_info_wrapper">
 										<div class="car_attribute_wrapper">
@@ -377,7 +377,7 @@
 								</div>
 							</div>
 							<div class="element grid classic3_cols animated5">
-								<div class="one_third gallery3 grid static filterable portfolio_type themeborder" style="background-image:url(upload/bmw-x6-2015-41-700x466.jpg);">
+								<div class="one_third gallery3 grid static filterable portfolio_type themeborder" style="background-image:url(CapaVista/ReservacionesRentaCar/upload/bmw-x6-2015-41-700x466.jpg);">
 									<a class="car_image" href="#"></a>
 									<div class="portfolio_info_wrapper">
 										<div class="car_attribute_wrapper">
@@ -412,7 +412,7 @@
 								</div>
 							</div>
 							<div class="element grid classic3_cols animated6">
-								<div class="one_third gallery3 grid static filterable portfolio_type themeborder" style="background-image:url(upload/zaudia5-004-700x466.jpg);">
+								<div class="one_third gallery3 grid static filterable portfolio_type themeborder" style="background-image:url(CapaVista/ReservacionesRentaCar/upload/zaudia5-004-700x466.jpg);">
 									<a class="car_image" href="#"></a>
 									<div class="portfolio_info_wrapper">
 										<div class="car_attribute_wrapper">
@@ -447,7 +447,7 @@
 								</div>
 							</div>
 							<div class="element grid classic3_cols animated7">
-								<div class="one_third gallery3 grid static filterable portfolio_type themeborder" style="background-image:url(upload/BMW_Z4_FMA_1600x747-700x466.jpg);">
+								<div class="one_third gallery3 grid static filterable portfolio_type themeborder" style="background-image:url(CapaVista/ReservacionesRentaCar/upload/BMW_Z4_FMA_1600x747-700x466.jpg);">
 									<a class="car_image" href="#"></a>
 									<div class="portfolio_info_wrapper">
 										<div class="car_attribute_wrapper">
@@ -482,7 +482,7 @@
 								</div>
 							</div>
 							<div class="element grid classic3_cols animated8">
-								<div class="one_third gallery3 grid static filterable portfolio_type themeborder" style="background-image:url(upload/2016-Mercedes-Benz-GLE-2-700x466.jpg);">
+								<div class="one_third gallery3 grid static filterable portfolio_type themeborder" style="background-image:url(CapaVista/ReservacionesRentaCar/upload/2016-Mercedes-Benz-GLE-2-700x466.jpg);">
 									<a class="car_image" href="#"></a>
 									<div class="portfolio_info_wrapper">
 										<div class="car_attribute_wrapper">
@@ -517,7 +517,7 @@
 								</div>
 							</div>
 							<div class="element grid classic3_cols animated9">
-								<div class="one_third gallery3 grid static filterable portfolio_type themeborder" style="background-image:url(upload/P14_0596_a4_rgb-1-700x466.jpg);">
+								<div class="one_third gallery3 grid static filterable portfolio_type themeborder" style="background-image:url(CapaVista/ReservacionesRentaCar/upload/P14_0596_a4_rgb-1-700x466.jpg);">
 									<a class="car_image" href="#"></a>
 									<div class="portfolio_info_wrapper">
 										<div class="car_attribute_wrapper">
@@ -627,7 +627,7 @@
 					<h2 class="widgettitle">About Us</h2>
 					<div class="textwidget">
 						<p>Getting dressed up and traveling with good friends makes for a shared, unforgettable experience. </p>
-						<p><img src="images/logo@2x_white.png" alt="" width="175" height="24"></p>
+						<p><img src="CapaVista/ReservacionesRentaCar/images/logo@2x_white.png" alt="" width="175" height="24"></p>
 					</div>
 				</li>
 				<li id="text-3" class="widget widget_text">
@@ -682,18 +682,18 @@
 
 
 
-	<script type='text/javascript' src='js/jquery.js'></script>
-	<script type='text/javascript' src='js/jquery-migrate.min.js'></script>
-	<script type='text/javascript' src='js/plugins/grandcarrental-custom-post/js/jquery.barrating.js'></script>
-	<script src='js/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js'></script>
-	<script src='js/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js'></script>
-	<script src="js/plugins/revslider/public/assets/js/extensions/revolution.extension.slideanims.min.js"></script>
-	<script src="js/plugins/revslider/public/assets/js/extensions/revolution.extension.layeranimation.min.js"></script>
-	<script src="js/plugins/revslider/public/assets/js/extensions/revolution.extension.kenburn.min.js"></script>
-	<script src="js/plugins/revslider/public/assets/js/extensions/revolution.extension.navigation.min.js"></script>
-	<script src="js/plugins/revslider/public/assets/js/extensions/revolution.extension.parallax.min.js"></script>
-	<script src="js/plugins/revslider/public/assets/js/extensions/revolution.extension.actions.min.js"></script>
-	<script src="js/plugins/revslider/public/assets/js/extensions/revolution.extension.video.min.js"></script>
+	<script type='text/javascript' src='CapaVista/ReservacionesRentaCar/js/jquery.js'></script>
+	<script type='text/javascript' src='CapaVista/ReservacionesRentaCar/js/jquery-migrate.min.js'></script>
+	<script type='text/javascript' src='CapaVista/ReservacionesRentaCar/js/plugins/grandcarrental-custom-post/js/jquery.barrating.js'></script>
+	<script src='CapaVista/ReservacionesRentaCar/js/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js'></script>
+	<script src='CapaVista/ReservacionesRentaCar/js/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js'></script>
+	<script src="CapaVista/ReservacionesRentaCar/js/plugins/revslider/public/assets/js/extensions/revolution.extension.slideanims.min.js"></script>
+	<script src="CapaVista/ReservacionesRentaCar/js/plugins/revslider/public/assets/js/extensions/revolution.extension.layeranimation.min.js"></script>
+	<script src="CapaVista/ReservacionesRentaCar/js/plugins/revslider/public/assets/js/extensions/revolution.extension.kenburn.min.js"></script>
+	<script src="CapaVista/ReservacionesRentaCar/js/plugins/revslider/public/assets/js/extensions/revolution.extension.navigation.min.js"></script>
+	<script src="CapaVista/ReservacionesRentaCar/js/plugins/revslider/public/assets/js/extensions/revolution.extension.parallax.min.js"></script>
+	<script src="CapaVista/ReservacionesRentaCar/js/plugins/revslider/public/assets/js/extensions/revolution.extension.actions.min.js"></script>
+	<script src="CapaVista/ReservacionesRentaCar/js/plugins/revslider/public/assets/js/extensions/revolution.extension.video.min.js"></script>
 	<script type="text/javascript">
 		function setREVStartSize(e) {
 			try {
@@ -765,8 +765,8 @@
 
 		})();
 	</script>
-	<script type='text/javascript' src='js/plugins/ui/core.min.js'></script>
-	<script type='text/javascript' src='js/plugins/ui/datepicker.min.js'></script>
+	<script type='text/javascript' src='CapaVista/ReservacionesRentaCar/js/plugins/ui/core.min.js'></script>
+	<script type='text/javascript' src='CapaVista/ReservacionesRentaCar/js/plugins/ui/datepicker.min.js'></script>
 	<script type='text/javascript'>
 		jQuery(document).ready(function(jQuery) {
 			jQuery.datepicker.setDefaults({
@@ -785,22 +785,22 @@
 			});
 		});
 	</script>
-	<script type='text/javascript' src='js/plugins/jquery.requestAnimationFrame.js'></script>
-	<script type='text/javascript' src='js/plugins/ilightbox.packed.js'></script>
-	<script type='text/javascript' src='js/plugins/jquery.easing.js'></script>
-	<script type='text/javascript' src='js/plugins/waypoints.min.js'></script>
-	<script type='text/javascript' src='js/plugins/jquery.isotope.js'></script>
-	<script type='text/javascript' src='js/plugins/jquery.masory.js'></script>
-	<script type='text/javascript' src='js/plugins/jquery.tooltipster.min.js'></script>
-	<script type='text/javascript' src='js/plugins/jarallax.js'></script>
-	<script type='text/javascript' src='js/plugins/jquery.sticky-kit.min.js'></script>
-	<script type='text/javascript' src='js/plugins/jquery.stellar.min.js'></script>
-	<script type='text/javascript' src='js/plugins/jquery.cookie.js'></script>
-	<script type='text/javascript' src='js/plugins/custom_plugins.js'></script>
-	<script type='text/javascript' src='js/plugins/custom.js'></script>
-	<script type='text/javascript' src='js/plugins/custom_onepage.js'></script>
-	<script type='text/javascript' src='js/plugins/jarallax-video.js'></script>
-	<script type='text/javascript' src='js/plugins/jquery.cookie.js'></script>
+	<script type='text/javascript' src='CapaVista/ReservacionesRentaCar/js/plugins/jquery.requestAnimationFrame.js'></script>
+	<script type='text/javascript' src='CapaVista/ReservacionesRentaCar/js/plugins/ilightbox.packed.js'></script>
+	<script type='text/javascript' src='CapaVista/ReservacionesRentaCar/js/plugins/jquery.easing.js'></script>
+	<script type='text/javascript' src='CapaVista/ReservacionesRentaCar/js/plugins/waypoints.min.js'></script>
+	<script type='text/javascript' src='CapaVista/ReservacionesRentaCar/js/plugins/jquery.isotope.js'></script>
+	<script type='text/javascript' src='CapaVista/ReservacionesRentaCar/js/plugins/jquery.masory.js'></script>
+	<script type='text/javascript' src='CapaVista/ReservacionesRentaCar/js/plugins/jquery.tooltipster.min.js'></script>
+	<script type='text/javascript' src='CapaVista/ReservacionesRentaCar/js/plugins/jarallax.js'></script>
+	<script type='text/javascript' src='CapaVista/ReservacionesRentaCar/js/plugins/jquery.sticky-kit.min.js'></script>
+	<script type='text/javascript' src='CapaVista/ReservacionesRentaCar/js/plugins/jquery.stellar.min.js'></script>
+	<script type='text/javascript' src='CapaVista/ReservacionesRentaCar/js/plugins/jquery.cookie.js'></script>
+	<script type='text/javascript' src='CapaVista/ReservacionesRentaCar/js/plugins/custom_plugins.js'></script>
+	<script type='text/javascript' src='CapaVista/ReservacionesRentaCar/js/plugins/custom.js'></script>
+	<script type='text/javascript' src='CapaVista/ReservacionesRentaCar/js/plugins/custom_onepage.js'></script>
+	<script type='text/javascript' src='CapaVista/ReservacionesRentaCar/js/plugins/jarallax-video.js'></script>
+	<script type='text/javascript' src='CapaVista/ReservacionesRentaCar/js/plugins/jquery.cookie.js'></script>
 	<script type='text/javascript'>
 		/* <![CDATA[ */
 		var mc4wp_forms_config = [];
@@ -838,7 +838,7 @@
 			} else {
 				revapi1 = tpj("#rev_slider_1_1").show().revolution({
 					sliderType: "standard",
-					jsFileLocation: "js/plugins/revslider/public/assets/js/",
+					jsFileLocation: "CapaVista/ReservacionesRentaCar/js/plugins/revslider/public/assets/js/",
 					sliderLayout: "fullscreen",
 					dottedOverlay: "none",
 					delay: 9000,

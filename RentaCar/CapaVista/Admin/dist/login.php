@@ -1,3 +1,9 @@
+<?php
+include_once('../../../CapaNegocios/NLogin.php');
+$login = new NLogin();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -20,7 +26,7 @@
     <body class="authentication-bg authentication-bg-pattern d-flex align-items-center">
 
         <div class="home-btn d-none d-sm-block">
-            <a href="../../alquiler/index.php"><i class="fas fa-home h2 text-white"></i></a>
+            <a href="../../ReservacionesRentaCar/index.php"><i class="fas fa-home h2 text-white"></i></a>
         </div>
         
         <div class="account-pages w-100 mt-5 mb-5">
@@ -33,17 +39,17 @@
         
                              <strong><h1 style="font-size: 13px; color: white; "><?php 
                                 
-                                include('validar.php');	  
+                                //include('validar.php');	  
 
                                 ?></h1></strong>
                            
                                 <div class="text-center mb-4">
-                                    <a href="../../alquiler/index.php">
+                                    <a href="../../ReservacionesRentaCar/index.php">
                                         <span><img src="assets/images/logo-light.png" alt="" height="28"></span>
                                     </a>
                                 </div>
 
-                                <form action="../../verificarUser.php" class="pt-2" method="post">
+                                <form action="#" class="pt-2" method="post">
 
                                     <div class="form-group mb-3">
                                         <label for="emailaddress">Nombre de usuario</label>
@@ -63,6 +69,7 @@
 
                                     <div class="form-group mb-0 text-center">
                                         <button class="btn btn-success btn-block" type="submit">Iniciar Sesión</button>
+                                        <?php $req= $login->log()?>
                                     </div>
                                 </form>
                             </div> 
