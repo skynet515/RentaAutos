@@ -1,287 +1,294 @@
-<?php 
+<?php
 
-include_once('../../../CapaNegocios/restriccion.php');?>
+include_once('../../../CapaNegocios/restriccion.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>Administración</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
-        <meta content="Coderthemes" name="author" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <!-- App favicon -->
-        <link rel="shortcut icon" href="assets/images/favicon.ico">
 
-        <!-- jvectormap -->
-        <link href="assets/libs/jqvmap/jqvmap.min.css" rel="stylesheet" />
+<head>
+    <meta charset="utf-8" />
+    <title>Administración</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+    <meta content="Coderthemes" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
 
-        <!-- DataTables -->
-        <link href="assets/libs/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css"/>
-        <link href="assets/libs/datatables/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css"/>
-        
-        <!-- App css -->
-        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
+    <!-- jvectormap -->
+    <link href="assets/libs/jqvmap/jqvmap.min.css" rel="stylesheet" />
 
-    </head>
+    <!-- DataTables -->
+    <link href="assets/libs/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/datatables/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />
 
-    <body class="left-side-menu-dark">
+    <!-- App css -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
 
-        <!-- Begin page -->
-        <div id="wrapper">
+    <script language="javascript" type="text/javascript">
+        history.forward();
+    </script>
 
-            <!-- Topbar Start -->
-            <div class="navbar-custom">
-                <ul class="list-unstyled topnav-menu float-right mb-0">
-                    <li class="dropdown notification-list">
-                        <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect waves-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                            <img src="assets/images/users/avatar-4.jpg" alt="user-image" class="rounded-circle">
-                            <span class="pro-user-name ml-1">
-                                Agnes K <i class="mdi mdi-chevron-down"></i> 
-                            </span>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
-                            <!-- item-->
-                            <div class="dropdown-item noti-title">
-                                <h6 class="m-0">
-                                    Welcome !
-                                </h6>
-                            </div>
+</head>
 
-                            <!-- item-->
-                            <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                <i class="dripicons-user"></i>
-                                <span>My Account</span>
-                            </a>
+<body class="left-side-menu-dark">
 
-                            <!-- item-->
-                            <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                <i class="dripicons-gear"></i>
-                                <span>Settings</span>
-                            </a>
+    <!-- Begin page -->
+    <div id="wrapper">
 
-                            <!-- item-->
-                            <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                <i class="dripicons-help"></i>
-                                <span>Support</span>
-                            </a>
-
-                            <!-- item-->
-                            <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                <i class="dripicons-lock"></i>
-                                <span>Lock Screen</span>
-                            </a>
-
-                            <div class="dropdown-divider"></div>
-
-                            <!-- item-->
-                            <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                <i class="dripicons-power"></i>
-                                <span>Logout</span>
-                            </a>
-
+        <!-- Topbar Start -->
+        <div class="navbar-custom">
+            <ul class="list-unstyled topnav-menu float-right mb-0">
+                <li class="dropdown notification-list">
+                    <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect waves-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                        <img src="assets/images/users/avatar-4.jpg" alt="user-image" class="rounded-circle">
+                        <span class="pro-user-name ml-1">
+                            Agnes K <i class="mdi mdi-chevron-down"></i>
+                        </span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+                        <!-- item-->
+                        <div class="dropdown-item noti-title">
+                            <h6 class="m-0">
+                                Welcome !
+                            </h6>
                         </div>
-                    </li>
 
-                </ul>
-
-                <ul class="list-unstyled menu-left mb-0">
-                    <li class="float-left">
-                        <a href="index.html" class="logo">
-                            <span class="logo-lg">
-                                <img src="assets/images/logo-dark.png" alt="" height="22">
-                            </span>
-                            <span class="logo-sm">
-                                <img src="assets/images/logo-sm.png" alt="" height="24">
-                            </span>
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <i class="dripicons-user"></i>
+                            <span>My Account</span>
                         </a>
-                    </li>
-                    <li class="float-left">
-                        <a class="button-menu-mobile navbar-toggle">
-                            <div class="lines">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
+
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <i class="dripicons-gear"></i>
+                            <span>Settings</span>
                         </a>
-                    </li>
-            
-                </ul>
-            </div>
-            <!-- end Topbar -->
 
-            <!-- ========== Left Sidebar Start ========== -->
-            <div class="left-side-menu">
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <i class="dripicons-help"></i>
+                            <span>Support</span>
+                        </a>
 
-                <div class="slimscroll-menu">
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <i class="dripicons-lock"></i>
+                            <span>Lock Screen</span>
+                        </a>
 
-                    <!--- Sidemenu -->
-                    <div id="sidebar-menu">
+                        <div class="dropdown-divider"></div>
 
-                        <ul class="metismenu" id="side-menu">
-
-                            <li class="menu-title">Navigation</li>
-
-                            <li>
-                                <a href="index.html">
-                                    <i class="dripicons-meter"></i>
-                                    <span> Dashboard </span>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a href="email-inbox.html">
-                                    <i class="dripicons-mail"></i>
-                                    <span> Reservas </span>
-                                    <span class="menu-arrow"></span>
-                                </a>
-                            </li>
-
-                            <li class="menu-title">Components</li>
-
-                            <li>
-                                <a href="javascript: void(0);">
-                                    <i class="dripicons-briefcase"></i>
-                                    <span> UI Elements </span>
-                                    <span class="menu-arrow"></span>
-                                </a>
-                                <ul class="nav-second-level" aria-expanded="false">
-                                    <li>
-                                        <a href="ui-buttons.html">Buttons</a>
-                                    </li>
-                                </ul>
-                            </li>
-
-                            <li>
-                                <a href="javascript: void(0);">
-                                    <i class="dripicons-graph-bar"></i>
-                                    <span> Charts </span>
-                                    <span class="menu-arrow"></span>
-                                </a>
-                                <ul class="nav-second-level" aria-expanded="false">
-                                    <li>
-                                        <a href="chart-flot.html">Flot Charts</a>
-                                    </li>
-                                </ul>
-                            </li>
-
-                            <li>
-                                <a href="javascript: void(0);">
-                                    <i class="dripicons-document"></i>
-                                    <span class="badge badge-danger float-right">6</span>
-                                    <span> Forms </span>
-                                </a>
-                                <ul class="nav-second-level" aria-expanded="false">
-                                    <li>
-                                        <a href="form-elements.html">Form Elements</a>
-                                    </li>
-                                </ul>
-                            </li>
-
-                            <li>
-                                <a href="javascript: void(0);">
-                                    <i class="dripicons-view-list"></i>
-                                    <span> Tables </span>
-                                    <span class="menu-arrow"></span>
-                                </a>
-                                <ul class="nav-second-level" aria-expanded="false">
-                                    <li>
-                                        <a href="tables-basic.html">Basic Tables</a>
-                                    </li>
-                                </ul>
-                            </li>
-
-                        </ul>
+                        <!-- item-->
+                        <a href="javascript:void(0);" class="dropdown-item notify-item">
+                            <i class="dripicons-power"></i>
+                            <span>Logout</span>
+                        </a>
 
                     </div>
-                    <!-- End Sidebar -->
+                </li>
 
-                    <div class="clearfix"></div>
+            </ul>
+
+            <ul class="list-unstyled menu-left mb-0">
+                <li class="float-left">
+                    <a href="index.html" class="logo">
+                        <span class="logo-lg">
+                            <img src="assets/images/logo-dark.png" alt="" height="22">
+                        </span>
+                        <span class="logo-sm">
+                            <img src="assets/images/logo-sm.png" alt="" height="24">
+                        </span>
+                    </a>
+                </li>
+                <li class="float-left">
+                    <a class="button-menu-mobile navbar-toggle">
+                        <div class="lines">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <!-- end Topbar -->
+
+        <!-- ========== Left Sidebar Start ========== -->
+        <div class="left-side-menu">
+
+            <div class="slimscroll-menu">
+
+                <!--- Sidemenu -->
+                <div id="sidebar-menu">
+
+                    <ul class="metismenu" id="side-menu">
+
+                        <li class="menu-title">Navigation</li>
+
+                        <li>
+                            <a href="index.html">
+                                <i class="dripicons-meter"></i>
+                                <span> Dashboard </span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="email-inbox.html">
+                                <i class="dripicons-mail"></i>
+                                <span> Reservas </span>
+                                <span class="menu-arrow"></span>
+                            </a>
+                        </li>
+
+                        <li class="menu-title">Components</li>
+
+                        <li>
+                            <a href="javascript: void(0);">
+                                <i class="dripicons-briefcase"></i>
+                                <span> UI Elements </span>
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <ul class="nav-second-level" aria-expanded="false">
+                                <li>
+                                    <a href="ui-buttons.html">Buttons</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);">
+                                <i class="dripicons-graph-bar"></i>
+                                <span> Charts </span>
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <ul class="nav-second-level" aria-expanded="false">
+                                <li>
+                                    <a href="chart-flot.html">Flot Charts</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);">
+                                <i class="dripicons-document"></i>
+                                <span class="badge badge-danger float-right">6</span>
+                                <span> Forms </span>
+                            </a>
+                            <ul class="nav-second-level" aria-expanded="false">
+                                <li>
+                                    <a href="form-elements.html">Form Elements</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);">
+                                <i class="dripicons-view-list"></i>
+                                <span> Tables </span>
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <ul class="nav-second-level" aria-expanded="false">
+                                <li>
+                                    <a href="tables-basic.html">Basic Tables</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
 
                 </div>
-                <!-- Sidebar -left -->
+                <!-- End Sidebar -->
+
+                <div class="clearfix"></div>
+
             </div>
-         
+            <!-- Sidebar -left -->
+        </div>
 
-            <div class="content-page">
-                <div class="content">
 
-                    <!-- Start Content-->
-                    <div class="container-fluid">
-                        
-                        <!-- start page title -->
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="page-title-box">
-                                    <div class="page-title-right">
-                                        <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Greeva</a></li>
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Layouts</a></li>
-                                            <li class="breadcrumb-item active">Dark Leftbar</li>
-                                        </ol>
-                                    </div>
-                                    <h4 class="page-title">Dark Leftbar</h4>
+        <div class="content-page">
+            <div class="content">
+
+                <!-- Start Content-->
+                <div class="container-fluid">
+
+                    <!-- start page title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box">
+                                <div class="page-title-right">
+                                    <ol class="breadcrumb m-0">
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Greeva</a></li>
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">Layouts</a></li>
+                                        <li class="breadcrumb-item active">Dark Leftbar</li>
+                                    </ol>
                                 </div>
-                            </div>
-                        </div>     
-                        <!-- end page title --> 
-
-              
-                        
-                                               
-                    </div> <!-- container -->
-
-                </div> <!-- content -->
-
-                <!-- Footer Start -->
-                <footer class="footer">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-12 text-center">
-                               2020 &copy; Cabezas Rent a Car 
+                                <h4 class="page-title">Dark Leftbar</h4>
                             </div>
                         </div>
                     </div>
-                </footer>
-                <!-- end Footer -->
+                    <!-- end page title -->
 
-            </div>
+
+
+
+                </div> <!-- container -->
+
+            </div> <!-- content -->
+
+            <!-- Footer Start -->
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            2020 &copy; Cabezas Rent a Car
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- end Footer -->
 
         </div>
-        <!-- END wrapper -->
 
-        <!-- Right Sidebar -->
-      
-        <!-- /Right-bar -->
+    </div>
+    <!-- END wrapper -->
 
-        <!-- Right bar overlay-->
-        <div class="rightbar-overlay"></div>
+    <!-- Right Sidebar -->
 
-        <!-- Vendor js -->
-        <script src="assets/js/vendor.min.js"></script>
+    <!-- /Right-bar -->
 
-        <!-- KNOB JS -->
-        <script src="assets/libs/jquery-knob/jquery.knob.min.js"></script>
-        <!-- Chart JS -->
-        <script src="assets/libs/chart-js/Chart.bundle.min.js"></script>
+    <!-- Right bar overlay-->
+    <div class="rightbar-overlay"></div>
 
-        <!-- Jvector map -->
-        <script src="assets/libs/jqvmap/jquery.vmap.min.js"></script>
-        <script src="assets/libs/jqvmap/jquery.vmap.usa.js"></script>
-        
-        <!-- Datatable js -->
-        <script src="assets/libs/datatables/jquery.dataTables.min.js"></script>
-        <script src="assets/libs/datatables/dataTables.bootstrap4.min.js"></script>
-        <script src="assets/libs/datatables/dataTables.responsive.min.js"></script>
-        <script src="assets/libs/datatables/responsive.bootstrap4.min.js"></script>
-        
-        <!-- Dashboard Init JS -->
-        <script src="assets/js/pages/dashboard.init.js"></script>
-        
-        <!-- App js -->
-        <script src="assets/js/app.min.js"></script>
+    <!-- Vendor js -->
+    <script src="assets/js/vendor.min.js"></script>
 
-    </body>
+    <!-- KNOB JS -->
+    <script src="assets/libs/jquery-knob/jquery.knob.min.js"></script>
+    <!-- Chart JS -->
+    <script src="assets/libs/chart-js/Chart.bundle.min.js"></script>
+
+    <!-- Jvector map -->
+    <script src="assets/libs/jqvmap/jquery.vmap.min.js"></script>
+    <script src="assets/libs/jqvmap/jquery.vmap.usa.js"></script>
+
+    <!-- Datatable js -->
+    <script src="assets/libs/datatables/jquery.dataTables.min.js"></script>
+    <script src="assets/libs/datatables/dataTables.bootstrap4.min.js"></script>
+    <script src="assets/libs/datatables/dataTables.responsive.min.js"></script>
+    <script src="assets/libs/datatables/responsive.bootstrap4.min.js"></script>
+
+    <!-- Dashboard Init JS -->
+    <script src="assets/js/pages/dashboard.init.js"></script>
+
+    <!-- App js -->
+    <script src="assets/js/app.min.js"></script>
+
+
+</body>
+
 </html>

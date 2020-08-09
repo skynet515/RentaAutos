@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-US" data-menu="leftalign">
 <!--ENCABEZADO-->
+
 <head>
 
     <link rel="shortcut icon" href="upload/TG-Thumb.png" />
 
     <title>Inicio</title>
-
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="format-detection" content="telephone=no">
@@ -29,7 +28,7 @@
     <link rel='stylesheet' href='css/themify-icons.css' type='text/css' media='all' />
     <link rel='stylesheet' href='css/kirki.css' type='text/css' media='all' />
     <link rel='stylesheet' href='css/grid.css' type='text/css' media='all' />
-
+    <script type="text/javascript" src="jquery.min.js"></script>
 
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Work+Sans%3A100%2C200%2C300%2Cregular%2C500%2C600%2C700%2C800%2C900%7CPoppins%3A300%2Cregular%2C500%2C600%2C700%2C900&#038;subset' type='text/css' media='all' />
 
@@ -41,7 +40,7 @@
 
 <body class="home page-template-default page page-id-3075 woocommerce-no-js ppb_enable">
 
-    
+
     <input type="hidden" id="pp_menu_layout" name="pp_menu_layout" value="leftalign" />
     <input type="hidden" id="pp_enable_right_click" name="pp_enable_right_click" value="0" />
     <input type="hidden" id="pp_enable_dragging" name="pp_enable_dragging" value="0" />
@@ -72,35 +71,27 @@
 
             <div class="menu-main-menu-container">
                 <ul id="mobile_main_menu" class="mobile_main_nav">
-                    <li class="menu-item current-menu-item menu-item-has-children"><a href="index.php">Inicio</a</li>
-                        <li class="menu-item current-menu-item menu-item-has-children"><a href="autosDisp.php">Autos disponibles</a</li>
-                        <li class="menu-item current-menu-item menu-item-has-children"><a href="#">Más para ti</a</li>
-                        <li class="menu-item current-menu-item menu-item-has-children"><a href="sobreNos.php">Sobre nosotros</a</li>
-                        <li class="menu-item current-menu-item menu-item-has-children"><a href="contacto.php">Contáctanos</a</li>  
-                    </li>
-                </ul>
+                    <li class="menu-item current-menu-item menu-item-has-children"><a href="index.php">Inicio</a</li> <li class="menu-item current-menu-item menu-item-has-children"><a href="autosDisp.php">Autos disponibles</a</li> <li class="menu-item current-menu-item menu-item-has-children"><a href="#">Más para ti</a</li> <li class="menu-item current-menu-item menu-item-has-children"><a href="sobreNos.php">Sobre nosotros</a</li> <li class="menu-item current-menu-item menu-item-has-children"><a href="contacto.php">Contáctanos</a</li> </li> </ul> </div> <div class="page_content_wrapper">
+                                            <div class="sidebar_wrapper">
+                                                <div class="sidebar">
+
+                                                    <div class="content">
+
+                                                        <ul class="sidebar_widget">
+                                                            <li id="text-8" class="widget widget_text">
+                                                                <h2 class="widgettitle">For More Informations</h2>
+                                                                <div class="textwidget"><span class="ti-mobile" style="margin-right:10px;"></span>1-567-124-44227
+                                                                    <br />
+                                                                    <span class="ti-alarm-clock" style="margin-right:10px;"></span>Mon - Sat 8.00 - 18.00</div>
+                                                            </li>
+                                                        </ul>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
             </div>
-            <div class="page_content_wrapper">
-                <div class="sidebar_wrapper">
-                    <div class="sidebar">
-    
-                        <div class="content">
-    
-                            <ul class="sidebar_widget">
-                                <li id="text-8" class="widget widget_text">
-                                    <h2 class="widgettitle">For More Informations</h2>
-                                    <div class="textwidget"><span class="ti-mobile" style="margin-right:10px;"></span>1-567-124-44227
-                                        <br/>
-                                        <span class="ti-alarm-clock" style="margin-right:10px;"></span>Mon - Sat 8.00 - 18.00</div>
-                                </li>
-                            </ul>
-    
-                        </div>
-    
-                    </div>
-                </div>
-            </div>
-    
+
             <!--REDES SOCIALES-->
             <div class="social_wrapper">
                 <ul>
