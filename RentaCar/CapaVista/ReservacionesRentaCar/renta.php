@@ -6,12 +6,7 @@ $idauto = $_GET['id'];
 $data = $renta->ListarPortada($idauto);
 ?>
 
-<style type="text/css">
-    .bootstrap-select>.dropdown-toggle {
-        width: 130%;
-        height: 25%;
-    }
-</style>
+
 
 <div id="page_caption" class="hasbg  withtopbar " style="background-image:url(upload/<?= $data['portada']; ?>">
 

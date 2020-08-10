@@ -60,35 +60,13 @@ class Nrenta
                 $request = $this->dauto->registrarRenta($lista, "reserva");
 
                 if ($request) {
-?>
-                    <div id="container">...</div>
-                    <div class="emergente">
-
-
-                    </div>
-                <?php
-                } else { ?>
-                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                        <strong>Error, no se Registró el Usuario</strong>
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                <?php
+                    include('modals/success.php');
+                } else {
+                    include('modals/error.php');
                 }
-            } else { ?>
-                <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                    <strong>Debe completar todos los campos</strong>
-                </div>
-            <?php   }
-        } else { ?>
-            <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                <strong>Debe completar todos los campos</strong>
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-<?php   }
+            } else {
+                include('modals/warning.php');
+            }
+        }
     }
 }
-?>
