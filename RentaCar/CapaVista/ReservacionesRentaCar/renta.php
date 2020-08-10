@@ -1,9 +1,9 @@
 <?php include('menu.php');
 include_once('../../CapaNegocios/Nrenta.php');
 $renta = new Nrenta();
-
 $idauto = $_GET['id'];
 $data = $renta->ListarPortada($idauto);
+$precio = $data['precio'];
 ?>
 
 
@@ -225,7 +225,6 @@ $data = $renta->ListarPortada($idauto);
                                     <label> Pais
                                         <br />
                                         <select class="selectpicker countrypicker" required="" name="pais" id="pais" data-flag="true"></select>
-
                                         <script>
                                             $('.countrypicker').countrypicker();
                                         </script>
@@ -365,7 +364,7 @@ $data = $renta->ListarPortada($idauto);
                                 </p>
                                 <p>
                                     <button type="submit" class="btn btn-success btn-lg">Realizar Reserva</button>
-                                    <?php $req = $renta->registrarRenta($idauto); ?>
+                                    <?php $req = $renta->registrarRenta($idauto, $precio); ?>
                                 </p>
 
                             </form>

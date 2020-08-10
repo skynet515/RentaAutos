@@ -70,15 +70,15 @@ class Drenta
 
             if ($id != 0) {
 
-                $sql = "INSERT INTO reserva (idauto, f_recogida, f_finres, cant_dia, 
+                $sql = "INSERT INTO reserva (idauto, f_recogida, f_entrega, cant_dia, 
                 total, direc_recogida, direc_entrega, H_recogida, H_entrega, idcliente, idadmin) VALUES (?,?,?,?,?,?,?,?,?,?,?)";;
 
                 $PreparedStatement = $this->conexion->getPrepareStatement($sql);
                 $PreparedStatement->bindValue(1, $lista['id'], PDO::PARAM_INT);
                 $PreparedStatement->bindValue(2, $lista['f_recogida'], PDO::PARAM_STR);
-                $PreparedStatement->bindValue(3, $lista['f_entrega'], PDO::PARAM_INT);
-                $PreparedStatement->bindValue(4, 9, PDO::PARAM_INT);
-                $PreparedStatement->bindValue(5, 100, PDO::PARAM_INT);
+                $PreparedStatement->bindValue(3, $lista['f_entrega'], PDO::PARAM_STR);
+                $PreparedStatement->bindValue(4, $lista['cant_dia'], PDO::PARAM_INT);
+                $PreparedStatement->bindValue(5, $lista['total'], PDO::PARAM_INT);
                 $PreparedStatement->bindValue(6, $lista['d_recogida'], PDO::PARAM_STR);
                 $PreparedStatement->bindValue(7, $lista['d_entrega'], PDO::PARAM_STR);
                 $PreparedStatement->bindValue(8, $lista['h_recogida'], PDO::PARAM_STR);
