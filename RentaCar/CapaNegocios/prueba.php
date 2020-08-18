@@ -1,6 +1,5 @@
 <?php
-$date1 = new DateTime('2020-08-05');
-$date2 = new DateTime('2020-08-14');
+date_default_timezone_set("America/El_Salvador");
 
-$cant_dia = $date1->diff($date2);
-echo $cant_dia->days;
+
+echo strftime("%d-%m-%y");

@@ -1,7 +1,7 @@
 <?php
 include_once('../../../CapaNegocios/restriccion.php');
 include_once('../../../CapaNegocios/NMReserva.php');
-include('menu.php');
+include('men.php');
 $NReserva = new NMReserva();
 ?>
 
@@ -79,28 +79,28 @@ $NReserva = new NMReserva();
                                     <!--Esto es lo que se repite-->
 
                                     <?php
-                                    $lista=$NReserva->listarReserva();
-                                    foreach($lista as $reserva=>$data){
-                                    
-                                    ?>
-                                    <li class="unread">
-                                        <div class="col-mail col-mail-1">
-                                            <div class="checkbox-wrapper-mail">
-                                                <input type="checkbox" id="chk1">
-                                                <label for="chk1" class="toggle"></label>
-                                            </div>
-                                            <span class="star-toggle far fa-star text-warning"></span>
-                                            <a href="" class="title"><?php echo $data['nombre'];?></a>
-                                        </div>
-                                        <div class="col-mail col-mail-2">
-                                            <a href="" class="subject"><?php echo $data['nombre'];?> ha solicitado una reserva de <?php echo $data['marca'];?> <?php echo $data['modelo'];?>  &nbsp;&ndash;&nbsp;
-                                                <!--<span class="teaser">@LucasKriebel - Very cool :) Nicklas, You have a new direct message.</span>-->
-                                            </a>
-                                            <div class="date"><?php echo $data['f_solicitud'];?></div>
-                                        </div>
-                                    </li>
+                                    $lista = $NReserva->listarReserva();
+                                    foreach ($lista as $reserva => $data) {
 
-                                    <?php }?>
+                                    ?>
+                                        <li class="unread">
+                                            <div class="col-mail col-mail-1">
+                                                <div class="checkbox-wrapper-mail">
+                                                    <input type="checkbox" id="chk1">
+                                                    <label for="chk1" class="toggle"></label>
+                                                </div>
+                                                <span class="star-toggle far fa-star text-warning"></span>
+                                                <a href="emailread.php?id=<?php echo $data['idreserva']; ?>" class="title"><?php echo $data['nombre']; ?></a>
+                                            </div>
+                                            <div class="col-mail col-mail-2">
+                                                <a href="emailread.php?id=<?php echo $data['idreserva']; ?>" class="subject"><?php echo $data['nombre']; ?> ha solicitado una reserva de <?php echo $data['marca']; ?> <?php echo $data['modelo']; ?> &nbsp;&ndash;&nbsp;
+                                                    <!--<span class="teaser">@LucasKriebel - Very cool :) Nicklas, You have a new direct message.</span>-->
+                                                </a>
+                                                <div class="date"><?php echo $data['f_solicitud']; ?></div>
+                                            </div>
+                                        </li>
+
+                                    <?php } ?>
                                 </ul>
 
                             </div>

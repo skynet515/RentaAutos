@@ -50,6 +50,7 @@ $Ndatos = new Nautosdesp(); ?>
 											</a>
 
 
+
 											<div class="car_attribute_wrapper_icon">
 												<div class="one_fourth">
 													<div class="car_attribute_icon ti-user"></div>
