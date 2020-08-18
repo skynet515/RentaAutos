@@ -1,6 +1,6 @@
 <?php
 include_once('../../../CapaNegocios/restriccion.php');
-include('menu.php');
+include('men.php');
 ?>
 <div class="content-page">
     <div class="content">
