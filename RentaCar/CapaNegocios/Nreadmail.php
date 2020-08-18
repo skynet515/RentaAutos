@@ -54,16 +54,73 @@ class Nreadmail
 					'pais' => $_POST['pais'],
 					'correo' => $_POST['correo']
 				);
-				/*?>
-				<script>
-					$(document).ready(function() {
-						$("#mdcliente").modal('hide');
-					});
-				</script>
-<?php*/
 				$req = $this->dmail->dclien($lista);
-				if ($req) include('assets/modals/success.php');
-				else include('assets/modals/error.php');
+				if ($req) {
+?>
+					<script>
+						alert("Cliente modificado con éxito");
+						document.location.href = "emailread.php?id=<?= $id ?> ";
+					</script>
+				<?php
+				}
+				?>
+				<script>
+					alert("Error al modificar cliente");
+				</script>
+				<?php
+			}
+		}
+	}
+
+	public function nres($id, $precio)
+	{
+
+		if (
+			isset($_POST['h_recogida']) &&
+			isset($_POST['d_entrega']) &&
+			isset($_POST['f_entrega']) &&
+			isset($_POST['f_recogida']) &&
+			isset($_POST['d_recogida']) &&
+			isset($_POST['h_entrega'])
+		) {
+			if (
+				!empty($_POST['h_recogida']) &&
+				!empty($_POST['d_entrega']) &&
+				!empty($_POST['f_entrega']) &&
+				!empty($_POST['f_recogida']) &&
+				!empty($_POST['d_recogida']) &&
+				!empty($_POST['h_entrega'])
+			) {
+				$date1 = new DateTime($_POST['f_entrega']);
+				$date2 = new DateTime($_POST['f_recogida']);
+				$cant_dia = $date1->diff($date2);
+				$total = ($cant_dia->days) * $precio;
+				$lista = array(
+					'cant_dia' => $cant_dia->days,
+					'total' => $total,
+					'd_recogida' => $_POST['d_recogida'],
+					'f_recogida' => $_POST['f_recogida'],
+					'h_recogida' => $_POST['h_recogida'],
+					'd_entrega' => $_POST['d_entrega'],
+					'f_entrega' => $_POST['f_entrega'],
+					'h_entrega' => $_POST['h_entrega'],
+					'id' => $id
+				);
+				$req = $this->dmail->dres($lista);
+				if ($req) {
+				?>
+					<script>
+						alert("Reserva modificada con éxito");
+						document.location.href = "emailread.php?id=<?= $id ?> ";
+					</script>
+				<?php
+				} else {
+				?>
+					<script>
+						alert("Error al modifica la reserva");
+					</script>
+<?php
+				}
 			}
 		}
 	}

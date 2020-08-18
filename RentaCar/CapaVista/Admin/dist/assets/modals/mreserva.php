@@ -26,17 +26,17 @@
 						</u>
 						<div class="form-group">
 							<label for="date">Fecha:<span class="text-danger">*</span></label>
-							<input class="form-control" type="date" id="date" required name="date" id="date">
+							<input name="f_recogida" value="<?= $data['f_recogida']; ?>" class="form-control" type="date" id="date" required name="date" id="date">
 						</div>
 
 						<div class="form-group">
 							<label for="time">Hora:<span class="text-danger">*</span></label>
-							<input required value="15:29" class="form-control" type="time" id="time" name="time">
+							<input required name="h_recogida" value="<?= $data['H_recogida']; ?>" class="form-control" type="time" id="time" name="time">
 						</div>
 
 						<div class="form-group">
 							<label for="dir">Dirección:<span class="text-danger">*</span></label>
-							<input type="text" class="form-control" id="dir" required placeholder="1234 Main St">
+							<input name="d_recogida" type="text" value="<?= $data['direc_recogida']; ?>" class="form-control" id="dir" required placeholder="1234 Main St">
 						</div>
 						</br>
 						<u>
@@ -44,22 +44,22 @@
 						</u>
 						<div class="form-group">
 							<label for="date">Fecha:<span class="text-danger">*</span></label>
-							<input class="form-control" type="date" id="date" required name="date" id="date">
+							<input name="f_entrega" value="<?= $data['f_entrega']; ?>" class="form-control" type="date" id="date" required name="date" id="date">
 						</div>
 
 						<div class="form-group">
 							<label for="time">Hora:<span class="text-danger">*</span></label>
-							<input required value="15:29" class="form-control" type="time" id="time" name="time">
+							<input required name="h_entrega" value="<?= $data['H_entrega']; ?>" class="form-control" type="time" id="time" name="time">
 						</div>
 
 						<div class="form-group">
 							<label for="dir">Dirección:<span class="text-danger">*</span></label>
-							<input type="text" class="form-control" id="dir" required placeholder="1234 Main St">
+							<input type="text" name="d_entrega" value="<?= $data['direc_entrega']; ?>" class="form-control" id="dir" required placeholder="1234 Main St">
 						</div>
 
 						<div class="form-group text-right mb-0">
 							<button id='mc' name="mclien" class="btn btn-primary waves-effect waves-light mr-1" type="submit">Modificar</button>
-							<?php $req = $reserva->nclien($data['idcliente']); ?>
+							<?php $req = $reserva->nres($data['idreserva'], $data['precio']); ?>
 					</form>
 				</div>
 

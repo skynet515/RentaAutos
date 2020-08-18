@@ -1,5 +1,6 @@
 <?php
 include('../../../CapaNegocios/Nreadmail.php');
+include_once('../../../CapaNegocios/restriccion.php');
 $reserva = new Nreadmail();
 $idr = $_GET['id'];
 //$idr = 4;

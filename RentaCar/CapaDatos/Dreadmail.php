@@ -54,4 +54,28 @@ class Dreadmail
 			return false;
 		}
 	}
+
+	public function dres($lista)
+	{
+		$sql = "UPDATE reserva SET 
+		f_recogida=?, H_recogida=?, direc_recogida=?,
+		f_entrega=?, H_entrega=?, direc_entrega=?,
+		cant_dia=?, total=?
+		WHERE idreserva =?;";
+
+		$PreparedStatement = $this->conexion->getPrepareStatement($sql);
+		$PreparedStatement->bindValue(1, $lista['f_recogida'], PDO::PARAM_STR);
+		$PreparedStatement->bindValue(2, $lista['h_recogida'], PDO::PARAM_STR);
+		$PreparedStatement->bindValue(3, $lista['d_recogida'], PDO::PARAM_STR);
+
+		$PreparedStatement->bindValue(4, $lista['f_entrega'], PDO::PARAM_STR);
+		$PreparedStatement->bindValue(5, $lista['h_entrega'], PDO::PARAM_STR);
+		$PreparedStatement->bindValue(6, $lista['d_entrega'], PDO::PARAM_STR);
+
+		$PreparedStatement->bindValue(7, $lista['cant_dia'], PDO::PARAM_INT);
+		$PreparedStatement->bindValue(8, $lista['total'], PDO::PARAM_INT);
+
+		$PreparedStatement->bindValue(9, $lista['id'], PDO::PARAM_INT);
+		return  $PreparedStatement->execute();
+	}
 }
