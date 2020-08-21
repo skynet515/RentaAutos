@@ -224,7 +224,7 @@ if (!is_numeric($idauto)) { ?>
                                         <p>
                                             <label> Nombre Completo
                                                 <br />
-                                                <span class="wpcf7-form-control-wrap your-name"><input type="text" id="nombre" name="nombre" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="true" placeholder="John Doe" required="" /></span> </label>
+                                                <span class="wpcf7-form-control-wrap your-name"><input type="text" id="nombre" name="nombre" value="" required size="40" class="wpcf7-form-control wpcf7-text wpcf7" aria-required="true" aria-invalid="true" placeholder="John Doe" /></span> </label>
                                         </p>
                                         <p>
                                             <label> Correo Electrónico

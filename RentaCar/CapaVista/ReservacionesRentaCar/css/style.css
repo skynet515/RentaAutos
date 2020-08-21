@@ -764,7 +764,7 @@ body.admin-bar .header_style_wrapper
 
 .top_bar.hasbg
 {
-	background: rgba(146, 146, 182, 1)
+	background: #33337b;
 }
 
 html[data-menu=centeralign] body .top_bar.scroll #nav_wrapper
