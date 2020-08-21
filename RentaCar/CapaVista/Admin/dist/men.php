@@ -137,62 +137,16 @@
 							<a href="email-inbox.php">
 								<i class="dripicons-mail"></i>
 								<span> Reservas </span>
-								<span class="menu-arrow"></span>
+								
 							</a>
 						</li>
 
-						<li class="menu-title">Components</li>
-
 						<li>
-							<a href="javascript: void(0);">
-								<i class="dripicons-briefcase"></i>
-								<span> UI Elements </span>
-								<span class="menu-arrow"></span>
-							</a>
-							<ul class="nav-second-level" aria-expanded="false">
-								<li>
-									<a href="ui-buttons.html">Buttons</a>
-								</li>
-							</ul>
-						</li>
-
-						<li>
-							<a href="javascript: void(0);">
-								<i class="dripicons-graph-bar"></i>
-								<span> Charts </span>
-								<span class="menu-arrow"></span>
-							</a>
-							<ul class="nav-second-level" aria-expanded="false">
-								<li>
-									<a href="chart-flot.html">Flot Charts</a>
-								</li>
-							</ul>
-						</li>
-
-						<li>
-							<a href="javascript: void(0);">
-								<i class="dripicons-document"></i>
-								<span class="badge badge-danger float-right">6</span>
-								<span> Forms </span>
-							</a>
-							<ul class="nav-second-level" aria-expanded="false">
-								<li>
-									<a href="form-elements.html">Form Elements</a>
-								</li>
-							</ul>
-						</li>
-
-						<li>
-							<a href="javascript: void(0);">
+							<a href="historial.php">
 								<i class="dripicons-view-list"></i>
-								<span> Tables </span>
-								<span class="menu-arrow"></span>
+								<span> Historial </span>
+								<!--<span class="menu-arrow"></span>-->
 							</a>
-							<ul class="nav-second-level" aria-expanded="false">
-								<li>
-									<a href="tables-basic.html">Basic Tables</a>
-								</li>
-							</ul>
 						</li>
 
 					</ul>

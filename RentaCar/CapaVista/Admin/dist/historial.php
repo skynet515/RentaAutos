@@ -1,6 +1,8 @@
 <?php
 include_once('../../../CapaNegocios/restriccion.php');
+include_once('../../../CapaNegocios/NReservaAd.php');
 include('men.php');
+$NReser = new NReservaAd();
 ?>
 <div class="content-page">
     <div class="content">
@@ -15,17 +17,45 @@ include('men.php');
                         <div class="page-title-right">
                             <ol class="breadcrumb m-0">
                                 <li class="breadcrumb-item"><a href="javascript: void(0);">Greeva</a></li>
-                                <li class="breadcrumb-item"><a href="javascript: void(0);">Layouts</a></li>
-                                <li class="breadcrumb-item active">Dark Leftbar</li>
+                                <li class="breadcrumb-item"><a href="javascript: void(0);">Email</a></li>
+                                <li class="breadcrumb-item active">Inbox</li>
                             </ol>
                         </div>
-                        <h4 class="page-title">Dark Leftbar</h4>
+                        <h4 class="page-title">Historial de reserva</h4>
                     </div>
                 </div>
             </div>
             <!-- end page title -->
 
-        </div> <!-- container -->
+            <!--INICIO DE TARJETAS-->
+
+            <div class="row">
+                <?php
+                $lista = $NReser->Mostrar();
+                foreach ($lista as $reserva => $data) {
+                ?>
+                    <div class="col-md-6 col-xl-3">
+                        <!-- Simple card -->
+                        <div class="card">
+                            <img class="card-img-top img-fluid" src="assets/images/small/img-1.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title"><?= $data['marca'] ?> <?= $data['modelo'] ?></h5>
+                                <p class="card-text"><b>Fecha de reserva:</b><br>
+                                    <?= $data['f_recogida'] ?></p>
+                                <p class="card-text"><b>Fecha de finalización:</b><br>
+                                    <?= $data['f_entrega'] ?></p>
+                                <a href="#" class="btn btn-primary waves-effect waves-light">Reactivar Auto</a>
+                            </div>
+                        </div>
+
+                    </div>
+                <?php } ?>
+            </div>
+
+
+
+
+        </div> <!-- container-fluid -->
 
     </div> <!-- content -->
 
@@ -34,14 +64,12 @@ include('men.php');
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    2020 &copy; Cabezas Rent a Car
+                    2018 - 2019 &copy; Greeva theme by <a href="">Coderthemes</a>
                 </div>
             </div>
         </div>
     </footer>
     <!-- end Footer -->
-
-</div>
 
 </div>
 <div class="rightbar-overlay"></div>
