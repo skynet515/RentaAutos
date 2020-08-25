@@ -1,5 +1,5 @@
 <?php
-include_once('../../../CapaNegocios/restriccion.php');
+
 include_once('../../../CapaNegocios/NMReserva.php');
 include('men.php');
 $NReserva = new NMReserva();
@@ -90,13 +90,13 @@ $NReserva = new NMReserva();
                                                     <label for="chk1" class="toggle"></label>
                                                 </div>
                                                 <span class="star-toggle far fa-star text-warning"></span>
-                                                <a href="emailread.php?id=<?php echo $data['idreserva']; ?>" class="title"><?=$data['nombre']; ?></a>
+                                                <a href="emailread.php?id=<?php echo $data['idreserva']; ?>" class="title"><?= $data['nombre']; ?></a>
                                             </div>
                                             <div class="col-mail col-mail-2">
-                                                <a href="emailread.php?id=<?php echo $data['idreserva']; ?>" class="subject"><?=$data['nombre']; ?> ha solicitado una reserva de <?php echo $data['marca']; ?> <?php echo $data['modelo']; ?> &nbsp;&ndash;&nbsp;
+                                                <a href="emailread.php?id=<?php echo $data['idreserva']; ?>" class="subject"><?= $data['nombre']; ?> ha solicitado una reserva de <?php echo $data['marca']; ?> <?php echo $data['modelo']; ?> &nbsp;&ndash;&nbsp;
                                                     <!--<span class="teaser">@LucasKriebel - Very cool :) Nicklas, You have a new direct message.</span>-->
                                                 </a>
-                                                <div class="date"><?=$data['f_solicitud']; ?></div>
+                                                <div class="date"><?= $data['f_solicitud']; ?></div>
                                             </div>
                                         </li>
 

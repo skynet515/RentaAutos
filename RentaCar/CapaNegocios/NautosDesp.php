@@ -3,7 +3,6 @@ include_once('../../CapaDatos/Dautosdesp.php');
 class Nautosdesp
 {
 	private $dautos;
-
 	public function __construct()
 	{
 		$this->dautos = new DautosDesp();

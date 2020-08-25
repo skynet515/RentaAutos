@@ -1,3 +1,8 @@
+<?php include_once('../../../CapaNegocios/restriccion.php');
+$name = $_SESSION['nombre'] . " " . $_SESSION['apellido'];
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -41,48 +46,32 @@
 					<a class="nav-link dropdown-toggle nav-user mr-0 waves-effect waves-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
 						<img src="assets/images/users/avatar-4.jpg" alt="user-image" class="rounded-circle">
 						<span class="pro-user-name ml-1">
-							Agnes K <i class="mdi mdi-chevron-down"></i>
+							<?= $name; ?> <i class="mdi mdi-chevron-down"></i>
 						</span>
 					</a>
 					<div class="dropdown-menu dropdown-menu-right profile-dropdown ">
 						<!-- item-->
 						<div class="dropdown-item noti-title">
 							<h6 class="m-0">
-								Welcome !
+								¡Bienvenido!
 							</h6>
 						</div>
 
 						<!-- item-->
-						<a href="javascript:void(0);" class="dropdown-item notify-item">
+						<a href="account.php" class="dropdown-item notify-item">
 							<i class="dripicons-user"></i>
-							<span>My Account</span>
-						</a>
-
-						<!-- item-->
-						<a href="javascript:void(0);" class="dropdown-item notify-item">
-							<i class="dripicons-gear"></i>
-							<span>Settings</span>
-						</a>
-
-						<!-- item-->
-						<a href="javascript:void(0);" class="dropdown-item notify-item">
-							<i class="dripicons-help"></i>
-							<span>Support</span>
-						</a>
-
-						<!-- item-->
-						<a href="javascript:void(0);" class="dropdown-item notify-item">
-							<i class="dripicons-lock"></i>
-							<span>Lock Screen</span>
+							<span>Mi Cuenta</span>
 						</a>
 
 						<div class="dropdown-divider"></div>
 
-						<!-- item-->
-						<a href="javascript:void(0);" class="dropdown-item notify-item">
-							<i class="dripicons-power"></i>
-							<span>Logout</span>
-						</a>
+						<form action="#" method="POST">
+							<button type="submit" name="cerrar" onclick="close()" class="dropdown-item notify-item"><i class="dripicons-power">
+								</i><span>Cerrar Sessión</span>
+							</button>
+							<?php $req = close(); ?>
+						</form>
+
 
 					</div>
 				</li>
@@ -137,7 +126,7 @@
 							<a href="email-inbox.php">
 								<i class="dripicons-mail"></i>
 								<span> Reservas </span>
-								
+
 							</a>
 						</li>
 

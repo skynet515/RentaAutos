@@ -1,5 +1,5 @@
 <?php
-include_once('../../../CapaNegocios/restriccion.php');
+
 include('men.php');
 ?>
 <div class="content-page">

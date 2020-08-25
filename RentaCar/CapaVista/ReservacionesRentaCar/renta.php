@@ -224,12 +224,12 @@ if (!is_numeric($idauto)) { ?>
                                         <p>
                                             <label> Nombre Completo
                                                 <br />
-                                                <span class="wpcf7-form-control-wrap your-name"><input type="text" id="nombre" name="nombre" value="" required size="40" class="wpcf7-form-control wpcf7-text wpcf7" aria-required="true" aria-invalid="true" placeholder="John Doe" /></span> </label>
+                                                <span class="wpcf7-form-control-wrap your-name"><input type="text" id="nombre" name="nombre" value="" required="required" size="40" class="wpcf7-form-control wpcf7-text wpcf7" aria-required="true" aria-invalid="true" placeholder="John Doe" /></span> </label>
                                         </p>
                                         <p>
                                             <label> Correo Electrónico
                                                 <br />
-                                                <span class="wpcf7-form-control-wrap your-email"><input type="email" id="correo" name="correo" value="" required="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="sample@yourcompany.com" /></span> </label>
+                                                <span class="wpcf7-form-control-wrap your-email"><input type="email" id="correo" name="correo" value="" required size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="sample@yourcompany.com" /></span> </label>
                                         </p>
 
                                         <p>
@@ -403,9 +403,11 @@ if (!is_numeric($idauto)) { ?>
         </div>
         </div>
 
+
         <link rel="stylesheet" href="//unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css" type="text/css" />
         <link rel="stylesheet" href="//unpkg.com/bootstrap-select@1.12.4/dist/css/bootstrap-select.min.css" type="text/css" />
         <link rel="stylesheet" href="//unpkg.com/bootstrap-select-country@4.0.0/dist/css/bootstrap-select-country.min.css" type="text/css" />
+
 
         <script src="//unpkg.com/jquery@3.4.1/dist/jquery.min.js"></script>
         <script src="//unpkg.com/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>

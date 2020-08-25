@@ -1,5 +1,5 @@
 <?php
-include_once('../../../CapaNegocios/restriccion.php');
+
 include_once('../../../CapaNegocios/NReservaAd.php');
 include('men.php');
 $NReser = new NReservaAd();

@@ -1,8 +1,8 @@
 <?php
 include_once('../../../CapaDatos/Dlogin.php');
+
 class NLogin
 {
-
     private $dlogin;
     private $user;
     private $pass;
@@ -21,7 +21,11 @@ class NLogin
             $request = $this->dlogin->VerificarUser($this->user, $this->pass);
             if ($request) {
                 session_start();
-                $_SESSION['user_id'] = $this->user;
+                $_SESSION['user_id'] = $request['idAdmin'];
+                $_SESSION['nombre'] = $request['nombre'];
+                $_SESSION['apellido'] = $request['apellido'];
+
+
                 header("location: ../../Admin/dist/index.php");
                 return $request;
             } else { ?>
