@@ -32,8 +32,6 @@
 
         </head>
         <?PHP include('menu.php');
-        include('assets/modals/mcliente.php');
-        include('assets/modals/mreserva.php');
         ?>
 
         <?php
@@ -60,6 +58,9 @@
                 } else {
                     $val = $data['$f'] . "  " . $data['$h'];
                 }
+
+                include('assets/modals/mcliente.php');
+                include('assets/modals/mreserva.php');
             ?>
 
 
