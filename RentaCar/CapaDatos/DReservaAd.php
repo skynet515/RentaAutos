@@ -15,10 +15,12 @@ class DReservaAd
         try {
             $PrepareStatement = $this->conexion->getPrepareStatement($sql);
             $PrepareStatement->execute();
-            $data=$PrepareStatement->fetchAll();
+            $data = $PrepareStatement->fetchAll();
             return $data;
         } catch (PDOException $e) {
             echo 'Error: ' . $e;
         }
     }
+
+    //Darle vida al boton reactivar auto
 }

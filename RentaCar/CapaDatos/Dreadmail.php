@@ -13,7 +13,11 @@ class Dreadmail
 		$sql = "UPDATE reserva SET estado = 1 WHERE idreserva = $id;";
 		$PrepareStatement = $this->conexion->getPrepareStatement($sql);
 		return $PrepareStatement->execute();
+
+		//Cambiar estado del auto
 	}
+
+
 	public function delete($id)
 	{
 		$sql = "DELETE FROM  reserva  WHERE idreserva= $id;";
