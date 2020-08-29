@@ -33,13 +33,15 @@ $name = $_SESSION['nombre'] . " " . $_SESSION['apellido'];
                         </a>
 
                         <div class="dropdown-divider"></div>
-                        <!-- item-->
+
                         <form action="#" method="POST">
-                            <button type="submit" name="cerrar" class="dropdown-item notify-item"><i class="dripicons-power">
+                            <button type="submit" name="cerrar" onclick="close()" class="dropdown-item notify-item"><i class="dripicons-power">
                                 </i><span>Cerrar Sessión</span>
                             </button>
                             <?php $req = close(); ?>
                         </form>
+
+
                     </div>
                 </li>
 
@@ -49,7 +51,7 @@ $name = $_SESSION['nombre'] . " " . $_SESSION['apellido'];
                 <li class="float-left">
                     <a href="index.html" class="logo">
                         <span class="logo-lg">
-                            <img src="assets/images/logo2.png" alt="" height="22">
+                            <img src="assets/images/logo-dark.png" alt="" height="22">
                         </span>
                         <span class="logo-sm">
                             <img src="assets/images/logo-sm.png" alt="" height="24">
@@ -69,7 +71,6 @@ $name = $_SESSION['nombre'] . " " . $_SESSION['apellido'];
             </ul>
         </div>
         <!-- end Topbar -->
-
         <!-- ========== Left Sidebar Start ========== -->
         <div class="left-side-menu">
 
@@ -80,12 +81,12 @@ $name = $_SESSION['nombre'] . " " . $_SESSION['apellido'];
 
                     <ul class="metismenu" id="side-menu">
 
-                        <li class="menu-title">Menú</li>
+                        <li class="menu-title">Navigation</li>
 
                         <li>
                             <a href="index.php">
                                 <i class="dripicons-meter"></i>
-                                <span> Inicio </span>
+                                <span> Dashboard </span>
                             </a>
                         </li>
 
@@ -93,9 +94,10 @@ $name = $_SESSION['nombre'] . " " . $_SESSION['apellido'];
                             <a href="email-inbox.php">
                                 <i class="dripicons-mail"></i>
                                 <span> Reservas </span>
-                                
+
                             </a>
                         </li>
+
                         <li>
                             <a href="historial.php">
                                 <i class="dripicons-view-list"></i>
@@ -114,3 +116,9 @@ $name = $_SESSION['nombre'] . " " . $_SESSION['apellido'];
             </div>
             <!-- Sidebar -left -->
         </div>
+
+        <div class="clearfix"></div>
+
+    </div>
+    <!-- Sidebar -left -->
+    </div>

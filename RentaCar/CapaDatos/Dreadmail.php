@@ -8,12 +8,16 @@ class Dreadmail
 		$this->conexion = Conexion::getInstance();
 	}
 
-	public function dconf($id)
+	public function dconf($id, $idaut)
 	{
 		$sql = "UPDATE reserva SET estado = 1 WHERE idreserva = $id;";
 		$PrepareStatement = $this->conexion->getPrepareStatement($sql);
-		return $PrepareStatement->execute();
-
+		$exec = $PrepareStatement->execute();
+		if ($exec) {
+			$sql = "UPDATE tblautos SET estado = 0 WHERE idautos = $idaut;";
+			$PrepareStatement = $this->conexion->getPrepareStatement($sql);
+			return $PrepareStatement->execute();
+		}
 		//Cambiar estado del auto
 	}
 

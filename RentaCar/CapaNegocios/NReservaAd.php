@@ -13,25 +13,24 @@ class NReservaAd
         return $this->dRes->MostrarAutos();
     }
 
-
-    public function Activar($id, $est)
+    public function Activar($id)
     {
-        $lista = array('estado' => $est, 'id' => $id);
-        $req = $this->dRes->ActivarAuto($lista);
-        if ($req) {
+        if (isset($_POST['btnact'])) {
+            $req = $this->dRes->ActivarAuto($id);
+            if ($req) {
 ?>
-            <script>
-                alert("Reserva modificada con éxito");
-                document.location.href = "historial.php";
-            </script>
-<?php
-        }else{
+                <script>
+                    alert("Automovil reactivado con éxito");
+                    document.location.href = "historial.php";
+                </script>
+            <?php
+            } else {
             ?>
-             <script>
-                alert("Reserva modificada con éxito");
-                document.location.href = "historial.php";
-            </script>
+                <script>
+                    alert("Error al reactivar automovil, intentelo nuevamente.");
+                </script>
 <?php
+            }
         }
     }
 }

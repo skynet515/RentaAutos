@@ -15,7 +15,7 @@ class DMReserva
         FROM reserva AS a INNER JOIN tblcliente AS b ON a.idcliente=b.idcliente 
         INNER JOIN tblautos AS aut ON a.idauto=aut.idautos INNER JOIN tblmodelo AS mo ON aut.idmodelo=mo.idmodelo
         INNER JOIN tblmarca AS marc ON aut.idmarca=marc.idmarca
-        WHERE a.estado=0;";
+        WHERE a.estado=0  ORDER BY f_solicitud desc;";
         try {
             $PrepareStatement = $this->conexion->getPrepareStatement($sql);
             $PrepareStatement->execute();

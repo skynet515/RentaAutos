@@ -14,10 +14,10 @@ class Nreadmail
 	{
 		return $this->dmail->detalleReserva($id);
 	}
-	public function nconf($id)
+	public function nconf($id, $idaut)
 	{
 		if (isset($_POST['conf'])) {
-			$req = $this->dmail->dconf($id);
+			$req = $this->dmail->dconf($id, $idaut);
 			if ($req) include('assets/modals/success.php');
 			else include('assets/modals/error.php');
 		}

@@ -1,5 +1,4 @@
 <?php
-
 include_once('../../../CapaNegocios/NReservaAd.php');
 include('men.php');
 $NReser = new NReservaAd();
@@ -25,6 +24,7 @@ $NReser = new NReservaAd();
             <div class="row">
                 <?php
                 $lista = $NReser->Mostrar();
+                $id = 0;
                 foreach ($lista as $reserva => $data) {
                 ?>
                     <div class="col-md-6 col-xl-3">
@@ -39,17 +39,15 @@ $NReser = new NReservaAd();
                                     <?= $data['f_entrega'] ?></p>
                                 <?php $idauto = $data['idautos'];
                                 $estado = $data['estadoa']; ?>
-                                <div class="button-list">
-                                    <button type="submit" name="conf" class="btn btn-primary btn-block waves-effect waves-light width-lg"><b>Confirmar Reserva</b></button>
-
-                                </div>
-                                <?php
-                                if ($data['estadoa'] == '1') {
-                                ?>
-                                    <?php $req = $NReser->Activar($idauto, $estado);
-                                
-                                }
-                                ?>
+                                <?php if ($estado == 0 && $idauto != $id) {
+                                    $id = $idauto; ?>
+                                    <form action=# method="post">
+                                        <div class="button-list">
+                                            <button type="submit" name="btnact" class="btn btn-primary btn-block waves-effect waves-light width-lg"><b>Reactivar Auto</b></button>
+                                        </div>
+                                        <?php $req = $NReser->Activar($idauto); ?>
+                                    </form>
+                                <?php } ?>
                             </div>
                         </div>
 
