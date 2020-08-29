@@ -54,7 +54,7 @@ if (isset($_SESSION['user_id'])) {
 
                             <div class="text-center mb-4">
                                 <a href="../../ReservacionesRentaCar/index.php">
-                                    <span><img src="assets/images/logo-light.png" alt="" height="28"></span>
+                                    <span><img src="assets/images/logo2.png" alt="" height="28"></span>
                                 </a>
                             </div>
 

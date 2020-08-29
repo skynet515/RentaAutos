@@ -15,7 +15,7 @@
                    <h2 class="widgettitle">About Us</h2>
                    <div class="textwidget">
                        <p>Getting dressed up and traveling with good friends makes for a shared, unforgettable experience. </p>
-                       <p><img src="images/logo@2x_white.png" alt="" width="175" height="24"></p>
+                       <p><img src="images/logo2.png" alt="" width="175" height="24"></p>
                    </div>
                </li>
 

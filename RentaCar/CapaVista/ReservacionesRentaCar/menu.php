@@ -122,14 +122,14 @@
                         <div id="logo_normal" class="logo_container">
                             <div class="logo_align">
                                 <a id="custom_logo" class="logo_wrapper hidden" href="index.html">
-                                    <img src="images/logo@2x_white.png" alt="" width="175" height="24" />
+                                    <img src="images/logo2.png" alt="" width="175" height="24" />
                                 </a>
                             </div>
                         </div>
                         <div id="logo_transparent" class="logo_container">
                             <div class="logo_align">
                                 <a id="custom_logo_transparent" class="logo_wrapper default" href="index.html">
-                                    <img src="images/logo@2x_white.png" alt="" width="175" height="24" />
+                                    <img src="images/logo2.png" alt="" width="175" height="24" />
                                 </a>
                             </div>
                         </div>

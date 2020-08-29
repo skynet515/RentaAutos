@@ -236,7 +236,7 @@
                                             ?>
                                                 <!-- BUTTON CONFIRMAR-->
                                                 <div class="button-list">
-                                                    <button type="submit" name="conf" class="btn btn-primary btn-block waves-effect waves-light width-lg"><b>Comfirmar Reserva</b></button>
+                                                    <button type="submit" name="conf" class="btn btn-primary btn-block waves-effect waves-light width-lg"><b>Confirmar Reserva</b></button>
                                                     <?php $req = $reserva->nconf($data['idreserva']); ?>
                                                 </div>
                                             <?php

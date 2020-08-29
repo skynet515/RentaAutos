@@ -119,14 +119,14 @@
 						<div id="logo_normal" class="logo_container">
 							<div class="logo_align">
 								<a id="custom_logo" class="logo_wrapper hidden" href="index.html">
-									<img src="CapaVista/ReservacionesRentaCar/images/logo@2x_white.png" alt="" width="175" height="24" />
+									<img src="CapaVista/ReservacionesRentaCar/images/logo2.png" alt="" width="175" height="24" />
 								</a>
 							</div>
 						</div>
 						<div id="logo_transparent" class="logo_container">
 							<div class="logo_align">
 								<a id="custom_logo_transparent" class="logo_wrapper default" href="index.html">
-									<img src="CapaVista/ReservacionesRentaCar/images/logo@2x_white.png" alt="" width="175" height="24" />
+									<img src="CapaVista/ReservacionesRentaCar/images/logo2.png" alt="" width="175" height="24" />
 								</a>
 							</div>
 						</div>
@@ -627,7 +627,7 @@
 					<h2 class="widgettitle">About Us</h2>
 					<div class="textwidget">
 						<p>Getting dressed up and traveling with good friends makes for a shared, unforgettable experience. </p>
-						<p><img src="CapaVista/ReservacionesRentaCar/images/logo@2x_white.png" alt="" width="175" height="24"></p>
+						<p><img src="CapaVista/ReservacionesRentaCar/images/logo2.png" alt="" width="175" height="24"></p>
 					</div>
 				</li>
 				<li id="text-3" class="widget widget_text">

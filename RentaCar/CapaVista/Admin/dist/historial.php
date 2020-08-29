@@ -14,13 +14,6 @@ $NReser = new NReservaAd();
             <div class="row">
                 <div class="col-12">
                     <div class="page-title-box">
-                        <div class="page-title-right">
-                            <ol class="breadcrumb m-0">
-                                <li class="breadcrumb-item"><a href="javascript: void(0);">Greeva</a></li>
-                                <li class="breadcrumb-item"><a href="javascript: void(0);">Email</a></li>
-                                <li class="breadcrumb-item active">Inbox</li>
-                            </ol>
-                        </div>
                         <h4 class="page-title">Historial de reserva</h4>
                     </div>
                 </div>
@@ -44,7 +37,19 @@ $NReser = new NReservaAd();
                                     <?= $data['f_recogida'] ?></p>
                                 <p class="card-text"><b>Fecha de finalización:</b><br>
                                     <?= $data['f_entrega'] ?></p>
-                                <a href="#" class="btn btn-primary waves-effect waves-light">Reactivar Auto</a>
+                                <?php $idauto = $data['idautos'];
+                                $estado = $data['estadoa']; ?>
+                                <div class="button-list">
+                                    <button type="submit" name="conf" class="btn btn-primary btn-block waves-effect waves-light width-lg"><b>Confirmar Reserva</b></button>
+
+                                </div>
+                                <?php
+                                if ($data['estadoa'] == '1') {
+                                ?>
+                                    <?php $req = $NReser->Activar($idauto, $estado);
+                                
+                                }
+                                ?>
                             </div>
                         </div>
 
@@ -64,7 +69,7 @@ $NReser = new NReservaAd();
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    2018 - 2019 &copy; Greeva theme by <a href="">Coderthemes</a>
+                    2020 &copy; Cabezas Rent a Car
                 </div>
             </div>
         </div>
