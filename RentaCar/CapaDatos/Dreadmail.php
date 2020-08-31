@@ -16,9 +16,14 @@ class Dreadmail
 		if ($exec) {
 			$sql = "UPDATE tblautos SET estado = 0 WHERE idautos = $idaut;";
 			$PrepareStatement = $this->conexion->getPrepareStatement($sql);
-			return $PrepareStatement->execute();
+			$exec = $PrepareStatement->execute();
+
+			//Select para traer los datos del cliente
+			if ($exec) {
+				$date = $this->detalleReserva($id);
+				return $date;
+			}
 		}
-		//Cambiar estado del auto
 	}
 
 

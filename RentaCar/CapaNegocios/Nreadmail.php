@@ -1,5 +1,6 @@
 <?php
 include_once('../../../CapaDatos/Dreadmail.php');
+include_once('NMail.php');
 
 class Nreadmail
 {
@@ -17,9 +18,13 @@ class Nreadmail
 	public function nconf($id, $idaut)
 	{
 		if (isset($_POST['conf'])) {
-			$req = $this->dmail->dconf($id, $idaut);
-			if ($req) include('assets/modals/success.php');
-			else include('assets/modals/error.php');
+			$list = $this->dmail->dconf($id, $idaut);
+			if (!empty($list)) {
+				$req = email($list);
+				if ($req) {
+					include('assets/modals/success.php');
+				} else include('assets/modals/error.php');
+			} else include('assets/modals/error.php');
 		}
 
 		if (isset($_POST['cancel'])) {
