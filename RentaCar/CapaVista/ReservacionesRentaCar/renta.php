@@ -21,7 +21,7 @@ if (!is_numeric($idauto)) { ?>
         $precio = $data['precio'];
     ?>
 
-        <div id="page_caption" class="hasbg  withtopbar " style="background-image:url(upload/<?= $data['portada']; ?>">
+        <div id="page_caption" class="hasbg  withtopbar " style="background-image:url(img/<?= $data['portada']; ?>">
 
             <div class="single_car_header_button">
                 <div class="standard_wrapper">
@@ -33,14 +33,14 @@ if (!is_numeric($idauto)) { ?>
                     ?>
                         <?php if ($matriz == 0) {  ?>
 
-                            <a href="upload/<?= $img['img']; ?>" id="single_car_gallery_open" class="button fancy-gallery"><span class="ti-camera"></span>View Photos</a>
+                            <a href="img/<?= $img['img']; ?>" id="single_car_gallery_open" class="button fancy-gallery"><span class="ti-camera"></span>View Photos</a>
 
                         <?php } else if ($matriz > 0) {
 
                         ?>
 
                             <div style="display:none;">
-                                <a id="single_car_gallery_image1" href="upload/<?= $img['img']; ?>" title="" class="fancy-gallery"></a>
+                                <a id="single_car_gallery_image1" href="img/<?= $img['img']; ?>" title="" class="fancy-gallery"></a>
                             </div>
 
                     <?php    }

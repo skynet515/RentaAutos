@@ -40,7 +40,7 @@ $Ndatos = new Nautosdesp(); ?>
 								<div class="one_third gallery3 classic static filterable portfolio_type themeborder" data-id="post-2">
 
 									<a class="car_image" href="renta.php?id=<?php echo $data['idautos']; ?>">
-										<img src="upload/<?= $data['img']; ?>" alt="BMW 3 Series" />
+										<img src="img/<?= $data['img']; ?>" alt="BMW 3 Series" />
 									</a>
 
 									<div class="portfolio_info_wrapper">

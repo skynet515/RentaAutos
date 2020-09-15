@@ -47,14 +47,14 @@
                             <div style="margin:auto;width:60%">
                                 <div role="form" class="wpcf7" id="wpcf7-f2465-o1" lang="en-US" dir="ltr">
                                     <div class="screen-reader-response"></div>
-                                    <form class="quform" action="js/plugins/quform/process.php" method="post" enctype="multipart/form-data" onclick="">
+                                    <form class="quform" action="../../CapaNegocios/mail-prueba.php" method="post" enctype="multipart/form-data" onclick="">
 
                                         <div class="quform-elements">
                                             <div class="quform-element">
                                                 
                                                     <br>
                                                     <span class="wpcf7-form-control-wrap your-name">
-                                                        <input id="name" type="text" name="name" size="40" class="input1" aria-required="true" aria-invalid="false" placeholder="Name*">
+                                                        <input id="name" type="text" name="txtNombre" size="40" class="input1" required="true" aria-invalid="false" placeholder="Nombre ">
                                                     </span> 
                                                 
                                             </div>
@@ -62,7 +62,7 @@
                                                 
                                                     <br>
                                                     <span class="wpcf7-form-control-wrap your-email">
-                                                        <input id="email" type="text" name="email" size="40" class="input1" aria-required="true" aria-invalid="false" placeholder="Email*">
+                                                        <input id="email" type="email" name="txtEmail" size="40" class="input1" aria-required="true" aria-invalid="false" placeholder="Correo Electronico">
                                                     </span> 
                                                 
                                             </div>
@@ -70,7 +70,7 @@
                                                 
                                                     <br>
                                                     <span class="wpcf7-form-control-wrap your-message">
-                                                        <textarea  id="message" name="message" cols="40" rows="10" class="input1" aria-invalid="false" placeholder="Message*"></textarea>
+                                                        <textarea  id="message" name="txtMensaje" cols="40" rows="10" class="input1" required ="true" aria-invalid="false" placeholder="Mensaje*"></textarea>
                                                     </span>
                                                 
                                             </div>
@@ -78,7 +78,7 @@
                                             <!-- Begin Submit button -->
                                             <div class="quform-submit">
                                                 <div class="quform-submit-inner">
-                                                    <button type="submit" class="submit-button"><span>Send</span></button>
+                                                    <button type="submit" class="submit-button"><span>Enviar</span></button>
                                                 </div>
                                                 <div class="quform-loading-wrap"><span class="quform-loading"></span></div>
                                             </div>
