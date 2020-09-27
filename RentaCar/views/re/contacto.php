@@ -1,7 +1,7 @@
 <?php include('menu.php');?>
 
 
-        <div id="page_caption" class="hasbg parallax  withtopbar  " style="background-image:url(upload/driver-2.jpg);">
+        <div id="page_caption" class="hasbg parallax  withtopbar  " style="background-image:url(img/ban/portada2.png);">
 
             <div class="page_title_wrapper">
                 <div class="page_title_inner">
@@ -22,7 +22,7 @@
                         <div class="inner">
                             <div style="margin:auto;width:80%">
                                 </p>
-                                <h4 class="p1"><span class="s1"><b>Just over a month into my trip and I wonder how I’ve changed, if at all. Certainly the experiences I’ve had and things I’ve seen have shaped me in someway. </b></span></h4>
+                                <h4 class="p1"><span class="s1"><b>Viajamos, algunos para siempre, en busca de otros estados, otras vidas, otras almas</b></span></h4>
                                 <div style="margin-top: 30px;">
                                     <div class="social_wrapper shortcode dark ">
                                         <ul>

@@ -4,7 +4,7 @@ $Ndatos = new Nautosdesp(); ?>
 
 <?php include('menu.php'); ?>
 
-<div id="page_caption" class="hasbg parallax  withtopbar  " style="background-image:url(upload/driver-2.jpg);">
+<div id="page_caption" class="hasbg parallax  withtopbar  " style="background-image:url(img/ban/04.jpg);">
 
 	<div class="page_title_wrapper">
 		<div class="page_title_inner">
