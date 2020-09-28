@@ -34,6 +34,8 @@
         <?PHP include('menu.php');
         ?>
 
+
+
         <?php
         error_reporting(0);
         include('../../../CapaNegocios/Nreadmail.php');
@@ -49,6 +51,7 @@
             <?php
         } else {
             $data = $reserva->ndetalle($idr);
+            $img = $reserva->listarimages($data['idautos']);
             if ($data != null) {
 
                 date_default_timezone_set("America/El_Salvador");
@@ -108,16 +111,16 @@
 
                                         <div class="inbox-bar">
                                             <div class="mt-2">
-                                                <h4>Reserva Auto: ""</h4>
+                                                <h4>Reserva Auto: <?= $data['marca'] . " " . $data['modelo'] . "."; ?></h4>
 
                                                 <hr />
 
                                                 <div class="media mb-4 mt-1">
-                                                    <img class="d-flex mr-3 rounded-circle avatar-sm" src="assets/images/users/avatar-2.jpg" alt="Generic placeholder image">
+                                                    <img class="d-flex mr-3 rounded-circle avatar-sm" src="assets/images/users/use.png" alt="Generic placeholder image">
                                                     <div class="media-body">
                                                         <span class="float-right"><?= $val ?></span>
                                                         <h4 class="m-0"></h4>
-                                                        <small class="text-muted">Enviado: <?= $data['correo']; ?></small>
+                                                        <h5 class="text-muted">Enviado: <?= $data['correo']; ?></h5>
                                                     </div>
                                                 </div>
                                                 <!------------------------------------------>
@@ -127,7 +130,12 @@
                                                         <h5 class="my-3">Detalle Renta</h5>
                                                         <div class="card-group">
                                                             <div class="card">
-                                                                <img class="card-img-top img-fluid" src="assets/images/small/img-1.jpg" alt="Card image cap">
+                                                                <?php
+                                                                foreach ($img as $list => $lista) {
+                                                                    $listImg[$list] = $lista['img'];
+                                                                }
+                                                                ?>
+                                                                <img class="card-img-top img-fluid" src="assets/images/small/<?= $listImg[0] ?>" alt="Card image cap">
                                                                 <div class="card-body">
                                                                     <h3 class="card-title">Detalle Reserva</h3>
                                                                     <h4>Fecha de solicitud:</h4>
@@ -164,7 +172,7 @@
                                                             </div>
 
                                                             <div class="card">
-                                                                <img class="card-img-top img-fluid" src="assets/images/small/img-3.jpg" alt="Card image cap">
+                                                                <img class="card-img-top img-fluid" src="assets/images/small/<?= $listImg[1] ?>" alt="Card image cap">
                                                                 <div class="card-body">
                                                                     <h3 class="card-title">Detalle Automovil</h3>
                                                                     <h4>Modelo:</h4>
@@ -193,7 +201,7 @@
                                                             </div>
 
                                                             <div class="card">
-                                                                <img class="card-img-top img-fluid" src="assets/images/small/img-2.jpg" alt="Card image cap">
+                                                                <img class="card-img-top img-fluid" src="assets/images/small/<?= $listImg[2] ?>" alt="Card image cap">
                                                                 <div class="card-body">
                                                                     <h3 class="card-title">Detalle Cliente</h3>
                                                                     <h4>Nombre Cliente:</h4>

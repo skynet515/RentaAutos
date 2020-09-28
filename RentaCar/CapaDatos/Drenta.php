@@ -26,6 +26,28 @@ class Drenta
         }
     }
 
+
+
+    //detalle automovil
+    public function detalleReacAuto($id)
+    {
+        $sql = "
+		SELECT aut.idautos, modelo.modelo, marca.marca, aut.matricula, aut.motor, aut.precio, tra.transmision, an.anio, aut.capacidad, aut.cant_puertas, aut.cant_asientos, col.color, aut.estado
+				FROM tblautos AS aut INNER JOIN tblmarca AS marca ON aut.idmarca=marca.idmarca INNER JOIN tblmodelo AS 
+				modelo ON aut.idmodelo=modelo.idmodelo INNER JOIN tbltransmision AS tra ON aut.idtransmision=tra.idtransmision
+				INNER JOIN tblanio AS an ON an.idanio=aut.idanio INNER JOIN tblcolor AS col ON col.idcolor=aut.idcolor WHERE aut.idautos=$id";
+
+        try {
+            $PrepareStatement = $this->conexion->getPrepareStatement($sql);
+            $PrepareStatement->execute();
+            return $PrepareStatement->fetch();
+        } catch (PDOException $e) {
+            echo "Error: " . $e;
+            return false;
+        }
+    }
+
+
     public function images($idauto)
     {
         $sql = "SELECT repo.img
