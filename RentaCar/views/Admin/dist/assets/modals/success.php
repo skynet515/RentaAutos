@@ -18,7 +18,7 @@
 
 				<!-- Modal body -->
 				<div class="modal-body">
-					<h4>Proceso realizado con éxito</h4>
+					<h4>Solicitud realizada con éxito</h4>
 				</div>
 
 				<!-- Modal footer -->

@@ -1,8 +1,6 @@
 <?php
 include_once('../../../CapaDatos/Dreadmail.php');
-include_once('../../../CapaDatos/Drenta.php');
 include_once('NMail.php');
-
 
 class Nreadmail
 {
@@ -11,12 +9,6 @@ class Nreadmail
 	public function __construct()
 	{
 		$this->dmail = new Dreadmail();
-		$this->dauto = new Drenta();
-	}
-
-	public function listarimages($id)
-	{
-		return $this->dauto->images($id);
 	}
 
 	public function ndetalle($id)

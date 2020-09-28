@@ -3,7 +3,6 @@ include_once('../../../CapaNegocios/NReservaAd.php');
 include('men.php');
 $NReser = new NReservaAd();
 ?>
-
 <div class="content-page">
     <div class="content">
 
@@ -14,7 +13,7 @@ $NReser = new NReservaAd();
             <div class="row">
                 <div class="col-12">
                     <div class="page-title-box">
-                        <h4 class="page-title">Reactivar Auto</h4>
+                        <h4 class="page-title">Historial de reserva</h4>
                     </div>
                 </div>
             </div>
@@ -30,33 +29,50 @@ $NReser = new NReservaAd();
                 ?>
                     <div class="col-md-6 col-xl-3">
                         <!-- Simple card -->
-                        <a href="detalle.php?id=<?= $data['idautos']; ?>"><img class="card-img-top img-fluid" src="assets/images/small/<?= $data['img'] ?>" alt="Card image cap"></a>
                         <div class="card">
-                            <a href="detalle.php?id=<?= $data['idautos']; ?>">
-                                &nbsp;
-                                <h3 align="center" center class="card-title"><?= $data['marca'] ?> <?= $data['modelo'] ?></h3>
+                            <img class="card-img-top img-fluid" src="assets/images/small/img-1.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title"><?= $data['marca'] ?> <?= $data['modelo'] ?></h5>
+                                <p class="card-text"><b>Fecha de reserva:</b><br>
+                                    <?= $data['f_recogida'] ?></p>
+                                <p class="card-text"><b>Fecha de finalización:</b><br>
+                                    <?= $data['f_entrega'] ?></p>
+                                <?php $idauto = $data['idautos'];
+                                $estado = $data['estadoa']; ?>
+                                <?php if ($estado == 0 && $idauto != $id) {
+                                    $id = $idauto; ?>
+                                    <form action=# method="post">
+                                        <div class="button-list">
+                                            <button type="submit" name="btnact" class="btn btn-primary btn-block waves-effect waves-light width-lg"><b>Reactivar Auto</b></button>
+                                        </div>
+                                        <?php $req = $NReser->Activar($idauto); ?>
+                                    </form>
+                                <?php } ?>
+                            </div>
                         </div>
+
                     </div>
                 <?php } ?>
             </div>
-        </div>
-    </div>
-</div>
-</div> <!-- container-fluid -->
 
-</div> <!-- content -->
 
-<!-- Footer Start -->
-<footer class="footer">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                2020 &copy; Cabezas Rent a Car
+
+
+        </div> <!-- container-fluid -->
+
+    </div> <!-- content -->
+
+    <!-- Footer Start -->
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    2020 &copy; Cabezas Rent a Car
+                </div>
             </div>
         </div>
-    </div>
-</footer>
-<!-- end Footer -->
+    </footer>
+    <!-- end Footer -->
 
 </div>
 <div class="rightbar-overlay"></div>

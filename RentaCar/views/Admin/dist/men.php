@@ -133,7 +133,7 @@ $name = $_SESSION['nombre'] . " " . $_SESSION['apellido'];
 						<li>
 							<a href="historial.php">
 								<i class="dripicons-view-list"></i>
-								<span> Reactivar Auto </span>
+								<span> Historial </span>
 								<!--<span class="menu-arrow"></span>-->
 							</a>
 						</li>
