@@ -1,10 +1,10 @@
 <?php
-include_once('../../CapaNegocios/Nmas.php');
+include_once('../../CapaNegocios/NautosDesp.php');
 $Ndatos = new Nautosdesp(); ?>
 
 <?php include('menu.php'); ?>
 
-<div id="page_caption" class="hasbg parallax  withtopbar  " style="background-image:url(img/ban/03.jpg);">
+<div id="page_caption" class="hasbg parallax  withtopbar  " style="background-image:url(upload/driver-2.jpg);">
 
     <div class="page_title_wrapper">
         <div class="page_title_inner">

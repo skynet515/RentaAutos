@@ -76,7 +76,7 @@
 
             <div class="menu-main-menu-container">
                 <ul id="mobile_main_menu" class="mobile_main_nav">
-                    <li class="menu-item current-menu-item menu-item-has-children"><a href="index.php">Inicio</a</li> <li class="menu-item current-menu-item menu-item-has-children"><a href="autosDisp.php">Autos disponibles</a</li> <li class="menu-item current-menu-item menu-item-has-children"><a href="masparati.php">Más para ti</a</li> <li class="menu-item current-menu-item menu-item-has-children"><a href="sobreNos.php">Sobre nosotros</a</li> <li class="menu-item current-menu-item menu-item-has-children"><a href="contacto.php">Contáctanos</a</li> </li> </ul> </div> <div class="page_content_wrapper">
+                    <li class="menu-item current-menu-item menu-item-has-children"><a href="index.php">Inicio</a</li> <li class="menu-item current-menu-item menu-item-has-children"><a href="autosDisp.php">Autos disponibles</a</li> <li class="menu-item current-menu-item menu-item-has-children"><a href="#">Más para ti</a</li> <li class="menu-item current-menu-item menu-item-has-children"><a href="sobreNos.php">Sobre nosotros</a</li> <li class="menu-item current-menu-item menu-item-has-children"><a href="contacto.php">Contáctanos</a</li> </li> </ul> </div> <div class="page_content_wrapper">
                                             <div class="sidebar_wrapper">
                                                 <div class="sidebar">
 
