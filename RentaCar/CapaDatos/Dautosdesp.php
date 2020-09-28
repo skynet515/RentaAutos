@@ -18,7 +18,11 @@ class DautosDesp
 		FROM tblautos AS aut INNER JOIN tblmarca AS marca ON aut.idmarca=marca.idmarca INNER JOIN tblmodelo AS 
 		modelo ON aut.idmodelo=modelo.idmodelo INNER JOIN tbltransmision AS tra ON aut.idtransmision=tra.idtransmision
 <<<<<<< HEAD
+<<<<<<< HEAD
 		INNER JOIN tblimg AS img ON aut.idimg=img.idimg WHERE aut.estado=1 and aut.idrentacar=1";
+=======
+		INNER JOIN tblimg AS img ON aut.idimg=img.idimg WHERE aut.estado=1";
+>>>>>>> parent of 4f78ead... Adicion de imagenes en las vistas
 =======
 		INNER JOIN tblimg AS img ON aut.idimg=img.idimg WHERE aut.estado=1";
 >>>>>>> parent of 4f78ead... Adicion de imagenes en las vistas
