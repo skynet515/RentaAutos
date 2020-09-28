@@ -19,6 +19,7 @@ class DautosDesp
 		modelo ON aut.idmodelo=modelo.idmodelo INNER JOIN tbltransmision AS tra ON aut.idtransmision=tra.idtransmision
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		INNER JOIN tblimg AS img ON aut.idimg=img.idimg WHERE aut.estado=1 and aut.idrentacar=1";
 =======
 		INNER JOIN tblimg AS img ON aut.idimg=img.idimg WHERE aut.estado=1";
@@ -26,6 +27,9 @@ class DautosDesp
 =======
 		INNER JOIN tblimg AS img ON aut.idimg=img.idimg WHERE aut.estado=1";
 >>>>>>> parent of 4f78ead... Adicion de imagenes en las vistas
+=======
+		INNER JOIN tblimg AS img ON aut.idimg=img.idimg WHERE aut.estado=1 and aut.idrentacar=1";
+>>>>>>> parent of c440fd5... asdfg
 
 		try {
 			$PrepareStatement = $this->conexion->getPrepareStatement($sql);
