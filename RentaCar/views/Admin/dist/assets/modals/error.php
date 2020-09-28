@@ -20,7 +20,7 @@
 
 				<!-- Modal body -->
 				<div class="modal-body">
-					<h4>Error al realizar su solicitud.</h4>
+					<h4>El proceso falló, vuelva a intentarlo.</h4>
 				</div>
 
 				<!-- Modal footer -->

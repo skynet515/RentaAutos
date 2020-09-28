@@ -4,7 +4,7 @@
 
 <head>
 
-    <link rel="shortcut icon" href="upload/TG-Thumb.png" />
+    <link rel="shortcut icon" href="images/use.PNG" />
 
     <title>Cabezas Renta Car</title>
     <meta charset="UTF-8" />
