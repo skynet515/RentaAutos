@@ -6,7 +6,7 @@
 
     <link rel="shortcut icon" href="images/use.PNG" />
 
-    <title>Administración RC</title>
+    <title>Cabezas Renta Car</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="format-detection" content="telephone=no">
