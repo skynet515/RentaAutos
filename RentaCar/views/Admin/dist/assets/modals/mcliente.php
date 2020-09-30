@@ -24,9 +24,8 @@
 
 						<div class="form-group">
 							<label for="Name">Nombre cliente<span class="text-danger">*</span></label>
-							<input type="text" value="<?= $data['nombre']; ?>" name="nombre" data-parsley-type="alphanum" parsley-trigger="change" required placeholder="Ingrese un nombre" class="form-control" id="Name">
+							<input type="text" value="<?= $data['nombre']; ?>" name="nombre" parsley-trigger="change" required placeholder="Ingrese un nombre" class="form-control" id="Name">
 						</div>
-
 
 
 						<div class="form-group">
@@ -38,12 +37,12 @@
 
 							<div>
 								<label for="tel">Teléfono<span class="text-danger">*</span></label>
-								<input data-parsley-type="alphanum" value="<?= $data['tel']; ?>" name="tel" type="text" class="form-control" required placeholder="Ingrese un número de teléfono." id="tel" />
+								<input data-parsley-type="tel" value="<?= $data['tel']; ?>" parsley-trigger="change" name="tel" type="tel" class="form-control" required placeholder="Ingrese un número de teléfono." id="tel" />
 							</div>
 						</div>
 						<div class="form-group">
 							<label for="userCountry">País<span class="text-danger">*</span></label>
-							<input type="text" name="pais" value="<?= $data['pais']; ?>" parsley-trigger=" change" required placeholder="Ingrese un pais" class="form-control" id="userCountry">
+							<input type="text" name="pais" value="<?= $data['pais']; ?>" parsley-trigger="change" required placeholder="Ingrese un pais" class="form-control" id="userCountry">
 						</div>
 
 						<div class="form-group text-right mb-0">

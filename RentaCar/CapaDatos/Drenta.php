@@ -32,9 +32,9 @@ class Drenta
     public function detalleReacAuto($id)
     {
         $sql = "
-		SELECT aut.idautos, modelo.modelo, marca.marca, aut.matricula, aut.motor, aut.precio, tra.transmision, an.anio, aut.capacidad, aut.cant_puertas, aut.cant_asientos, col.color, aut.estado
+        SELECT aut.idautos, modelo.modelo, marca.marca, aut.matricula, aut.motor,rc.idrentacar, rc.rentacar, aut.precio, tra.transmision, an.anio, aut.capacidad, aut.cant_puertas, aut.cant_asientos, col.color, aut.estado
 				FROM tblautos AS aut INNER JOIN tblmarca AS marca ON aut.idmarca=marca.idmarca INNER JOIN tblmodelo AS 
-				modelo ON aut.idmodelo=modelo.idmodelo INNER JOIN tbltransmision AS tra ON aut.idtransmision=tra.idtransmision
+				modelo ON aut.idmodelo=modelo.idmodelo INNER JOIN tbltransmision AS tra ON aut.idtransmision=tra.idtransmision INNER JOIN tblrentacar AS rc ON rc.idrentacar=aut.idrentacar
 				INNER JOIN tblanio AS an ON an.idanio=aut.idanio INNER JOIN tblcolor AS col ON col.idcolor=aut.idcolor WHERE aut.idautos=$id";
 
         try {
@@ -52,6 +52,21 @@ class Drenta
     {
         $sql = "SELECT repo.img
         FROM tblrepositorio AS repo INNER JOIN tblautos AS au ON au.idautos=repo.idauto
+        WHERE au.idautos=$idauto";
+
+        try {
+            $PrepareStatement = $this->conexion->getPrepareStatement($sql);
+            $PrepareStatement->execute();
+            return $PrepareStatement->fetchAll();
+        } catch (PDOException $e) {
+            echo 'Error' . $e;
+            return false;
+        }
+    }
+    public function imagesMPT($idauto)
+    {
+        $sql = "SELECT repo.img
+        FROM tblimg AS repo INNER JOIN tblautos AS au ON au.idimg= repo.idimg
         WHERE au.idautos=$idauto";
 
         try {

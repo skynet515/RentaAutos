@@ -3,13 +3,13 @@
 
         <head>
             <meta charset="utf-8" />
-            <title>Detalle de Reserva</title>
+            <title>Administración RC</title>
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
-            <meta content="Coderthemes" name="author" />
+            <meta content="Administración Cabezas-RentaCar" name="description" />
+            <meta content="RentaCar" name="Cabezas-RentaCar" />
             <meta http-equiv="X-UA-Compatible" content="IE=edge" />
             <!-- App favicon -->
-            <link rel="shortcut icon" href="assets/images/favicon.ico">
+            <link rel="shortcut icon" href="assets/images/users/use.png">
 
             <!-- Summernote css -->
             <link href="assets/libs/summernote/summernote-bs4.css" rel="stylesheet" />
@@ -51,7 +51,7 @@
             <?php
         } else {
             $data = $reserva->ndetalle($idr);
-            $img = $reserva->listarimages($data['idautos']);
+            $img = $reserva->listarimages($data['idautos'], $data['idrentacar']);
             if ($data != null) {
 
                 date_default_timezone_set("America/El_Salvador");
@@ -92,13 +92,8 @@
                                 <div class="col-12">
                                     <div class="page-title-box">
                                         <div class="page-title-right">
-                                            <ol class="breadcrumb m-0">
-                                                <li class="breadcrumb-item"><a href="javascript: void(0);">Administrador</a></li>
-                                                <li class="breadcrumb-item"><a href="javascript: void(0);">Email</a></li>
-                                                <li class="breadcrumb-item active">Email Read</li>
-                                            </ol>
                                         </div>
-                                        <h4 class="page-title">Email Read</h4>
+                                        <h4 class="page-title">Reservación Sin Confirmar</h4>
                                     </div>
                                 </div>
                             </div>

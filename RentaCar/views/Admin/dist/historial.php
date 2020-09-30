@@ -14,6 +14,7 @@ $NReser = new NReservaAd();
             <div class="row">
                 <div class="col-12">
                     <div class="page-title-box">
+
                         <h4 class="page-title">Reactivar Auto</h4>
                     </div>
                 </div>
@@ -35,6 +36,7 @@ $NReser = new NReservaAd();
                             <a href="detalle.php?id=<?= $data['idautos']; ?>">
                                 &nbsp;
                                 <h3 align="center" center class="card-title"><?= $data['marca'] ?> <?= $data['modelo'] ?></h3>
+                                <h5 align="center"><?= $data['rentacar'] ?></h5>
                         </div>
                     </div>
                 <?php } ?>

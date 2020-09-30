@@ -14,9 +14,10 @@ class Nreadmail
 		$this->dauto = new Drenta();
 	}
 
-	public function listarimages($id)
+	public function listarimages($id, $idr)
 	{
-		return $this->dauto->images($id);
+		if ($idr == 1) return $this->dauto->images($id);
+		if ($idr == 2) return $this->dauto->imagesMPT($id);
 	}
 
 	public function ndetalle($id)

@@ -3,13 +3,13 @@
 
 <head>
 	<meta charset="utf-8" />
-	<title>Detalle de Reserva</title>
+	<title>Administración RC</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
-	<meta content="Coderthemes" name="author" />
+	<meta content="Administración Cabezas-RentaCar" name="description" />
+	<meta content="RentaCar" name="Cabezas-RentaCar" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<!-- App favicon -->
-	<link rel="shortcut icon" href="assets/images/favicon.ico">
+	<link rel="shortcut icon" href="assets/images/users/use.png">
 
 	<!-- Summernote css -->
 	<link href="assets/libs/summernote/summernote-bs4.css" rel="stylesheet" />
@@ -52,7 +52,7 @@ if (!is_numeric($idr)) {
 	$auto = new NactivarAut();
 
 	$data = $auto->detalleReacAuto($idr);
-	$img = $auto->listarimages($idr);
+	$img = $auto->listarimages($idr, $data['idrentacar']);
 
 	if ($data != null) {
 	?>
@@ -83,7 +83,7 @@ if (!is_numeric($idr)) {
 						<div class="col-12">
 							<div class="page-title-box">
 								<div class="page-title-right">
-
+									<h4 class="page-title">Sección: <?= $data['rentacar'] ?></h4>
 								</div>
 								<h4 class="page-title">Reactivar Automovil</h4>
 							</div>
@@ -108,8 +108,18 @@ if (!is_numeric($idr)) {
 										<div class="card-group">
 											<div class="card">
 												<?php
-												foreach ($img as $list => $lista) {
-													$listImg[$list] = $lista['img'];
+
+												if ($data['idrentacar'] == 1) {
+													foreach ($img as $list => $lista) {
+														$listImg[$list] = $lista['img'];
+													}
+												} else {
+
+													for ($x = 0; $x < 2; $x++) {
+														foreach ($img as $list => $lista) {
+															$listImg[$x] = $lista['img'];
+														}
+													}
 												}
 												?>
 												<img class="card-img-top img-fluid" src="assets/images/small/<?= $listImg[0] ?>" alt="Card image cap">

@@ -13,7 +13,7 @@ $name = $_SESSION['nombre'] . " " . $_SESSION['apellido'];
             <ul class="list-unstyled topnav-menu float-right mb-0">
                 <li class="dropdown notification-list">
                     <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect waves-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                        <img src="assets/images/users/avatar-4.jpg" alt="user-image" class="rounded-circle">
+                        <img src="assets/images/users/use.png" alt="user-image" class="rounded-circle">
                         <span class="pro-user-name ml-1">
                             <?= $name; ?> <i class="mdi mdi-chevron-down"></i>
                         </span>
@@ -49,12 +49,12 @@ $name = $_SESSION['nombre'] . " " . $_SESSION['apellido'];
 
             <ul class="list-unstyled menu-left mb-0">
                 <li class="float-left">
-                    <a href="index.html" class="logo">
+                    <a href="index.php" class="logo">
                         <span class="logo-lg">
-                            <img src="assets/images/logo-dark.png" alt="" height="22">
+                            <img src="assets/images/users/Logo.png" alt="" height="22">
                         </span>
                         <span class="logo-sm">
-                            <img src="assets/images/logo-sm.png" alt="" height="24">
+                            <img src="assets/images/users/use.png" alt="" height="24">
                         </span>
                     </a>
                 </li>
