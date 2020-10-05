@@ -32,40 +32,6 @@ $NReserva = new NMReserva();
 
                         <div class="inbox-bar">
 
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-light waves-effect"><i class="mdi mdi-archive font-18 vertical-middle"></i></button>
-                                <button type="button" class="btn btn-sm btn-light waves-effect"><i class="mdi mdi-alert-octagon font-18 vertical-middle"></i></button>
-                                <button type="button" class="btn btn-sm btn-light waves-effect"><i class="mdi mdi-delete-variant font-18 vertical-middle"></i></button>
-                            </div>
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-light dropdown-toggle waves-effect" data-toggle="dropdown" aria-expanded="false">
-                                    <i class="mdi mdi-folder font-18 vertical-middle"></i>
-                                    <i class="mdi mdi-chevron-down font-14 ml-1"></i>
-                                </button>
-                                <div class="dropdown-menu">
-                                    <span class="dropdown-header">Move to</span>
-                                    <a class="dropdown-item" href="javascript: void(0);">Social</a>
-                                    <a class="dropdown-item" href="javascript: void(0);">Promotions</a>
-                                    <a class="dropdown-item" href="javascript: void(0);">Updates</a>
-                                    <a class="dropdown-item" href="javascript: void(0);">Forums</a>
-                                </div>
-                            </div>
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-light dropdown-toggle waves-effect" data-toggle="dropdown" aria-expanded="false">
-                                    <i class="mdi mdi-label font-18 vertical-middle"></i>
-                                    <i class="mdi mdi-chevron-down font-14 ml-1"></i>
-                                </button>
-                                <div class="dropdown-menu">
-                                    <span class="dropdown-header">Label as:</span>
-                                    <a class="dropdown-item" href="javascript: void(0);">Updates</a>
-                                    <a class="dropdown-item" href="javascript: void(0);">Social</a>
-                                    <a class="dropdown-item" href="javascript: void(0);">Promotions</a>
-                                    <a class="dropdown-item" href="javascript: void(0);">Forums</a>
-                                </div>
-                            </div>
-
-
-
                             <div class="mt-4">
 
                                 <ul class="message-list">
@@ -82,7 +48,6 @@ $NReserva = new NMReserva();
                                                     <input type="checkbox" id="chk1">
                                                     <label for="chk1" class="toggle"></label>
                                                 </div>
-                                                <span class="star-toggle far fa-star text-warning"></span>
                                                 <a href="emailread.php?id=<?php echo $data['idreserva']; ?>" class="title"><?= $data['nombre']; ?></a>
                                             </div>
                                             <div class="col-mail col-mail-2">
@@ -99,17 +64,6 @@ $NReserva = new NMReserva();
                             </div>
                             <!-- end .mt-4 -->
 
-                            <div class="row">
-                                <div class="col-7">
-                                    Showing 1 - 20 of 289
-                                </div> <!-- end col-->
-                                <div class="col-5">
-                                    <div class="btn-group float-right">
-                                        <button type="button" class="btn btn-light btn-sm"><i class="mdi mdi-chevron-left"></i></button>
-                                        <button type="button" class="btn btn-info btn-sm"><i class="mdi mdi-chevron-right"></i></button>
-                                    </div>
-                                </div> <!-- end col-->
-                            </div>
                             <!-- end row-->
                         </div>
                         <!-- end inbox-rightbar-->
@@ -130,7 +84,7 @@ $NReserva = new NMReserva();
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12 text-center">
-                2020 &copy; Cabezas Rent a Car
+                    2020 &copy; Cabezas Rent a Car
                 </div>
             </div>
         </div>

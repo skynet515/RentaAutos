@@ -64,6 +64,24 @@
 
                 include('assets/modals/mcliente.php');
                 include('assets/modals/mreserva.php');
+
+
+
+                // asignacion de imagenes en caso sea del otro rentacar
+
+                if ($data['idrentacar'] == 1) {
+                    foreach ($img as $list => $lista) {
+                        $listImg[$list] = $lista['img'];
+                    }
+                } else {
+
+                    for ($x = 0; $x < 3; $x++) {
+                        foreach ($img as $list => $lista) {
+                            $listImg[$x] = $lista['img'];
+                        }
+                    }
+                }
+
             ?>
 
 
@@ -125,11 +143,7 @@
                                                         <h5 class="my-3">Detalle Renta</h5>
                                                         <div class="card-group">
                                                             <div class="card">
-                                                                <?php
-                                                                foreach ($img as $list => $lista) {
-                                                                    $listImg[$list] = $lista['img'];
-                                                                }
-                                                                ?>
+
                                                                 <img class="card-img-top img-fluid" src="assets/images/small/<?= $listImg[0] ?>" alt="Card image cap">
                                                                 <div class="card-body">
                                                                     <h3 class="card-title">Detalle Reserva</h3>
