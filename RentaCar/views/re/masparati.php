@@ -92,9 +92,7 @@ $Ndatos = new Nautosdesp(); ?>
                         <!--FIN DE WHILE-->
                     </div>
                     <br class="clear" />
-                    <div class="pagination"><span class="current">1</span><a href='#' class="inactive">2</a></div>
-                    <div class="pagination_detail">
-                        Page 1 of 2 </div>
+                    
 
                 </div>
             </div>

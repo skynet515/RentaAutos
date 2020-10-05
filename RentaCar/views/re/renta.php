@@ -33,7 +33,7 @@ if (!is_numeric($idauto)) { ?>
                     ?>
                         <?php if ($matriz == 0) {  ?>
 
-                            <a href="img/<?= $img['img']; ?>" id="single_car_gallery_open" class="button fancy-gallery"><span class="ti-camera"></span>View Photos</a>
+                            <a href="img/<?= $img['img']; ?>" id="single_car_gallery_open" class="button fancy-gallery"><span class="ti-camera"></span>Ver fotos</a>
 
                         <?php } else if ($matriz > 0) {
 
@@ -45,11 +45,6 @@ if (!is_numeric($idauto)) { ?>
 
                     <?php    }
                     } ?>
-                    <a href="#video_review143" id="single_car_video_review_open" class="button" data-type="inline"><span class="ti-control-play"></span>Video Review</a>
-
-                    <div id="video_review143" class="car_video_review_wrapper" style="display:none;">
-                        <iframe width="1280" height="720" src="https://www.youtube.com/embed/ajeCEr-SRac" frameborder="0" allowfullscreen></iframe>
-                    </div>
                 </div>
             </div>
 
@@ -59,20 +54,7 @@ if (!is_numeric($idauto)) { ?>
                         <span id="single_car_price"><span class="single_car_currency">$</span><span class="single_car_price"><?= $data['precio']; ?></span></span>
                         <span id="single_car_price_per_unit_change" class="single_car_price_per_unit">
                             <span id="single_car_unit">Por día</span>
-                            <span class="ti-angle-down"></span>
-
-                            <ul id="price_per_unit_select">
-                                <li class="icon arrow"></li>
-                                <li class="active">
-                                    <a class="active" href="javascript:;" data-filter="car_price_day" data-price="&lt;span class=&quot;single_car_currency&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;single_car_price&quot;&gt;64&lt;/span&gt;">Per Day</a>
-                                </li>
-                                <li>
-                                    <a class="active" href="javascript:;" data-filter="car_price_hour" data-price="&lt;span class=&quot;single_car_currency&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;single_car_price&quot;&gt;8&lt;/span&gt;">Per Hour</a>
-                                </li>
-                                <li>
-                                    <a class="active" href="javascript:;" data-filter="car_price_airport" data-price="&lt;span class=&quot;single_car_currency&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;single_car_price&quot;&gt;75&lt;/span&gt;">Airport Transfer</a>
-                                </li>
-                            </ul>
+                        
                         </span>
                     </div>
                 </div>
@@ -119,30 +101,25 @@ if (!is_numeric($idauto)) { ?>
 
                         <ul class="single_car_departure_wrapper themeborder">
                             <li>
-                                <div class="single_car_departure_title">Included</div>
+                                <div class="single_car_departure_title">Incluye</div>
                                 <div class="single_car_departure_content">
                                     <div class="one_half ">
-                                        <span class="ti-check"></span>Audio input </div>
+                                        <span class="ti-check"></span>Entrada de Audio </div>
                                     <div class="one_half last">
-                                        <span class="ti-check"></span>All Wheel drive </div>
+                                        <span class="ti-check"></span>GPS</div>
                                     <div class="one_half ">
                                         <span class="ti-check"></span>Bluetooth </div>
                                     <div class="one_half last">
-                                        <span class="ti-check"></span>USB input </div>
-                                    <div class="one_half ">
-                                        <span class="ti-check"></span>Heated seats </div>
+                                        <span class="ti-check"></span>Entradas USB</div>
                                     <div class="one_half last">
                                         <span class="ti-check"></span>FM Radio </div>
                                 </div>
                             </li>
 
                             <li>
-                                <div class="single_car_departure_title">Not Included</div>
+                                <div class="single_car_departure_title">Nota:</div>
                                 <div class="single_car_departure_content">
-                                    <div class="one_half ">
-                                        <span class="ti-close"></span>GPS Navigation </div>
-                                    <div class="one_half last">
-                                        <span class="ti-close"></span>Sunroof </div>
+                                    <p><b>Las reservacciones deben hacerse con dos días de anticipación</b></p>
                                 </div>
                             </li>
                         </ul>

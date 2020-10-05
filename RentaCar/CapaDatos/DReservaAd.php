@@ -11,7 +11,7 @@ class DReservaAd
 
     public function MostrarAutos()
     {
-        $sql = "CALL activarAuto;";
+        $sql = "CALL AutosReserva;";
         try {
             $PrepareStatement = $this->conexion->getPrepareStatement($sql);
             $PrepareStatement->execute();

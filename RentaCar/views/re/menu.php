@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US" data-menu="leftalign">
+<html lang="es-ES" data-menu="leftalign">
 <!--ENCABEZADO-->
 
 <head>
