@@ -82,7 +82,12 @@ class Drenta
     public function registrarRenta($lista, $tabla)
     {
 
-        $sqlc = "INSERT INTO tblcliente (nombre, tel, correo, pais )
+        $sqlc =
+            "UPDATE tblcliente 
+        SET nombre = ?, tel = ?, pais =?  
+        WHERE correo=?; 
+
+        INSERT INTO tblcliente (nombre, tel, pais, correo, )
         SELECT * FROM	(SELECT ?, ?, ?, ?) AS tmp
         WHERE NOT EXISTS
         ( SELECT correo FROM tblcliente WHERE correo=?)LIMIT 1;)";
@@ -93,9 +98,17 @@ class Drenta
             $PreparedStatement = $this->conexion->getPrepareStatement($sqlc);
             $PreparedStatement->bindValue(1, $lista['nombre'], PDO::PARAM_STR);
             $PreparedStatement->bindValue(2, $lista['tel'], PDO::PARAM_STR);
-            $PreparedStatement->bindValue(3, $lista['correo'], PDO::PARAM_STR);
-            $PreparedStatement->bindValue(4, $lista['pais'], PDO::PARAM_STR);
-            $PreparedStatement->bindValue(5, $lista['correo'], PDO::PARAM_STR);
+            $PreparedStatement->bindValue(3, $lista['pais'], PDO::PARAM_STR);
+            $PreparedStatement->bindValue(4, $lista['correo'], PDO::PARAM_STR);
+
+
+            $PreparedStatement->bindValue(5, $lista['nombre'], PDO::PARAM_STR);
+            $PreparedStatement->bindValue(6, $lista['tel'], PDO::PARAM_STR);
+            $PreparedStatement->bindValue(7, $lista['pais'], PDO::PARAM_STR);
+            $PreparedStatement->bindValue(8, $lista['correo'], PDO::PARAM_STR);
+            $PreparedStatement->bindValue(9, $lista['correo'], PDO::PARAM_STR);
+
+
             $exec = $PreparedStatement->execute();
             if ($exec) {
                 $sqlid = "SELECT idcliente FROM tblcliente WHERE correo = ?;";

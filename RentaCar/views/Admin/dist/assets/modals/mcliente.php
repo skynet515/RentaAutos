@@ -20,44 +20,42 @@
 
 
 				<div class="card-box">
-					<form action="#" method="post" class="parsley-examples">
-
+					<form action="#" method="POST" class="parsley-examples">
 						<div class="form-group">
-							<label for="Name">Nombre cliente<span class="text-danger">*</span></label>
-							<input type="text" value="<?= $data['nombre']; ?>" name="nombre" parsley-trigger="change" required placeholder="Ingrese un nombre" class="form-control" id="Name">
+							<label for="userName">Nombre Cliente<span class="text-danger">*</span></label>
+							<input type="text" name="nombre" value="<?= $data['nombre']; ?>" parsley-trigger="change" minlength="5" required="" placeholder="Ingrese nombre completo" class="form-control" id="userName">
 						</div>
-
 
 						<div class="form-group">
 							<label for="emailAddress">Correo Electrónico<span class="text-danger">*</span></label>
-							<input type="email" name="correo" value="<?= $data['correo']; ?>" parsley-trigger="change" required placeholder="ingrese un correo" class="form-control" id="emailAddress">
+							<input type="email" name="correo" value="<?= $data['correo']; ?>" parsley-trigger="change" required="" placeholder="Ingrese email" class="form-control" id="emailAddress">
 						</div>
+
 
 						<div class="form-group">
+							<label>Teléfono</label>
+							<input type="text" name="tel" onkeypress="return (event.charCode >= 48 && event.charCode <= 57 || event.charCode == 43)" value="<?= $data['tel']; ?>" class="form-control" data-toggle="input-mask" placeholder="Ingrese un número celular" data-mask-format="+000 0000-0000" minlength="5" maxlength="14">
 
-							<div>
-								<label for="tel">Teléfono<span class="text-danger">*</span></label>
-								<input data-parsley-type="tel" value="<?= $data['tel']; ?>" parsley-trigger="change" name="tel" type="tel" class="form-control" required placeholder="Ingrese un número de teléfono." id="tel" />
-							</div>
+
 						</div>
+
 						<div class="form-group">
 							<label for="userCountry">País<span class="text-danger">*</span></label>
-							<input type="text" name="pais" value="<?= $data['pais']; ?>" parsley-trigger="change" required placeholder="Ingrese un pais" class="form-control" id="userCountry">
+							<input type="text" name="pais" value="<?= $data['pais']; ?>" parsley-trigger="change" required="" minlength="4" placeholder="Ingrese un pais" class="form-control" id="userCountry">
 						</div>
 
 						<div class="form-group text-right mb-0">
-							<button id='mc' name="mclien" class="btn btn-primary waves-effect waves-light mr-1" type="submit">Modificar</button>
-							<?php $req = $reserva->nclien($data['idcliente']); ?>
+							<button type="submit" name="mclien" class="btn btn-primary waves-effect waves-light mr-1">Modificar</button> <?php $req = $reserva->nclien($data['idcliente']); ?>
+						</div>
+
 					</form>
-				</div>
+				</div> <!-- end card-box -->
 
-			</div> <!-- end card-box -->
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
 
-		</div>
-		<div class="modal-footer">
-			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-		</div>
 	</div>
-
-</div>
 </div>

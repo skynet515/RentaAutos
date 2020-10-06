@@ -54,7 +54,7 @@ if (!is_numeric($idauto)) { ?>
                         <span id="single_car_price"><span class="single_car_currency">$</span><span class="single_car_price"><?= $data['precio']; ?></span></span>
                         <span id="single_car_price_per_unit_change" class="single_car_price_per_unit">
                             <span id="single_car_unit">Por día</span>
-                        
+
                         </span>
                     </div>
                 </div>
@@ -257,7 +257,7 @@ if (!is_numeric($idauto)) { ?>
                                         <p>
                                             <label> Número de teléfono
                                                 <br />
-                                                <span class="wpcf7-form-control-wrap your-tel"><input type="tel" name="tel" id="tel" value="" size="40" required="" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" placeholder="+66-4353434" /></span> </label>
+                                                <span class="wpcf7-form-control-wrap your-tel"><input type="tel" name="tel" id="tel" value="" size="40" required="" onkeypress="return (event.charCode >= 48 && event.charCode <= 57 || event.charCode == 43)" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" placeholder="+66-4353434" /></span> </label>
                                         </p>
                                         <p>
                                             <label> Dirección de recogida
