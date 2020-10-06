@@ -118,7 +118,7 @@ $name = $_SESSION['nombre'] . " " . $_SESSION['apellido'];
 						<li>
 							<a href="index.php">
 								<i class="dripicons-meter"></i>
-								<span> Dashboard </span>
+								<span> Inicio </span>
 							</a>
 						</li>
 
@@ -131,10 +131,16 @@ $name = $_SESSION['nombre'] . " " . $_SESSION['apellido'];
 						</li>
 
 						<li>
-							<a href="historial.php">
+							<a href="activar-auto.php">
 								<i class="dripicons-view-list"></i>
 								<span> Reactivar Auto </span>
 								<!--<span class="menu-arrow"></span>-->
+							</a>
+						</li>
+						<li>
+							<a href="historial.php">
+								<i class="dripicons-meter"></i>
+								<span>Historial de reservas </span>
 							</a>
 						</li>
 
