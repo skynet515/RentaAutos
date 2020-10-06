@@ -84,10 +84,10 @@
 
                                                         <ul class="sidebar_widget">
                                                             <li id="text-8" class="widget widget_text">
-                                                                <h2 class="widgettitle">For More Informations</h2>
-                                                                <div class="textwidget"><span class="ti-mobile" style="margin-right:10px;"></span>1-567-124-44227
+                                                                <h2 class="widgettitle">Para más información</h2>
+                                                                <div class="textwidget"><span class="ti-mobile" style="margin-right:10px;"></span>(503) 7602-4801
                                                                     <br />
-                                                                    <span class="ti-alarm-clock" style="margin-right:10px;"></span>Mon - Sat 8.00 - 18.00</div>
+                                                                    <span class="ti-alarm-clock" style="margin-right:10px;"></span>24 horas, los 7 días a la semana. </div>
                                                             </li>
                                                         </ul>
 
@@ -100,11 +100,9 @@
             <!--REDES SOCIALES-->
             <div class="social_wrapper">
                 <ul>
-                    <li class="facebook"><a target="_blank" href="#"><i class="fa fa-facebook-official"></i></a></li>
-                    <li class="twitter"><a target="_blank" href="http://twitter.com/#"><i class="fa fa-twitter"></i></a></li>
-                    <li class="youtube"><a target="_blank" title="Youtube" href="#"><i class="fa fa-youtube"></i></a></li>
-                    <li class="pinterest"><a target="_blank" title="Pinterest" href="http://pinterest.com/#"><i class="fa fa-pinterest"></i></a></li>
-                    <li class="instagram"><a target="_blank" title="Instagram" href="http://instagram.com/theplanetd"><i class="fa fa-instagram"></i></a></li>
+                    <li class="facebook"><a target="_blank" href="https://www.facebook.com/cabezasrentacar"><i class="fa fa-facebook-official"></i></a></li>
+
+                    <li class="instagram"><a target="_blank" title="Instagram" href="https://www.instagram.com/cabezas_rent_a_car_sv/"><i class="fa fa-instagram"></i></a></li>
                 </ul>
             </div>
         </div>

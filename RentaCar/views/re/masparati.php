@@ -9,7 +9,7 @@ $Ndatos = new Nautosdesp(); ?>
     <div class="page_title_wrapper">
         <div class="page_title_inner">
             <div class="page_title_content">
-                <h1 class="withtopbar">Disfruta nuestra nueva flota</h1>
+                <h1 class="withtopbar">Innovación, elegancia, comodidad.</h1>
                 <div class="page_tagline">
                     Reserva los mejores autos, no te arrenpetiras</div>
             </div>
@@ -92,7 +92,7 @@ $Ndatos = new Nautosdesp(); ?>
                         <!--FIN DE WHILE-->
                     </div>
                     <br class="clear" />
-                    
+
 
                 </div>
             </div>

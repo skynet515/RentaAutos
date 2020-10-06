@@ -9,12 +9,11 @@
                    </div>
                </li>
                <li id="text-2" class="widget widget_text">
-                   <br>
-                   <br>
-                   <br>
-                   <h2 class="widgettitle">About Us</h2>
+
+
+                   <h2 class="widgettitle">Sobre Nosotros</h2>
+                   <p>¡Somos la mejor opción en renta de vehículos En El Salvador, Automóviles del año, Equipados, Asegurados y económicos! <br><br></p>
                    <div class="textwidget">
-                       <p>Getting dressed up and traveling with good friends makes for a shared, unforgettable experience. </p>
                        <p><img src="images/logo2.png" alt="" width="175" height="24"></p>
                    </div>
                </li>
@@ -22,17 +21,13 @@
                <li id="mc4wp_form_widget-5" class="widget widget_mc4wp_form_widget">
                    <h2 class="widgettitle">Información de Contacto.</h2>
 
-                   <p><span class="ti-mobile" style="margin-right:10px;"></span>1-567-124-44227</p>
-                   <p><span class="ti-location-pin" style="margin-right:10px;"></span>184 Main Street East Perl Habour 8007</p>
-                   <p><span class="ti-alarm-clock" style="margin-right:10px;"></span>Mon - Sat 8.00 - 18.00 Sunday CLOSED</p>
+                   <p><span class="ti-mobile" style="margin-right:10px;"></span>(503) 7602-4801</p>
+                   <p><span class="ti-alarm-clock" style="margin-right:10px;"></span>24 Horas al día, los 7 dás de la semana.</p>
                    <div style="margin-top:20px;">
                        <div class="social_wrapper shortcode dark ">
                            <ul>
-                               <li class="facebook"><a target="_blank" title="Facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                               <li class="twitter"><a target="_blank" title="Twitter" href="https://twitter.com/#"><i class="fa fa-twitter"></i></a></li>
-                               <li class="youtube"><a target="_blank" title="Youtube" href="#"><i class="fa fa-youtube"></i></a></li>
-                               <li class="pinterest"><a target="_blank" title="Pinterest" href="https://pinterest.com/#"><i class="fa fa-pinterest"></i></a></li>
-                               <li class="instagram"><a target="_blank" title="Instagram" href="https://instagram.com/theplanetd"><i class="fa fa-instagram"></i></a></li>
+                               <li class="facebook"><a target="_blank" title="Facebook" href="https://www.facebook.com/cabezasrentacar"><i class="fa fa-facebook"></i></a></li>
+                               <li class="instagram"><a target="_blank" title="Instagram" href="https://www.instagram.com/cabezas_rent_a_car_sv/"><i class="fa fa-instagram"></i></a></li>
                            </ul>
                        </div>
                    </div>
