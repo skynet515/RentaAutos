@@ -4,7 +4,7 @@ $Ndatos = new Nautosdesp(); ?>
 
 <?php include('menu.php'); ?>
 
-<div id="page_caption" class="hasbg parallax  withtopbar  " style="background-image:url(img/ban/04.jpg);">
+<div id="page_caption" class="hasbg parallax  withtopbar  " style="background-image:url(img/ban/hilux.png);">
 
 	<div class="page_title_wrapper">
 		<div class="page_title_inner">
@@ -20,6 +20,11 @@ $Ndatos = new Nautosdesp(); ?>
 
 <div id="page_content_wrapper" class="hasbg withtopbar ">
 	<div class="inner">
+	    <div style="margin:auto; width:100%;">
+            <div class="page_tagline">
+                <h5>Los autos que veras a continuación son con fines ilustrativos, al momento de entrega pueden variar en forma y color</h5>
+            </div>
+        </div>
 
 		<div class="inner_wrapper nopadding">
 
@@ -61,7 +66,7 @@ $Ndatos = new Nautosdesp(); ?>
 												<div class="one_fourth">
 													<div class="car_attribute_icon ti-briefcase"></div>
 													<div class="car_attribute_content">
-														2 </div>
+															<?= $data['cant_asientos']; ?></div>
 												</div>
 
 												<div class="one_fourth">

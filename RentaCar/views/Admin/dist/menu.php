@@ -13,7 +13,7 @@ $name = $_SESSION['nombre'] . " " . $_SESSION['apellido'];
             <ul class="list-unstyled topnav-menu float-right mb-0">
                 <li class="dropdown notification-list">
                     <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect waves-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                        <img src="assets/images/users/use.png" alt="user-image" class="rounded-circle">
+                        <img src="assets/images/users/use.PNG" alt="user-image" class="rounded-circle">
                         <span class="pro-user-name ml-1">
                             <?= $name; ?> <i class="mdi mdi-chevron-down"></i>
                         </span>
@@ -35,7 +35,7 @@ $name = $_SESSION['nombre'] . " " . $_SESSION['apellido'];
                         <div class="dropdown-divider"></div>
 
                         <form action="#" method="POST">
-                            <button type="submit" name="cerrar" onclick="close()" class="dropdown-item notify-item"><i class="dripicons-power">
+                            <button type="submit" name="cerrar" class="dropdown-item notify-item"><i class="dripicons-power">
                                 </i><span>Cerrar Sessión</span>
                             </button>
                             <?php $req = close(); ?>
@@ -54,7 +54,7 @@ $name = $_SESSION['nombre'] . " " . $_SESSION['apellido'];
                             <img src="assets/images/users/Logo.png" alt="" height="22">
                         </span>
                         <span class="logo-sm">
-                            <img src="assets/images/users/use.png" alt="" height="24">
+                            <img src="assets/images/users/use.PNG" alt="" height="24">
                         </span>
                     </a>
                 </li>
@@ -98,20 +98,14 @@ $name = $_SESSION['nombre'] . " " . $_SESSION['apellido'];
                             </a>
                         </li>
 
-                        <li>
-                            <a href="activar-auto.php">
-                                <i class="dripicons-view-list"></i>
-                                <span> Reactivar Auto </span>
-                                <!--<span class="menu-arrow"></span>-->
-                            </a>
-                        </li>
+
 
                         <li>
-							<a href="historial.php">
-								<i class="dripicons-meter"></i>
-								<span>Historial de reservas </span>
-							</a>
-						</li>
+                            <a href="historial.php">
+                                <i class="dripicons-meter"></i>
+                                <span>Historial de reservas </span>
+                            </a>
+                        </li>
 
                     </ul>
 

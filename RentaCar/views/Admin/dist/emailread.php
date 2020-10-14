@@ -1,40 +1,6 @@
-        <!DOCTYPE html>
-        <html lang="en">
-
-        <head>
-            <meta charset="utf-8" />
-            <title>Administración RC</title>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <meta content="Administración Cabezas-RentaCar" name="description" />
-            <meta content="RentaCar" name="Cabezas-RentaCar" />
-            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-            <!-- App favicon -->
-            <link rel="shortcut icon" href="assets/images/users/use.png">
-
-            <!-- Summernote css -->
-            <link href="assets/libs/summernote/summernote-bs4.css" rel="stylesheet" />
-
-            <!-- Validation js (Parsleyjs) -->
-            <script src="assets/libs/parsleyjs/parsley.min.js"></script>
-
-            <!-- validation init -->
-            <script src="assets/js/pages/form-validation.init.js"></script>
-
-            <!-- App css -->
-            <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-            <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
-            <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
-
-
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-
-        </head>
-        <?PHP include('menu.php');
+        
+        <?php include('men.php');
         ?>
-
-
 
         <?php
         error_reporting(0);
@@ -129,7 +95,7 @@
                                                 <hr />
 
                                                 <div class="media mb-4 mt-1">
-                                                    <img class="d-flex mr-3 rounded-circle avatar-sm" src="assets/images/users/use.png" alt="Generic placeholder image">
+                                                    <img class="d-flex mr-3 rounded-circle avatar-sm" src="assets/images/users/use.PNG" alt="Generic placeholder image">
                                                     <div class="media-body">
                                                         <span class="float-right"><?= $val ?></span>
                                                         <h4 class="m-0"></h4>

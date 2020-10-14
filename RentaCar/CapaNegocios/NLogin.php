@@ -24,9 +24,15 @@ class NLogin
                 $_SESSION['user_id'] = $request['idAdmin'];
                 $_SESSION['nombre'] = $request['nombre'];
                 $_SESSION['apellido'] = $request['apellido'];
-
-
+                
+            
                 header("location: ../../Admin/dist/index.php");
+                ?>
+                <script>
+                    location.reload();
+                </script>
+                <?php
+                
                 return $request;
             } else { ?>
                 <div class="alert alert-danger alert-dismissible fade show" role="alert">

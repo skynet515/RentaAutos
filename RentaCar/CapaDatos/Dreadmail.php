@@ -13,17 +13,17 @@ class Dreadmail
 		$sql = "UPDATE reserva SET estado = 1 WHERE idreserva = $id;";
 		$PrepareStatement = $this->conexion->getPrepareStatement($sql);
 		$exec = $PrepareStatement->execute();
-		if ($exec) {
+		/*	if ($exec) {
 			$sql = "UPDATE tblautos SET estado = 0 WHERE idautos = $idaut;";
 			$PrepareStatement = $this->conexion->getPrepareStatement($sql);
-			$exec = $PrepareStatement->execute();
+			$exec = $PrepareStatement->execute();*/
 
-			//Select para traer los datos del cliente
-			if ($exec) {
-				$date = $this->detalleReserva($id);
-				return $date;
-			}
+		//Select para traer los datos del cliente
+		if ($exec) {
+			$date = $this->detalleReserva($id);
+			return $date;
 		}
+		//	}
 	}
 
 

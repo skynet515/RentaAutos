@@ -14,7 +14,7 @@ class DautosDesp
 	//
 	public function listarautosDB()
 	{
-		$sql = "SELECT aut.idautos, marca.marca, modelo.modelo, aut.precio, tra.transmision, img.img, aut.capacidad
+		$sql = "SELECT aut.cant_asientos, aut.idautos, marca.marca, modelo.modelo, aut.precio, tra.transmision, img.img, aut.capacidad
 		FROM tblautos AS aut INNER JOIN tblmarca AS marca ON aut.idmarca=marca.idmarca INNER JOIN tblmodelo AS 
 		modelo ON aut.idmodelo=modelo.idmodelo INNER JOIN tbltransmision AS tra ON aut.idtransmision=tra.idtransmision
 		INNER JOIN tblimg AS img ON aut.idimg=img.idimg WHERE aut.estado=1 AND aut.idrentacar=1";

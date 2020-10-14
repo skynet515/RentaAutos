@@ -11,7 +11,7 @@ class Drenta
 
     public function portada($idauto)
     {
-        $sql = "SELECT marca.marca, modelo.modelo, aut.precio, tra.transmision, img.img, aut.capacidad, img.portada, aut.cant_puertas
+        $sql = "SELECT aut.cant_asientos, marca.marca, modelo.modelo, aut.precio, tra.transmision, img.img, aut.capacidad, img.portada, aut.cant_puertas
         FROM tblautos AS aut INNER JOIN tblmarca AS marca ON aut.idmarca=marca.idmarca INNER JOIN tblmodelo AS 
         modelo ON aut.idmodelo=modelo.idmodelo INNER JOIN tbltransmision AS tra ON aut.idtransmision=tra.idtransmision
         INNER JOIN tblimg AS img ON aut.idimg=img.idimg WHERE aut.idautos=$idauto";

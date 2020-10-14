@@ -22,7 +22,7 @@
                    <h2 class="widgettitle">Información de Contacto.</h2>
 
                    <p><span class="ti-mobile" style="margin-right:10px;"></span>(503) 7602-4801</p>
-                   <p><span class="ti-alarm-clock" style="margin-right:10px;"></span>24 Horas al día, los 7 dás de la semana.</p>
+                   <p><span class="ti-alarm-clock" style="margin-right:10px;"></span>24 Horas al día, los 7 días de la semana.</p>
                    <div style="margin-top:20px;">
                        <div class="social_wrapper shortcode dark ">
                            <ul>
@@ -43,7 +43,7 @@
            <div class="footer_bar_wrapper ">
                <div class="menu-footer-menu-container">
                    <ul id="footer_menu" class="footer_nav">
-                       <li class="menu-item"><a href="../Admin/dist/login.php">Admin</a></li>
+                       <li class="menu-item"><a href="https://cabezasrentacar.com/views/Admin/dist/login.php">Admin</a></li>
                    </ul>
                </div>
                <div id="copyright">© Copyright Cabezas Rent a Car</div>

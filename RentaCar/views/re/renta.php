@@ -80,9 +80,9 @@ if (!is_numeric($idauto)) { ?>
                             </div>
 
                             <div class="one_fourth">
-                                <div class="car_attribute_icon ti-briefcase"></div>
+                                <div class="car_attribute_icon ti-panel"></div>
                                 <div class="car_attribute_content">
-                                    4&nbsp; Maletas</div>
+                                     <?= $data['cant_asientos']; ?></div>
                             </div>
 
                             <div class="one_fourth">
@@ -103,25 +103,36 @@ if (!is_numeric($idauto)) { ?>
                             <li>
                                 <div class="single_car_departure_title">Incluye</div>
                                 <div class="single_car_departure_content">
-                                    <div class="one_half ">
+                                    <div class="one_half">
                                         <span class="ti-check"></span>Entrada de Audio </div>
-                                    <div class="one_half last">
-                                        <span class="ti-check"></span>GPS</div>
                                     <div class="one_half ">
                                         <span class="ti-check"></span>Bluetooth </div>
-                                    <div class="one_half last">
+                                    <div class="one_half">
                                         <span class="ti-check"></span>Entradas USB</div>
-                                    <div class="one_half last">
+                                    <div class="one_half">
                                         <span class="ti-check"></span>FM Radio </div>
                                 </div>
                             </li>
 
                             <li>
-                                <div class="single_car_departure_title">Nota:</div>
+                                <div class="single_car_departure_title">El precio de cada auto incluye:</div>
                                 <div class="single_car_departure_content">
-                                    <p><b>Las reservacciones deben hacerse con dos días de anticipación</b></p>
+                                    <div class="one_half">
+                                        <span class="ti-check"></span>Seguro</div>
+                                    <div class="one_half ">
+                                        <span class="ti-check"></span>Impuestos</div>
+                                    <div class="one_half">
+                                        <span class="ti-check"></span>Asistencia vial 24/7</div>
+                                    <div class="one_half">
+                                        <span class="ti-check"></span>Gastos médicos por choque</div>
                                 </div>
                             </li>
+                             <li>
+                                 <div class="single_car_departure_title">Nota: </div>
+                                 <div class="single_car_departure_content">
+                                     <p>Las Entregas en el aeropuerto son gratis, las entregas afuera tendrán un costo adicional</p>
+                                 </div>
+                             </li>
                         </ul>
 
                         <div class="fullwidth_comment_wrapper sidebar">

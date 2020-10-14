@@ -58,7 +58,7 @@ if (isset($_SESSION['user_id'])) {
                                 </a>
                             </div>
 
-                            <form action="#" class="pt-2" method="post">
+                            <form class="pt-2" method="post">
                                 <div class="form-group mb-3">
                                     <label for="emailaddress">Correo electrónico</label>
                                     <input class="form-control" type="email" name="user" id="user" required="" placeholder="Escriba su nombre de usuario">
