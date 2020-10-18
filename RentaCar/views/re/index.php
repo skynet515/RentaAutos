@@ -111,7 +111,7 @@
                                         <span class="car_unit_day"></span>
                                     </div>
                                 </div>
-                                <br class="clear" />
+                                <br class="clear"/>
                             </div>
                         </div>
                     </div>
@@ -126,7 +126,7 @@
                 <div class="inner">
                     <div style="margin:auto;width:100%">
                         <h2 class="ppb_title" style="color:#ffffff;">Nuestra flota, es tu flota</h2>
-                        <div class="page_tagline" style="color:#ffffff;">Sabemos que la diferencia está en los detalles y por eso nuestros servicios de alquiler de autos,
+                        <div class="page_tagline" style="color:#ffffff;">Sabemos que la diferencia está en los detalles y por eso nuestros servicios de alquiler de autos es el mejor,
                             <br />has tu reserva ahora mismo</div>
                         <div class="ppb_header_content">
                             <p><span style="font-size: 32px;">Llama ahora (503) 7602-4801</span></p>

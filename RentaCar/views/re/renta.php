@@ -82,7 +82,7 @@ if (!is_numeric($idauto)) { ?>
                             <div class="one_fourth">
                                 <div class="car_attribute_icon ti-panel"></div>
                                 <div class="car_attribute_content">
-                                     <?= $data['cant_asientos']; ?></div>
+                                    <?= $data['cant_asientos']; ?></div>
                             </div>
 
                             <div class="one_fourth">
@@ -127,12 +127,29 @@ if (!is_numeric($idauto)) { ?>
                                         <span class="ti-check"></span>Gastos médicos por choque</div>
                                 </div>
                             </li>
-                             <li>
-                                 <div class="single_car_departure_title">Nota: </div>
-                                 <div class="single_car_departure_content">
-                                     <p>Las Entregas en el aeropuerto son gratis, las entregas afuera tendrán un costo adicional</p>
-                                 </div>
-                             </li>
+                            <li>
+                                <div class="single_car_departure_title">Requisitos para realizar reserva: </div>
+                                <div class="single_car_departure_content">
+                                    <div class="one_half">
+                                        <span class="ti-check"></span>No necesitas déposito</div>
+                                    <div class="one_half ">
+                                        <span class="ti-check"></span>Foto de pasaporte</div>
+                                    <div class="one_half">
+                                        <span class="ti-check"></span>Itinerario de vuelo.</div>
+                                    <div class="one_half">
+                                        <span class="ti-check"></span>Licencia.</div>
+                                </div>
+                                <div class="single_car_departure_content">
+                                    <p><strong>Importante: </strong>Debes enviar estos documentos al WhatsApp (503) 7602-4801</p>
+                                </div>
+                            </li>
+                            
+                            <li>
+                                <div class="single_car_departure_title">Nota: </div>
+                                <div class="single_car_departure_content">
+                                    <p>Las Entregas en el aeropuerto son gratis, las entregas afuera tendrán un costo adicional</p>
+                                </div>
+                            </li>
                         </ul>
 
                         <div class="fullwidth_comment_wrapper sidebar">
@@ -271,7 +288,7 @@ if (!is_numeric($idauto)) { ?>
                                                 <span class="wpcf7-form-control-wrap your-tel"><input type="tel" name="tel" id="tel" value="" size="40" required="" onkeypress="return (event.charCode >= 48 && event.charCode <= 57 || event.charCode == 43)" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" placeholder="+66-4353434" /></span> </label>
                                         </p>
                                         <p>
-                                            <label> Dirección de recogida
+                                            <label>¿Dónde quieres que te entreguemos el auto?
                                                 <br />
                                                 <span class=" wpcf7-form-control-wrap pickup-address"><input type="text" required="" id="d_recogida" name="d_recogida" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="34 Mainfield Road" /></span> </label>
                                         </p>
@@ -350,7 +367,7 @@ if (!is_numeric($idauto)) { ?>
                                         </p>
 
                                         <p>
-                                            <label> Dirección de entrega
+                                            <label>¿Dónde entregarás el auto?
                                                 <br />
                                                 <span class=" wpcf7-form-control-wrap dropoff-address"><input type="text" id="d_entrega" name="d_entrega" value="" required="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Heatrow Airport" /></span> </label><span class="wpcf7-form-control-wrap dynamicurl"><input type="hidden" name="dynamicurl" value="http://themes.themegoods.com/grandcarrental/demo/car/mercedes-benz-gle/" size="40" class="wpcf7-form-control wpcf7dtx-dynamictext wpcf7-dynamichidden" aria-invalid="false" /></span></p>
 

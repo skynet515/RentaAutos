@@ -87,7 +87,7 @@ class Drenta
         SET nombre = ?, tel = ?, pais =?  
         WHERE correo=?; 
 
-        INSERT INTO tblcliente (nombre, tel, pais, correo, )
+        INSERT INTO tblcliente (nombre, tel, pais, correo )
         SELECT * FROM	(SELECT ?, ?, ?, ?) AS tmp
         WHERE NOT EXISTS
         ( SELECT correo FROM tblcliente WHERE correo=?)LIMIT 1;)";
@@ -118,7 +118,7 @@ class Drenta
                 $id = $PreparedStatement->fetch();
             }
 
-            if ($id != 0) {
+            if ($id) {
 
                 $sql = "INSERT INTO reserva (idauto, f_recogida, f_entrega, cant_dia, 
                 total, direc_recogida, direc_entrega, H_recogida, H_entrega, idcliente, idadmin) VALUES (?,?,?,?,?,?,?,?,?,?,?)";;

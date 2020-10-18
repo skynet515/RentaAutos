@@ -30,9 +30,9 @@ class Nreadmail
 			$list = $this->dmail->dconf($id, $idaut);
 			if (!empty($list)) {
 				$req = email($list);
-				if ($req) {
+				//if ($req) {
 					include('assets/modals/success.php');
-				} else include('assets/modals/error.php');
+				/*} else include('assets/modals/error.php');*/
 			} else include('assets/modals/error.php');
 		}
 
@@ -41,10 +41,9 @@ class Nreadmail
 			if ($req) include('assets/modals/success.php');
 			else include('assets/modals/error.php');
 		}
-		if (isset($_POST['edit'])) {
-			include('assets/modals/error.php');
-		}
+		
 	}
+
 	public function nclien($id)
 	{
 		if (

@@ -50,8 +50,8 @@ function email($list)
 			$req = mail($correoTo, $asunto, $mensaje, $headers);
 			$correoTo="";
 		}
-		if ($req) return true;
-		else return false;
+		//if ($req) return true;
+		//else return false;
 	} catch (Exception $e) {
 		return false;
 	}

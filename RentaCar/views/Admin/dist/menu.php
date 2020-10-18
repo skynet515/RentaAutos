@@ -101,7 +101,7 @@ $name = $_SESSION['nombre'] . " " . $_SESSION['apellido'];
 
 
                         <li>
-                            <a href="historial.php">
+                            <a href="historial.php?id=1">
                                 <i class="dripicons-meter"></i>
                                 <span>Historial de reservas </span>
                             </a>

@@ -1,4 +1,3 @@
-        
         <?php include('men.php');
         ?>
 
@@ -27,7 +26,7 @@
                 } else {
                     $val = $data['$f'] . "  " . $data['$h'];
                 }
-
+                
                 include('assets/modals/mcliente.php');
                 include('assets/modals/mreserva.php');
 
@@ -220,8 +219,10 @@
                                             ?>
                                                 <!-- BUTTON CONFIRMAR-->
                                                 <div class="button-list">
-                                                    <button type="submit" name="conf" class="btn btn-primary btn-block waves-effect waves-light width-lg"><b>Comfirmar Reserva</b></button>
-                                                    <?php $req = $reserva->nconf($data['idreserva'], $data['idautos']); ?>
+                                                    <button type="submit" name="conf" class="btn btn-primary btn-block waves-effect waves-light width-lg"><b>Confirmar Reserva</b></button>
+                                                    <?php $req = $reserva->nconf($data['idreserva'], $data['idautos']); 
+                                                    
+                                                    ?>
                                                 </div>
                                             <?php
                                                 include('assets/modals/warning.php');
@@ -372,12 +373,12 @@
 
                 </body>
 
-        </html>
-        <?php } else {
-        ?>
-            <script>
-                window.location.replace('email-inbox.php');
-            </script>
+                </html>
+            <?php } else {
+            ?>
+                <script>
+                    window.location.replace('email-inbox.php');
+                </script>
         <?php
             }
         } ?>

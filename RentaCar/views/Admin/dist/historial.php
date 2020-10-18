@@ -1,8 +1,12 @@
 <?php
 
 include_once('../../../CapaNegocios/NHistorial.php');
+
+
 include('men.php');
 $NReserva = new NHistorial();
+
+$n = ($_GET['id']);
 ?>
 
 
@@ -38,32 +42,81 @@ $NReserva = new NHistorial();
                                     <!--Esto es lo que se repite-->
 
                                     <?php
-                                    $lista = $NReserva->listarReserva();
-                                    foreach ($lista as $reserva => $data) {
+                                    $numR = $NReserva->contar();
+                                    $totR = (int)$numR['numR'];
+                                    $numXpagina = 20;
+                                    $desde = ($n - 1) * $numXpagina;
+                                    $totPag = ceil($totR / $numXpagina);
+
+
+                                    $lista = $NReserva->listarReserva($desde, $numXpagina);
+
+                                    if ($lista > 0) {
+
+                                        foreach ($lista as $reserva => $data) {
 
                                     ?>
-                                        <li class="unread">
-                                            <div class="col-mail col-mail-1">
-                                                <div class="checkbox-wrapper-mail">
-                                                    <input type="checkbox" id="chk1">
-                                                    <label for="chk1" class="toggle"></label>
+                                            <li class="unread">
+                                                <div class="col-mail col-mail-1">
+                                                    <div class="checkbox-wrapper-mail">
+                                                        <input type="checkbox" id="chk1">
+                                                        <label for="chk1" class="toggle"></label>
+                                                    </div>
+                                                    <a href="emailread.php?id=<?php echo $data['idreserva']; ?>" class="title"><?= $data['nombre']; ?></a>
                                                 </div>
-                                                <a href="emailread.php?id=<?php echo $data['idreserva']; ?>" class="title"><?= $data['nombre']; ?></a>
-                                            </div>
-                                            <div class="col-mail col-mail-2">
-                                                <a href="emailread.php?id=<?php echo $data['idreserva']; ?>" class="subject"><?= $data['nombre']; ?> solicitó una reserva de <?php echo $data['marca']; ?> <?php echo $data['modelo']; ?> &nbsp;&ndash;&nbsp;
-                                                    <!--<span class="teaser">@LucasKriebel - Very cool :) Nicklas, You have a new direct message.</span>-->
-                                                </a>
-                                                <div class="date"><?= $data['f_solicitud']; ?></div>
-                                            </div>
-                                        </li>
+                                                <div class="col-mail col-mail-2">
+                                                    <a href="emailread.php?id=<?php echo $data['idreserva']; ?>" class="subject"><?= $data['nombre']; ?> solicitó una reserva de <?php echo $data['marca']; ?> <?php echo $data['modelo']; ?> &nbsp;&ndash;&nbsp;
+                                                        <!--<span class="teaser">@LucasKriebel - Very cool :) Nicklas, You have a new direct message.</span>-->
+                                                    </a>
+                                                    <div class="date"><?= $data['f_solicitud']; ?></div>
+                                                </div>
+                                            </li>
 
-                                    <?php } ?>
+                                    <?php }
+                                    } ?>
                                 </ul>
 
                             </div>
                             <!-- end .mt-4 -->
 
+
+                            <div class="row">
+                                <div class="col-7">
+
+                                    <?php
+                                    if ($n != 1) {
+                                    ?>
+
+                                        <a href="historial.php?id=<?= ($n - 1) ?>"><button type="button" class="btn btn-light btn-sm"><i class="mdi mdi-chevron-left"></i></button></a>
+
+
+                                        <?php
+                                    }
+                                    for ($j = 1; $j <= $totPag; $j++) {
+                                        if ($j == $n) {
+                                        ?>
+                                            <a href="historial.php?id=<?= $j ?>"><button type="button" class="btn btn-info btn-sm"><?= $j ?></i></button></a>
+
+                                        <?php
+                                        } else {
+                                        ?>
+                                            <a href="historial.php?id=<?= $j ?>"><button type="button" class="btn btn-light btn-sm"><?= $j ?></i></button></a>
+
+                                    <?php
+                                        }
+                                    }
+                                    ?>
+
+                                    <?php
+                                    if ($n != $totPag) {
+                                    ?>
+                                        <a href="historial.php?id=<?= $n + 1 ?>"><button type="button" class="btn btn-light btn-sm"><i class="mdi mdi-chevron-right"></i></button></a>
+                                    <?php
+                                    }
+                                    ?>
+                                </div> <!-- end col-->
+
+                            </div>
                             <!-- end row-->
                         </div>
                         <!-- end inbox-rightbar-->
