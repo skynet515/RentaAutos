@@ -108,7 +108,7 @@ $n = ($_GET['id']);
                                     ?>
 
                                     <?php
-                                    if ($n != $totPag) {
+                                    if ($n != $totPag && !empty($lista)) {
                                     ?>
                                         <a href="historial.php?id=<?= $n + 1 ?>"><button type="button" class="btn btn-light btn-sm"><i class="mdi mdi-chevron-right"></i></button></a>
                                     <?php

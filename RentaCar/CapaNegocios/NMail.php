@@ -12,14 +12,14 @@ function email($list)
 {
 
 	try {
-	    $correoTo = $list['correo'];
+		$correoTo = $list['correo'];
 		$nombre = $list['nombre'];
 		$marca = $list['marca'];
 		$modelo = $list['modelo'];
 		$correo = 'confirmation@cabezasrentacar.com';
 		$fech_in = $list['f_recogida'];
 		$fecha_fin = $list['f_entrega'];
-	
+
 		$uniq = uniqid('np');
 
 		$headers = "MIME-Version: 1.0\r\n";
@@ -46,12 +46,12 @@ function email($list)
 			</html>";
 
 		$asunto = 'Confirmación de Reserva Cabezas Rent a Car';
-		for ($x = 0; $x <= 0; $x++) {
-			$req = mail($correoTo, $asunto, $mensaje, $headers);
-			$correoTo="";
-		}
-		//if ($req) return true;
-		//else return false;
+
+		$req = mail($correoTo, $asunto, $mensaje, $headers);
+		$correoTo = "";
+
+		if ($req) return true;
+		else return false;
 	} catch (Exception $e) {
 		return false;
 	}

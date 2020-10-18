@@ -26,7 +26,7 @@
 				<div class="modal-footer">
 					<form action="#" method="post">
 						<button type="submit" name="cancel" class="btn">Confirmar</button>
-						<?php $req = $reserva->nconf($data['idreserva'], $data['idautos']); ?>
+						<?php $req = $reserva->ndelete($data['idreserva'])?>
 						<button type="submit" class="btn" data-dismiss="modal">Cancelar</button>
 					</form>
 				</div>

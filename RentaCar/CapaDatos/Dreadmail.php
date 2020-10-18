@@ -8,7 +8,7 @@ class Dreadmail
 		$this->conexion = Conexion::getInstance();
 	}
 
-	public function dconf($id, $idaut)
+	public function dconf($id)
 	{
 		$sql = "UPDATE reserva SET estado = 1 WHERE idreserva = $id;";
 		$PrepareStatement = $this->conexion->getPrepareStatement($sql);

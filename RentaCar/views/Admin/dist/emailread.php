@@ -26,9 +26,10 @@
                 } else {
                     $val = $data['$f'] . "  " . $data['$h'];
                 }
-                
+
                 include('assets/modals/mcliente.php');
                 include('assets/modals/mreserva.php');
+
 
 
 
@@ -202,13 +203,14 @@
                                                             <button type="button" class="btn btn-purple dropdown-item" data-toggle="modal" data-target="#mdres">Edita Reserva</button>
                                                         </div>
                                                     </div>
-                                                    <?php $req = $reserva->nconf($data['idreserva'], $data['idautos']);  ?>
+                                                    <?php //$req = $reserva->nconf($data['idreserva']);  
+                                                    ?>
                                                     </br>
                                                     <!-- BOTON CANCELAR -->
                                                     <?php if ($data['estado'] == '0') { ?>
                                                         <button type="button" id="can" class="btn btn-danger waves-effect waves-light width-md">Cancelar Reservas</button>
                                                     <?php
-
+                                                       
                                                     } ?>
                                             </div>
 
@@ -220,14 +222,14 @@
                                                 <!-- BUTTON CONFIRMAR-->
                                                 <div class="button-list">
                                                     <button type="submit" name="conf" class="btn btn-primary btn-block waves-effect waves-light width-lg"><b>Confirmar Reserva</b></button>
-                                                    <?php $req = $reserva->nconf($data['idreserva'], $data['idautos']); 
-                                                    
+                                                    <?php $req = $reserva->nconf($data['idreserva']);
+
                                                     ?>
                                                 </div>
                                             <?php
-                                                include('assets/modals/warning.php');
+include('assets/modals/warning.php');
                                             }
-
+                                            
                                             ?>
 
 

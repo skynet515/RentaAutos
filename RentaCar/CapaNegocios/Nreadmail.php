@@ -24,24 +24,47 @@ class Nreadmail
 	{
 		return $this->dmail->detalleReserva($id);
 	}
-	public function nconf($id, $idaut)
+	public function nconf($id)
 	{
 		if (isset($_POST['conf'])) {
-			$list = $this->dmail->dconf($id, $idaut);
+			$list = $this->dmail->dconf($id);
 			if (!empty($list)) {
 				$req = email($list);
-				//if ($req) {
-					include('assets/modals/success.php');
-				/*} else include('assets/modals/error.php');*/
-			} else include('assets/modals/error.php');
+				if ($req) {
+					?>
+					<script>
+						alert("Reserva confirmada con éxito");
+						document.location.href = "emailread.php?id=<?= $id ?> ";
+					</script>
+					<?php
+				} else{
+					?>
+					<script>
+						alert("Error al confirmar reserva");
+						document.location.href = "emailread.php?id=<?= $id ?> ";
+					</script>
+					<?php
+				} 
+			} else {
+				?>
+					<script>
+						alert("Ha sucedido un error");
+						document.location.href = "emailread.php?id=<?= $id ?> ";
+					</script>
+					<?php
+			}
 		}
 
+		
+		
+	}
+
+	public function ndelete($id){
 		if (isset($_POST['cancel'])) {
 			$req = $this->dmail->delete($id);
-			if ($req) include('assets/modals/success.php');
-			else include('assets/modals/error.php');
+			if ($req){include('assets/modals/success.php');} 
+			else{include('assets/modals/error.php');} 
 		}
-		
 	}
 
 	public function nclien($id)
